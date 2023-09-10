@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
 export class MainComponent {
   onMouseEnter(position: number){
     let theDiv = document.getElementById('div' + position) as HTMLDivElement;
+    let theImg = document.getElementById('img' + position) as HTMLImageElement;
     theDiv.style.backgroundColor = 'black';
-    theDiv.style.display = 'none';
+    theImg.classList.add('darken');
   }
 
   onMouseLeave(position: number){
     let theDiv = document.getElementById('div' + position) as HTMLDivElement;
+    let theImg = document.getElementById('img' + position) as HTMLImageElement;
     theDiv.style.display = '';
+    theImg.classList.remove('darken');
   }
 }
