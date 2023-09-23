@@ -10,6 +10,7 @@ You can add global styles to this file, and also import other style files
 
 body {
   background-color: black;
+  font-family: 'Bookman Old Style', Georgia, 'Times New Roman', Times, serif;
 } 
 
 h1,
