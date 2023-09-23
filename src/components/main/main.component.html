@@ -1,57 +1,66 @@
 <body>
-    <div style="width:100vw;height:100vh;">
+    <div id="content" *ngIf="display"><app-content></app-content></div>
+    <div id="main" style="width:100vw;height:100vh;" *ngIf="!display">
         <div class="grid-inline-container">
             <!--row 1-->
             <div id="div1" class="img-class img-size img-top-left row1" 
                 (mouseenter)="onMouseEnter(1)"
                 (mousemove)="onMouseEnter(1)"
-                (mouseleave)="onMouseLeave(1)">
+                (mouseleave)="onMouseLeave(1)"
+                (click)="onContentClick(1)" >
                 <img id="img1" src="../../assets/img/Heal.jpg" alt="Our Church Family" class="img-class"/>
             </div>
             <div id="div1overlay" class="radial-gradient img-class img-size img-top-left row1" 
                 (mouseenter)="onMouseEnter(1)"
                 (mousemove)="onMouseEnter(1)"
-                (mouseleave)="onMouseLeave(1)">
-                <span class="center-text radial-gradient">Our Church Family</span>
+                (mouseleave)="onMouseLeave(1)"
+                (click)="onContentClick(1)">
+                <span class="center-text radial-gradient" >Our Church Family</span>
             </div>
 
             <div id="div2" class="img-class img-size img-top-left-center row1" 
                 (mouseenter)="onMouseEnter(2)"
                 (mousemove)="onMouseEnter(2)"
-                (mouseleave)="onMouseLeave(2)">
+                (mouseleave)="onMouseLeave(2)"
+                (click)="onContentClick(1)">
                 <img id="img2" src="../../assets/img/CONGO.jpg" alt="Missions" class="img-class"/>
             </div>
             <div id="div2overlay" class="radial-gradient img-class img-size img-top-left-center row1" 
                 (mouseenter)="onMouseEnter(2)"
                 (mousemove)="onMouseEnter(2)"
-                (mouseleave)="onMouseLeave(2)">
+                (mouseleave)="onMouseLeave(2)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">Reaching the World</span>
             </div>
 
             <div id="div3" class="img-class img-size img-top-right-center row1" 
                 (mouseenter)="onMouseEnter(3)"
                 (mousemove)="onMouseEnter(3)"
-                (mouseleave)="onMouseLeave(3)">
+                (mouseleave)="onMouseLeave(3)"
+                (click)="onContentClick(1)">
                 <img id="img3" src="../../assets/img/Horse.jpg" alt="Reaching Our Community" class="img-class"/>
                 <div class="center-text">Three</div>
             </div>
             <div id="div3overlay" class="radial-gradient img-class img-size img-top-right-center row1" 
                 (mouseenter)="onMouseEnter(3)"
                 (mousemove)="onMouseEnter(3)"
-                (mouseleave)="onMouseLeave(3)">
+                (mouseleave)="onMouseLeave(3)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">Reaching Our Community</span>
             </div>
 
             <div id="div4" class="img-class img-size img-top-right row1"  
                 (mouseenter)="onMouseEnter(4)"
                 (mousemove)="onMouseEnter(4)"
-                (mouseleave)="onMouseLeave(4)">
+                (mouseleave)="onMouseLeave(4)"
+                (click)="onContentClick(1)">
                 <img id="img4" src="../../assets/img/Friends.jpg" alt="Four" class="img-class"/>            
             </div>
             <div id="div4overlay" class="radial-gradient img-class img-size img-top-right row1"  
                 (mouseenter)="onMouseEnter(4)"
                 (mousemove)="onMouseEnter(4)"
-                (mouseleave)="onMouseLeave(4)">
+                (mouseleave)="onMouseLeave(4)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">Prayer</span>
             </div>
 
@@ -59,13 +68,15 @@
             <div id="div5" class="img-class img-size img-middle-left row2"  
                 (mouseenter)="onMouseEnter(5)"
                 (mousemove)="onMouseEnter(5)"
-                (mouseleave)="onMouseLeave(5)">
+                (mouseleave)="onMouseLeave(5)"
+                (click)="onContentClick(1)">
                 <img id="img5" src="../../assets/img/Aniv Med.jpg" alt="Five" class="img-class"/>
             </div>
             <div id="div5overlay" class="radial-gradient img-class img-size img-middle-left row2"  
                 (mouseenter)="onMouseEnter(5)"
                 (mousemove)="onMouseEnter(5)"
-                (mouseleave)="onMouseLeave(5)">
+                (mouseleave)="onMouseLeave(5)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">Worship Services</span>
             </div>
 
@@ -83,13 +94,15 @@
             <div id="div6" class="img-class img-size img-middle-right row2"  
                 (mouseenter)="onMouseEnter(6)"
                 (mousemove)="onMouseEnter(6)"
-                (mouseleave)="onMouseLeave(6)">
+                (mouseleave)="onMouseLeave(6)"
+                (click)="onContentClick(1)">
                 <img id="img6" src="../../assets/img/_MG_1065.jpg" alt="Six" class="img-class"/>
             </div>
             <div id="div6overlay" class="radial-gradient img-class img-size img-middle-right row2"  
                 (mouseenter)="onMouseEnter(6)"
                 (mousemove)="onMouseEnter(6)"
-                (mouseleave)="onMouseLeave(6)">
+                (mouseleave)="onMouseLeave(6)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">The RCUS</span>
             </div>
 
@@ -97,53 +110,61 @@
             <div id="div7" class="img-class img-size img-bottom-left row3"  
                 (mouseenter)="onMouseEnter(7)"
                 (mousemove)="onMouseEnter(7)"
-                (mouseleave)="onMouseLeave(7)">
+                (mouseleave)="onMouseLeave(7)"
+                (click)="onContentClick(1)">
                 <img id="img7" src="../../assets/img/IMG_7122.JPG" alt="Seven" class="img-class"/>
             </div>
             <div id="div7overlay" class="radial-gradient img-class img-size img-bottom-left row3"  
                 (mouseenter)="onMouseEnter(7)"
                 (mousemove)="onMouseEnter(7)"
-                (mouseleave)="onMouseLeave(7)">
+                (mouseleave)="onMouseLeave(7)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">What We Believe</span>
             </div>
 
             <div id="div8" class="img-class img-size img-bottom-left-center row3"  
                 (mouseenter)="onMouseEnter(8)"
                 (mousemove)="onMouseEnter(8)"
-                (mouseleave)="onMouseLeave(8)">
+                (mouseleave)="onMouseLeave(8)"
+                (click)="onContentClick(1)">
                 <img id="img8" src="../../assets/img/Unity.jpg" alt="Eight" class="img-class"/>
             </div>
             <div id="div8overlay" class="radial-gradient img-class img-size img-bottom-left-center row3"  
                 (mouseenter)="onMouseEnter(8)"
                 (mousemove)="onMouseEnter(8)"
-                (mouseleave)="onMouseLeave(8)">
-                <span class="center-text radial-gradient">What We Teach</span>
+                (mouseleave)="onMouseLeave(8)"
+                (click)="onContentClick(1)">
+                <span class="center-text radial-gradient">How We Teach</span>
             </div>
 
             <div id="div9" class="img-class img-size img-bottom-right-center row3"  
                 (mouseenter)="onMouseEnter(9)"
                 (mousemove)="onMouseEnter(9)"
-                (mouseleave)="onMouseLeave(9)">
+                (mouseleave)="onMouseLeave(9)"
+                (click)="onContentClick(1)">
                 <img id="img9" src="../../assets/img/Love.jpg" alt="Nine" class="img-class"/>
             </div>
             <div id="div9overlay" class="radial-gradient img-class img-size img-bottom-right-center row3"  
                 (mouseenter)="onMouseEnter(9)"
                 (mousemove)="onMouseEnter(9)"
-                (mouseleave)="onMouseLeave(9)">
+                (mouseleave)="onMouseLeave(9)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">Our Leaders</span>
             </div>
 
             <div id="div10" class="img-class img-size img-bottom-right row3"  
                 (mouseenter)="onMouseEnter(10)"
                 (mousemove)="onMouseEnter(10)"
-                (mouseleave)="onMouseLeave(10)">
+                (mouseleave)="onMouseLeave(10)"
+                (click)="onContentClick(1)">
                 <img id="img10" src="../../assets/img/tower_Painting_Painting2.RIF" alt="Ten
                 " class="img-class"/>
             </div>
             <div id="div10overlay" class="radial-gradient img-class img-size img-bottom-right row3"  
                 (mouseenter)="onMouseEnter(10)"
                 (mousemove)="onMouseEnter(10)"
-                (mouseleave)="onMouseLeave(10)">
+                (mouseleave)="onMouseLeave(10)"
+                (click)="onContentClick(1)">
                 <span class="center-text radial-gradient">How to Find Us</span>
             </div>
         </div>
