@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  display = false;
+  onContentClick(position: number) {
+    this.display = !this.display;
+  }
+
   onMouseEnter(position: number){
     let theDiv = document.getElementById('div' + position) as HTMLDivElement;
     let theImg = document.getElementById('img' + position) as HTMLImageElement;
