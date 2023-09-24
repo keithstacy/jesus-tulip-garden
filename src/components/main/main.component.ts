@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   display = false;
-  onContentClick(position: number) {
+
+  onPanelClicked(position: number) {
     this.display = !this.display;
   }
 
@@ -24,4 +25,9 @@ export class MainComponent {
     theDiv.style.display = '';
     theImg.classList.remove('darken');
   }
+
+  onContentClicked(obj: any) {
+    this.display = false;
+  }
+
 }
