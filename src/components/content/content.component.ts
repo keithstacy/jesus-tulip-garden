@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
+  @Output() Clicked = new EventEmitter<any>();
 
+  clicked() {
+    this.Clicked.emit(0);
+  }
 }
