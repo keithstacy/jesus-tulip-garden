@@ -26,8 +26,4 @@ export class MainComponent {
     theImg.classList.remove('darken');
   }
 
-  onContentClicked(obj: any) {
-    this.display = false;
-  }
-
 }
