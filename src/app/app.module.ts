@@ -6,13 +6,31 @@ import { TempComponent } from '../components/temp/temp.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from '../components/main/main.component';
 import { ContentComponent } from '../components/content/content.component';
+import { ForeignMissionsComponent } from '../components/foreign-missions/foreign-missions.component';
+import { LocalOutreachComponent } from '../components/local-outreach/local-outreach.component';
+import { PrayerComponent } from '../components/prayer/prayer.component';
+import { WorshipServiceComponent } from '../components/worship-service/worship-service.component';
+import { GlobalFamilyComponent } from '../components/global-family/global-family.component';
+import { WhatWeBelieveComponent } from '../components/what-we-believe/what-we-believe.component';
+import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.component';
+import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
+import { FindUsComponent } from '../components/find-us/find-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TempComponent,
     MainComponent,
-    ContentComponent
+    ContentComponent,
+    ForeignMissionsComponent,
+    LocalOutreachComponent,
+    PrayerComponent,
+    WorshipServiceComponent,
+    GlobalFamilyComponent,
+    WhatWeBelieveComponent,
+    HowWeTeachComponent,
+    OurLeadersComponent,
+    FindUsComponent
   ],
   imports: [
     BrowserModule,
