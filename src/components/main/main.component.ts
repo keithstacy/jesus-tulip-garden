@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ComponentRef, ViewContainerRef } from '@angular/core';
+import { Router } from '@angular/router';
+import { ContentService } from '../../services/content.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  display = false;
+  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef) {
+  }
+
+  displayMain = true;
 
   onPanelClicked(position: number) {
-    this.display = !this.display;
+    console.log('onPanelClicked: ' + position);
+    this.contentSvc.LoadContentComponent(this.containerRef, position);
+    this.displayMain = false;
   }
 
   onMouseEnter(position: number){
@@ -24,6 +31,12 @@ export class MainComponent {
     let theImg = document.getElementById('img' + position) as HTMLImageElement;
     theDiv.style.display = '';
     theImg.classList.remove('darken');
+  }
+
+  ReturnToMain(event: boolean) {
+    console.log('returnToMain received in main component')
+    this.displayMain = event;
+    this.containerRef.clear();
   }
 
 }

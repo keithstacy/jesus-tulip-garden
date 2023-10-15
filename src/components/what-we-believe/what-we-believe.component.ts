@@ -2,15 +2,15 @@ import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { ContentService } from 'src/services/content.service';
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'app-what-we-believe',
+  templateUrl: './what-we-believe.component.html',
+  styleUrls: ['./what-we-believe.component.css']
 })
-export class ContentComponent implements OnInit {
-
+export class WhatWeBelieveComponent  implements OnInit {
+  
   constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log('Content loaded');
   }
 

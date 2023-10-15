@@ -1,12 +1,12 @@
 <body>
-    <div id="main" style="width:100vw;height:100vh;" *ngIf="!display">
+    <div id="main" style="width:100vw;height:100vh;" *ngIf="displayMain">
         <div class="grid-inline-container">
             <!--row 1-->
             <div id="div1" class="img-class img-size img-top-left row1" 
                 (mouseenter)="onMouseEnter(1)"
                 (mousemove)="onMouseEnter(1)"
                 (mouseleave)="onMouseLeave(1)"
-                (click)="onPanelClicked(1)" >
+                (click)="onPanelClicked(1)">
                 <img id="img1" src="../../assets/img/Heal.jpg" alt="Our Church Family" class="img-class"/>
             </div>
             <div id="div1overlay" class="radial-gradient img-class img-size img-top-left row1" 

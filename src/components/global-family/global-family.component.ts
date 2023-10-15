@@ -2,11 +2,11 @@ import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { ContentService } from 'src/services/content.service';
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'app-global-family',
+  templateUrl: './global-family.component.html',
+  styleUrls: ['./global-family.component.css']
 })
-export class ContentComponent implements OnInit {
+export class GlobalFamilyComponent  implements OnInit {
 
   constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
 
