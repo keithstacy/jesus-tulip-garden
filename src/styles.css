@@ -91,24 +91,19 @@ p {
   flex: 1;
 }
 
-.grid-container {
-  display:grid;
-  gap:10px;
-}
-
 .grid-inline-container {
   display:inline-grid;
   position:relative;
   grid-template-columns: repeat(100, 1%);
   grid-template-rows: repeat(100, 1%);
-  grid-gap:0;
+  grid: gap 0;
   width:100%;
   height:100%;
 }
 
 .img-class {
-  width:100%;
-  height:100%;
+  width:105%;
+  height:105%;
 }
 
 .row1 {
@@ -132,8 +127,8 @@ p {
 }
 
 .img-size {
-  width:100%;
-  height:100%;
+  width:105%;
+  height:105%;
   position:relative;
   text-align:center;
   color:black;
