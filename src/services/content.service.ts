@@ -5,7 +5,7 @@ import { HowWeTeachComponent } from 'src/components/how-we-teach/how-we-teach.co
 import { OurLeadersComponent } from 'src/components/our-leaders/our-leaders.component';
 import { WhatWeBelieveComponent } from 'src/components/what-we-believe/what-we-believe.component';
 import { WorshipServiceComponent } from 'src/components/worship-service/worship-service.component';
-import { ContentComponent } from 'src/components/content/content.component';
+import { ChurchFamilyComponent } from 'src/components/church-family/church-family.component';
 import { ForeignMissionsComponent } from 'src/components/foreign-missions/foreign-missions.component';
 import { LocalOutreachComponent } from 'src/components/local-outreach/local-outreach.component';
 import { MainComponent } from 'src/components/main/main.component';
@@ -23,7 +23,7 @@ export class ContentService {
   LoadContentComponent(containerRef: ViewContainerRef, id: number) {
     console.log('loadComponent called with ID of ' + id);
     if (id == 1) {
-      const componentRef = containerRef.createComponent(ContentComponent);
+      const componentRef = containerRef.createComponent(ChurchFamilyComponent);
     }
     else if (id == 2) {
       const componentRef = containerRef.createComponent(ForeignMissionsComponent);
