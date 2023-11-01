@@ -25,25 +25,25 @@ export class ContentService {
       const componentRef = containerRef.createComponent(ChurchFamilyComponent);
     }
     else if (id == 2) {
-      const componentRef = containerRef.createComponent(ForeignMissionsComponent);
-    }
-    else if (id == 3) {
-      const componentRef = containerRef.createComponent(LocalOutreachComponent);
-    }
-    else if (id == 4) {
-      const componentRef = containerRef.createComponent(PrayerComponent);
-    }
-    else if (id == 5){
-      const componentRef = containerRef.createComponent(WorshipServiceComponent);
-    }
-    else if (id == 6) {
-      const componentRef = containerRef.createComponent(GlobalFamilyComponent);
-    }
-    else if (id == 7) {
       const componentRef = containerRef.createComponent(WhatWeBelieveComponent);
     }
-    else if (id == 8) {
+    else if (id == 3) {
       const componentRef = containerRef.createComponent(HowWeTeachComponent);
+    }
+    else if (id == 4) {
+      const componentRef = containerRef.createComponent(WorshipServiceComponent);
+    }
+    else if (id == 5){
+      const componentRef = containerRef.createComponent(PrayerComponent);
+    }
+    else if (id == 6) {
+      const componentRef = containerRef.createComponent(LocalOutreachComponent);
+    }
+    else if (id == 7) {
+      const componentRef = containerRef.createComponent(ForeignMissionsComponent);
+    }
+    else if (id == 8) {
+      const componentRef = containerRef.createComponent(GlobalFamilyComponent);
     }
     else if (id == 9) {
       const componentRef = containerRef.createComponent(OurLeadersComponent);
