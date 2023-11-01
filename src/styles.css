@@ -9,7 +9,7 @@ You can add global styles to this file, and also import other style files
   }
 
 body {
-  background-color: black;
+  background-color: transparent;
   font-family: 'Bookman Old Style', Georgia, 'Times New Roman', Times, serif;
 } 
 
@@ -35,6 +35,37 @@ p {
   margin: 0;
 }
 
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.background-image {
+  background-image: url('src/assets/img/tower_Painting.Color.svg');
+  background-position: bottom center 50% 50%;
+  background-size:cover;
+  filter:brightness(100%);
+  background-color:white;
+}
+
+.background-image-main {
+  background-image: url('src/assets/img/tower_Painting.Color.svg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position:bottom left;
+
+}
+
+.text-behind {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8))
+}
+
 .pad-content {
   padding: 20px;
 }
@@ -44,7 +75,7 @@ p {
   top:45%;
   left:45%;
   transform: translate(-50%,-50%);
-  font-size: 3.75vh;
+  font-size: 2.75vh;
 }
 
 .img-top-left {
@@ -119,6 +150,11 @@ p {
   grid-row:1;
 }
 
+#main {
+  width:97vw;
+  height:96vh;
+}
+
 .middle-card {
   grid-row: 34/66;
   grid-column: 26/75;
@@ -132,7 +168,6 @@ p {
   position:relative;
   text-align:center;
   color:black;
-  
 }
 
 .darken {

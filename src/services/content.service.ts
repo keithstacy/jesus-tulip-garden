@@ -10,14 +10,13 @@ import { ForeignMissionsComponent } from 'src/components/foreign-missions/foreig
 import { LocalOutreachComponent } from 'src/components/local-outreach/local-outreach.component';
 import { MainComponent } from 'src/components/main/main.component';
 import { PrayerComponent } from 'src/components/prayer/prayer.component';
+import { IntroComponent } from 'src/components/intro/intro.component';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContentService {
-
-
   constructor(private applicationRef: ApplicationRef) { }
 
   LoadContentComponent(containerRef: ViewContainerRef, id: number) {
@@ -37,20 +36,23 @@ export class ContentService {
     else if (id == 5){
       const componentRef = containerRef.createComponent(WorshipServiceComponent);
     }
-    else if (id == 6){
+    else if (id == 6) {
       const componentRef = containerRef.createComponent(GlobalFamilyComponent);
     }
-    else if (id == 7){
+    else if (id == 7) {
       const componentRef = containerRef.createComponent(WhatWeBelieveComponent);
     }
-    else if (id == 8){
+    else if (id == 8) {
       const componentRef = containerRef.createComponent(HowWeTeachComponent);
     }
-    else if (id == 9){
+    else if (id == 9) {
       const componentRef = containerRef.createComponent(OurLeadersComponent);
     }
-    else if (id == 10){
+    else if (id == 10) {
       const componentRef = containerRef.createComponent(FindUsComponent);
+    }
+    else {
+      const componentRef = containerRef.createComponent(IntroComponent);
     }
   }
 

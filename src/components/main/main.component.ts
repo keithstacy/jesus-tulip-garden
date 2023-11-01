@@ -8,7 +8,7 @@ import { ContentService } from '../../services/content.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef) {
+  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef/*, private introComponent: IntroComponent*/) {
   }
 
   displayMain = true;
@@ -19,18 +19,24 @@ export class MainComponent {
     this.displayMain = false;
   }
 
-  onMouseEnter(position: number){
+  onMouseEnter(position: number) {
     let theDiv = document.getElementById('div' + position) as HTMLDivElement;
     let theImg = document.getElementById('img' + position) as HTMLImageElement;
     theDiv.style.backgroundColor = 'black';
     theImg.classList.add('darken');
   }
 
-  onMouseLeave(position: number){
+  onMouseLeave(position: number) {
     let theDiv = document.getElementById('div' + position) as HTMLDivElement;
     let theImg = document.getElementById('img' + position) as HTMLImageElement;
     theDiv.style.display = '';
     theImg.classList.remove('darken');
+  }
+
+  onCenterClicked() {
+    console.log('onCenterClicked')
+    this.contentSvc.LoadContentComponent(this.containerRef, 0);
+    this.displayMain = false;
   }
 
   ReturnToMain(event: boolean) {
