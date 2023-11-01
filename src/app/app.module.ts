@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { TempComponent } from '../components/temp/temp.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from '../components/main/main.component';
 import { ContentComponent } from '../components/content/content.component';
@@ -15,11 +13,11 @@ import { WhatWeBelieveComponent } from '../components/what-we-believe/what-we-be
 import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.component';
 import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
 import { FindUsComponent } from '../components/find-us/find-us.component';
+import { IntroComponent } from '../components/intro/intro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TempComponent,
     MainComponent,
     ContentComponent,
     ForeignMissionsComponent,
@@ -30,7 +28,8 @@ import { FindUsComponent } from '../components/find-us/find-us.component';
     WhatWeBelieveComponent,
     HowWeTeachComponent,
     OurLeadersComponent,
-    FindUsComponent
+    FindUsComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
