@@ -13,6 +13,7 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('Content loaded');
+    this.contentSvc.IntroViewed = true;
   }
 
   returnToMain(){

@@ -12,12 +12,20 @@ import { MainComponent } from 'src/components/main/main.component';
 import { PrayerComponent } from 'src/components/prayer/prayer.component';
 import { IntroComponent } from 'src/components/intro/intro.component';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class ContentService {
-  constructor(private applicationRef: ApplicationRef) { }
+  constructor(private applicationRef: ApplicationRef) { this._introViewed = false; }
+
+  private _introViewed: boolean;
+
+  get IntroViewed() {
+    return this._introViewed;
+  }
+  set IntroViewed(value) {
+    this._introViewed = value;
+  }
 
   LoadContentComponent(containerRef: ViewContainerRef, id: number) {
     console.log('loadComponent called with ID of ' + id);
@@ -53,6 +61,7 @@ export class ContentService {
     }
     else {
       const componentRef = containerRef.createComponent(IntroComponent);
+      this.IntroViewed = true;
     }
   }
 
