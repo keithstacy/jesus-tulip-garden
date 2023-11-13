@@ -57,8 +57,8 @@ p {
 .background-image-main {
   background-image: url('src/assets/img/tower_Painting.Color.svg');
   background-repeat: no-repeat;
-  background-size:auto;
-  background-position:bottom left;
+  background-size: 100% auto;
+  background-position:center left;
 
 }
 
