@@ -1,4 +1,4 @@
-import { Component, ComponentRef, ViewContainerRef } from '@angular/core';
+import { Component, ComponentRef, OnInit, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { ContentService } from '../../services/content.service';
 
@@ -7,8 +7,15 @@ import { ContentService } from '../../services/content.service';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
-export class MainComponent {
+export class MainComponent implements OnInit {
   constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef/*, private introComponent: IntroComponent*/) {
+  }
+
+  ngOnInit(): void {
+    console.log("ngOnInit");
+    if (this.contentSvc.IntroViewed) return;
+    this.contentSvc.LoadContentComponent(this.containerRef, 0);
+    this.displayMain = false;
   }
 
   displayMain = true;
