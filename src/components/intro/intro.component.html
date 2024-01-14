@@ -1,31 +1,45 @@
+<style>
+    .grid-for-text {
+        display:grid;
+        grid-template-columns:repeat(100, 1vw);
+        grid-template-rows:repeat(100, 1vh);
+    }
+    .link-box {
+        display:flex;
+        flex-direction:column;
+        font-size:calc(1.1vh + 1.1vw + 5px);
+        width:fit-content;
+        height:max-content;
+        padding:15px;
+        background-color:#ffffffaa;
+        grid-column:63/span 25;
+        grid-row:33/span 20;
+    }
+    .welcome-text {
+        font-size:calc(1vh + 1vw + 1em);
+        text-align:center;
+    }
+    .click-the-links {
+        font-size:calc(1vh + 1vw + 0.3em);text-align:center;
+    }
+</style>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-<div class="pad-content" style="background-color: transparent;color:black;display:grid;row-gap:5px;grid-template-columns:50% auto;grid-template-rows:6.0em 2.2em auto;height:95.1vh;width:97vw;">
-    <div style="grid-row:1;grid-column:1 / 3;font-size:6.0em;text-align:right;background-color: transparent;">St. Paul's Church</div>
-    <div style="grid-row:2;grid-column:1 / 3;font-size:2em;text-align:right;background-color:transparent;">Hamburg, Minnesota</div>
-    <div class="background-image-main" style="grid-row:3;grid-column:1;background-color:transparent;"></div>
-     <div style="padding:5px;grid-row:3;grid-column:2;background-color:transparent;">        
-        <p style="font-size:2.5em;">Hello! We're glad you stopped by!</p>
-        <p style="font-size:1.3em;">We're <span style="font-weight:450;">St. Paul's Evangelical Reformed Church</span> of Hamburg, Minnesota.  
-            We're not a big church, but we're a strong church, and over the past century and a half 
-            of our existence we've learned a lot about how to <span style="font-weight:450;">love people</span> 
-            the way the <span style="font-weight:450;">Lord Jesus Christ</span> 
-            called us to do. And we've also learned that being trendy isn't all it's cracked up to be.  Instead, we have embraced the 
-            <span style="font-weight:450;">deep traditions of our Christian history</span> and committed 
-            ourselves to speaking the <span style="font-weight:450;">eternal Truth of the Bible.</span>  </p><br>
-        <p style="font-size:1.3em;">If you have a hunger in your heart <span style="font-weight:450;">to know God in a deep way</span>, 
-            we hope you will join us.  We believe that we can show you the way to let the <span style="font-weight:450;">Lord Jesus Christ</span> 
-            fill that <span style="font-weight:450;">God-shaped hole in your heart</span>. We believe that we can help you grow 
-            <span style="font-weight:450;">stronger and deeper in your faith</span>. We believe that we can show you how to have 
-            <span style="font-weight:450;">confidence that God is real</span>, and that <span style="font-weight:450;">you truly belong</span> to Him.  We have 
-            <span style="font-weight:450;">experienced God's love</span> in our lives, and we want to bring you alongside us as you experience it for yourself.</p><br>
-        <p style="font-size:1.3em;">There's so much we want to tell you about ourselves.  So we've organized our web site into <span style="font-weight:450;">ten chapters</span>, 
-            each one explaining something important.  Please <span style="font-weight:450;">click the button below</span> to find out more about us.  </p><br>
-        <div style="display:flex;">
-            <button type="button" style="font-size:x-large;width:12em;height:5em;background-color:#8a0303;color:white;" (click)="returnToMain()" >Click here to learn more</button>
-            <div style="width:50px;"></div>
-            <button type="submit" style="font-size:medium;width:12em;height:7.5em;background-color: transparent;border:none;color:gray;" (click)="returnToMain()">
-                <span class="material-symbols-outlined" style="vertical-align: middle;">favorite</span>&nbsp;I'm a member!
-            </button>
+<div id="intro" class="full-page pad-content" style="background-color: transparent;color:black;height:85.1vh;width:97vw;">
+    <div class="background-image-main" style="background-color:transparent;min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
+        <div class="grid-for-text">
+            <div style="background-color:#ffffff99;height:59vh;width:38vh;grid-column:10;grid-row:10"><img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/></div>
+            <div class="text-outline-blue" style="font-size:6.0em;color:white;width:fit-content;padding:5px;grid-column:50/span 50;width:100%;grid-row:2;text-align:center;">St. Paul's Church</div>
+            <div class="text-outline-blue" style="font-size:2em;background-color:transparent;color:white;grid-column:50/span 50;grid-row:10;text-align:center;">Hamburg, Minnesota</div>
+            <div class="text-outline-blue" style="padding:5px;background-color:transparent;color:white;grid-column:50/span 48;grid-row:15;width:fit-content;height:max-content;">        
+                <p class="welcome-text">Hello! We're glad you stopped by!</p>
+                <p class="click-the-links">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links below</span> to find out more about us.  </p><br>
+            </div>
+            <div class="link-box">
+                <a [routerLink]="['/']" fragment="church-family" class="text-outline-white" style="color:darkblue;">Our Church Family</a>
+                <a class="text-outline-white" style="color:darkblue;">Our Global Family</a>
+                <a class="text-outline-white" style="color:darkblue;">Reaching the World</a>
+                <a class="text-outline-white" style="color:darkblue;">What We Believe</a>
+            </div>
         </div>
     </div> 
 </div>

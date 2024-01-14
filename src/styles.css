@@ -35,6 +35,20 @@ p {
   margin: 0;
 }
 
+.text-outline-blue {
+  text-shadow:2px 2px 2px darkblue, -2px -2px 2px darkblue, -2px 2px 2px darkblue, 2px -2px 2px darkblue;
+}
+
+.text-outline-white {
+  text-shadow:2px 2px 2px white, -2px -2px 2px white, -2px 2px 2px white, 2px -2px 2px white;
+}
+
+.text-outline-brown {
+  text-shadow:2px 2px 2px brown, -2px -2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;
+}
+
+
+
 .intro {
   position: absolute;
   top: 50%;
@@ -55,10 +69,10 @@ p {
 }
 
 .background-image-main {
-  background-image: url('src/assets/img/tower_Painting.Color.svg');
+  background-image: url('src/assets/img/StPaulChurchWideView.jpeg');
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position:center left;
+  background-position:center;
 
 }
 
@@ -318,6 +332,10 @@ a:hover {
 .circle-link:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.full-page {
+  height:100vh;
 }
 
 footer {
