@@ -14,6 +14,8 @@ import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.com
 import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
 import { FindUsComponent } from '../components/find-us/find-us.component';
 import { IntroComponent } from '../components/intro/intro.component';
+import { ScrollComponent } from '../components/scroll/scroll.component';
+import { ChurchFamilyComponent } from '../components/church-family/church-family.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { IntroComponent } from '../components/intro/intro.component';
     HowWeTeachComponent,
     OurLeadersComponent,
     FindUsComponent,
-    IntroComponent
+    IntroComponent,
+    ScrollComponent,
+    ChurchFamilyComponent
   ],
   imports: [
     BrowserModule,
