@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, ViewContainerRef, ElementRef } from '@angular/core';
 import { ContentService } from 'src/services/content.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ContentService } from 'src/services/content.service';
 })
 export class GlobalFamilyComponent  implements OnInit {
 
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
+  constructor(public elementRef: ElementRef, private contentSvc: ContentService, private containerRef: ViewContainerRef){}
 
   ngOnInit() {
     console.log('Content loaded');

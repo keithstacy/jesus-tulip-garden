@@ -14,7 +14,7 @@ export class FindUsComponent implements OnInit {
 
   @ViewChild('theMap') theMap: ElementRef = new ElementRef(null);
   
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
+  constructor(public elementRef: ElementRef, private contentSvc: ContentService, private containerRef: ViewContainerRef){}
 
   ngOnInit(): void {
     console.log('Content loaded');

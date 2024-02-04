@@ -16,14 +16,57 @@
         background-attachment:fixed;
     }
     .title-text {
-        font-size:7.0em;color:white;width:fit-content;padding:5px;grid-column:1/span 20;grid-row:1/span 10;width:100%;text-align:center;margin-right:50px;
+        font-size:7.0em;color:white;
+        width:-moz-fit-content;
+        width:fit-content;
+        padding:5px;
+        grid-column:3/span 20;
+        grid-row:3/span 10;
+        width:100%;
+        text-align:left;
+        margin-right:50px;
     }
+    .click-the-links {
+        font-size:calc(1.05vh + 1.05vw + 0.7em);
+        text-align:center;
+        background-color:#00000066;
+        border-radius:0.5em;
+        grid-column:48;
+        grid-row:10/span 10;
+        color:white;
+        width:max-content;
+        padding: 15px;
+    }
+    .link-button {
+        background: none;
+        border: none;
+        color:white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: inherit;
+        padding: 0;
+        text-align:center;
+    }
+    .link-button:hover {
+        text-decoration: underline;
+    }
+
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <div id="church-family" class="full-page pad-content" style="background-color: transparent;height:95.1vh;width:97vw;">
     <div class="background-image-church-family">
         <div class="grid-for-text">
             <div class="text-outline-brown title-text">Our Church Family</div>
+            <div class="text-outline-brown click-the-links">
+                <div><button class="link-button text-outline-brown">Who are we?</button></div>
+                <div><button class="link-button text-outline-brown">What do we believe?</button></div>
+                <div><button class="link-button text-outline-brown">How can you<br/>join with us?</button></div>
+                <hr>
+                <div><button class="link-button text-outline-brown">Church Bulletin</button></div>
+                <div><button class="link-button text-outline-brown">Pastor's Sermons</button></div>
+                <div><button class="link-button text-outline-brown">Member Giving</button></div>
+            </div>
         </div>
     </div> 
 </div>

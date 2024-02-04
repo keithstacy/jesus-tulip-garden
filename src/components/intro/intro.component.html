@@ -6,14 +6,15 @@
     }
     .link-box {
         display:flex;
-        flex-direction:column;
-        font-size:calc(1.1vh + 1.1vw + 5px);
+        flex-direction:row;
+        font-size:25pt;
+        /* width:-moz-fit-content;
         width:fit-content;
-        height:max-content;
+        height:max-content; */
         padding:15px;
         background-color:#ffffffaa;
-        grid-column:63/span 25;
-        grid-row:33/span 20;
+        grid-column:1/span 100;
+        grid-row:1/span 3;
     }
     .welcome-text {
         font-size:calc(1vh + 1vw + 1em);
@@ -22,24 +23,55 @@
     .click-the-links {
         font-size:calc(1vh + 1vw + 0.3em);text-align:center;
     }
+    .link-button {
+        background: none;
+        border: none;
+        color:darkblue;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: inherit;
+        padding: 0 20px;
+        text-align:left;
+        margin-top:-13px
+    }
+    .link-button:hover {
+        text-decoration: underline;
+    }
+    .x {
+        display:grid;
+        grid-template-columns: repeat(15, 5%);
+        grid-template-rows: repeat(10, 10%);
+    }
+
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-<div id="intro" class="full-page pad-content" style="background-color: transparent;color:black;height:85.1vh;width:97vw;">
+<div id="intro" class="full-page pad-content" style="background-color: transparent;color:black;height:95.1vh;width:97vw;">
     <div class="background-image-main" style="background-color:transparent;min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
         <div class="grid-for-text">
-            <div style="background-color:#ffffff99;height:59vh;width:38vh;grid-column:10;grid-row:10"><img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/></div>
-            <div class="text-outline-blue" style="font-size:6.0em;color:white;width:fit-content;padding:5px;grid-column:50/span 50;width:100%;grid-row:2;text-align:center;">St. Paul's Church</div>
-            <div class="text-outline-blue" style="font-size:2em;background-color:transparent;color:white;grid-column:50/span 50;grid-row:10;text-align:center;">Hamburg, Minnesota</div>
-            <div class="text-outline-blue" style="padding:5px;background-color:transparent;color:white;grid-column:50/span 48;grid-row:15;width:fit-content;height:max-content;">        
-                <p class="welcome-text">Hello! We're glad you stopped by!</p>
-                <p class="click-the-links">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links below</span> to find out more about us.  </p><br>
-            </div>
+            
             <div class="link-box">
-                <a [routerLink]="['/']" fragment="church-family" class="text-outline-white" style="color:darkblue;">Our Church Family</a>
-                <a class="text-outline-white" style="color:darkblue;">Our Global Family</a>
-                <a class="text-outline-white" style="color:darkblue;">Reaching the World</a>
-                <a class="text-outline-white" style="color:darkblue;">What We Believe</a>
+                <button (click)="navigateToChurchFamily()" class="text-outline-white link-button">Our Church Family</button>
+                <button (click)="navigateToGlobalFamily()" class="text-outline-white link-button">Our Global Family</button>
+                <button (click)="navigateToFindUs()" class="text-outline-white link-button">How to Find Us</button>
             </div>
+
+            <div class="text-outline-blue x" style="border: transparent 2px solid;color:white;padding:5px;grid-column:49/span 47;width:100%;grid-row:4/span 20;text-align:center;">
+
+                <div style="background-color:#ffffff99;height:200px;width:130px;grid-column:2;grid-row:1">
+                    <img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/>
+                </div>
+                <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                    <div style="border: transparent 2px solid;width:100%;font-size:5.0em;">St. Paul's Church</div>
+                    <div style="border: transparent 2px solid;width:100%;font-size:2em;">Hamburg, Minnesota</div>
+                </div>
+            </div>
+
+            <div class="text-outline-blue" style="border: transparent 2px solid;min-width:555px;padding:5px;background-color:transparent;color:white;grid-column:50/span 47;grid-row:25/span 20;width:fit-content;height:max-content;">        
+                <p class="welcome-text">Hello! We're glad you stopped by!</p>
+                <p class="click-the-links">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links at the top of the page</span> to find out more about us.  </p><br>
+            </div>
+
         </div>
     </div> 
 </div>
