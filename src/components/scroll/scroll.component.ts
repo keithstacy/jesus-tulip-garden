@@ -1,3 +1,4 @@
+//This code is impacted by the jitter issue
 import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { IntroComponent } from '../intro/intro.component'
 import { ChurchFamilyComponent } from '../church-family/church-family.component';

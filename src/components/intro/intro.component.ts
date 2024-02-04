@@ -1,3 +1,4 @@
+//This code is impacted by the jitter issue
 import { Component, OnInit, ViewContainerRef, ElementRef, Output, EventEmitter } from '@angular/core';
 import { ContentService } from 'src/services/content.service';
 
