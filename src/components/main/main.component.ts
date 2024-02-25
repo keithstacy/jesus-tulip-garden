@@ -1,55 +1,31 @@
-import { Component, ComponentRef, OnInit, ViewContainerRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ViewContainerRef, AfterViewInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ContentService } from '../../services/content.service';
+
+declare var Microsoft: any;
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
-export class MainComponent implements OnInit {
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef/*, private introComponent: IntroComponent*/) {
+export class MainComponent implements OnInit, AfterViewInit {
+  safeUrl!: SafeResourceUrl;
+  map: any;
+
+  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef, private sanitizer: DomSanitizer) {
+
+  }
+
+  ngAfterViewInit() {
   }
 
   ngOnInit(): void {
-    console.log("ngOnInit");
-    if (this.contentSvc.IntroViewed) return;
-    this.contentSvc.LoadContentComponent(this.containerRef, 0);
-    this.displayMain = false;
+    let url = 'https://www.google.com/maps/embed/v1/directions?key=AIzaSyCIXUW6dyc_LjqQX-E68thdZE_OacHewIA&destination=44.723877%2C-93.929512&zoom=12&origin=home&center=44.723877%2C-93.929512';
+    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   displayMain = true;
 
-  onPanelClicked(position: number) {
-    console.log('onPanelClicked: ' + position);
-    this.contentSvc.LoadContentComponent(this.containerRef, position);
-    this.displayMain = false;
-  }
-
-  onMouseEnter(position: number) {
-    let theDiv = document.getElementById('div' + position) as HTMLDivElement;
-    let theImg = document.getElementById('img' + position) as HTMLImageElement;
-    theDiv.style.backgroundColor = 'black';
-    theImg.classList.add('darken');
-  }
-
-  onMouseLeave(position: number) {
-    let theDiv = document.getElementById('div' + position) as HTMLDivElement;
-    let theImg = document.getElementById('img' + position) as HTMLImageElement;
-    theDiv.style.display = '';
-    theImg.classList.remove('darken');
-  }
-
-  onCenterClicked() {
-    console.log('onCenterClicked')
-    this.contentSvc.LoadContentComponent(this.containerRef, 0);
-    this.displayMain = false;
-  }
-
-  ReturnToMain(event: boolean) {
-    console.log('returnToMain received in main component')
-    this.displayMain = event;
-    this.containerRef.clear();
-  }
 
 }

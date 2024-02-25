@@ -1,20 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { IntroComponent } from 'src/components/intro/intro.component';
-import { ChurchFamilyComponent } from 'src/components/church-family/church-family.component';
-import { GlobalFamilyComponent } from 'src/components/global-family/global-family.component';
-import { FindUsComponent } from 'src/components/find-us/find-us.component';
 import { MainComponent } from 'src/components/main/main.component';
-import { ContentComponent } from 'src/components/content/content.component';
+import { WhoAreWeComponent } from 'src/components/who-are-we/who-are-we.component';
+import { WhatWeBelieveComponent } from 'src/components/what-we-believe/what-we-believe.component';
+import { JoinWithUsComponent } from 'src/components/join-with-us/join-with-us.component';
 
 const routes: Routes = [
+  { path: '', component: MainComponent },
   { path: 'main', component: MainComponent },
-  { path: 'content', component: ContentComponent },
-  { path: 'intro', component: IntroComponent },
-  { path: 'church-family', component: ChurchFamilyComponent },
-  { path: 'global-family', component: GlobalFamilyComponent },
-  { path: 'find-us', component: FindUsComponent }
+  { path: 'who-are-we', component: WhoAreWeComponent },
+  { path: 'what-we-believe', component: WhatWeBelieveComponent },
+  { path: 'join-with-us', component: JoinWithUsComponent }
 ]
 
 @NgModule({
@@ -25,4 +22,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class  AppRoutingModule { }

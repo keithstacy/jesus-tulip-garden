@@ -8,14 +8,11 @@ import { ForeignMissionsComponent } from '../components/foreign-missions/foreign
 import { LocalOutreachComponent } from '../components/local-outreach/local-outreach.component';
 import { PrayerComponent } from '../components/prayer/prayer.component';
 import { WorshipServiceComponent } from '../components/worship-service/worship-service.component';
-import { GlobalFamilyComponent } from '../components/global-family/global-family.component';
 import { WhatWeBelieveComponent } from '../components/what-we-believe/what-we-believe.component';
 import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.component';
 import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
-import { FindUsComponent } from '../components/find-us/find-us.component';
-import { IntroComponent } from '../components/intro/intro.component';
-import { ScrollComponent } from '../components/scroll/scroll.component';
-import { ChurchFamilyComponent } from '../components/church-family/church-family.component';
+import { WhoAreWeComponent } from '../components/who-are-we/who-are-we.component';
+import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +23,11 @@ import { ChurchFamilyComponent } from '../components/church-family/church-family
     LocalOutreachComponent,
     PrayerComponent,
     WorshipServiceComponent,
-    GlobalFamilyComponent,
     WhatWeBelieveComponent,
     HowWeTeachComponent,
     OurLeadersComponent,
-    FindUsComponent,
-    IntroComponent,
-    ScrollComponent,
-    ChurchFamilyComponent
+    WhoAreWeComponent,
+    JoinWithUsComponent,
   ],
   imports: [
     BrowserModule,
