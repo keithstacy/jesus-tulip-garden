@@ -1,4 +1,8 @@
 You can add global styles to this file, and also import other style files
+html {
+  scroll-behavior: smooth;
+}
+
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -33,6 +37,63 @@ img:hover {
   
 p {
   margin: 0;
+}
+
+.page-layout {
+  min-height:100%;
+  min-width:1000px;
+  background-attachment: fixed;
+  background-position:bottom;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.background-image-church-family {
+  background-image:url('../src/assets/img/AnivMed.jpg');
+  background-position: bottom center;
+  background-size:cover;
+  filter:brightness(100%);
+  background-color:white;
+  height:105%;
+  background-repeat:no-repeat;
+  background-color:transparent;
+  background-attachment:fixed;
+}
+.background-image-global-family {
+  background-image:url('../src/assets/img/CongoChurchService.JPG');
+  background-position: bottom center;
+  background-size:cover;
+  filter:brightness(100%);
+  background-color:white;
+  height:103%;
+  background-repeat:no-repeat;
+  background-color:transparent;
+  background-attachment:fixed;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0 20px;
+  text-align:left;
+  margin-top:-13px
+}
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.link-box {
+  display:flex;
+  flex-direction:row;
+  font-size:25pt;
+  padding:15px;
+  background-color:#ffffffaa;
+  grid-column:1/span 100;
+  grid-row:1/span 3;
 }
 
 .text-outline-blue {
@@ -84,54 +145,6 @@ p {
   padding: 20px;
 }
 
-.center-text {
-  position:absolute;
-  top:45%;
-  left:45%;
-  transform: translate(-50%,-50%);
-  font-size: 2.75vh;
-}
-
-.img-top-left {
-  grid-column: 1 / 25;
-}
-
-.img-top-left-center {
-  grid-column: 26/50;
-}
-
-.img-top-right-center {
-  grid-column: 51/75;
-}
-
-.img-top-right {
-  grid-column: 76/100;
-}
-
-.img-middle-right {
-  grid-column: 76/100;
-}
-
-.img-bottom-right {
-  grid-column: 76/100;
-}
-
-.img-bottom-right-center {
-  grid-column: 51/75;
-}
-
-.img-bottom-left-center {
-  grid-column: 26/50;
-}
-
-.img-bottom-left {
-  grid-column: 1/25;
-}
-
-.img-middle-left {
-  grid-column: 1/25;
-}
-
 .spacer {
   flex: 1;
 }
@@ -151,29 +164,9 @@ p {
   height:105%;
 }
 
-.row1 {
-  grid-row:1/33;
-}
-.row2 {
-  grid-row:34/66;
-}
-.row3 {
-  grid-row:67/100;
-}
-.row4 {
-  grid-row:1;
-}
-
 #main {
   width:97vw;
   height:96vh;
-}
-
-.middle-card {
-  grid-row: 34/66;
-  grid-column: 26/75;
-  background-color: black;
-  color:white;
 }
 
 .img-size {
@@ -378,65 +371,3 @@ footer a {
     visibility: hidden;
   }
 }
-
-/* svg.material-icons {
-  height: 24px;
-  width: auto;
-}
-
-svg.material-icons:not(:last-child) {
-  margin-right: 8px;
-}
- */
- 
-/* 
-.github-star-badge {
-  color: #24292e;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  padding: 3px 10px;
-  border: 1px solid rgba(27,31,35,.2);
-  border-radius: 3px;
-  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-  margin-left: 4px;
-  font-weight: 600;
-}
-
-.github-star-badge:hover {
-  background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-  border-color: rgba(27,31,35,.35);
-  background-position: -.5em;
-}
-
-.github-star-badge .material-icons {
-  height: 16px;
-  width: 16px;
-  margin-right: 4px;
-}
- */
-/*
-svg#clouds {
-  position: fixed;
-  bottom: -160px;
-  left: -230px;
-  z-index: -10;
-  width: 1920px;
-}
-*/
-/*
-svg#rocket {
-  width: 80px;
-  position: absolute;
-  left: -10px;
-  top: -24px;
-}
-
-svg#rocket-smoke {
-  height: calc(100vh - 95px);
-  position: absolute;
-  top: 10px;
-  right: 180px;
-  z-index: -10;
-}
-*/

@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+.grid-for-text {
+    display:grid;
+    grid-template-columns:repeat(100, 1vw);
+    grid-template-rows:repeat(100, 1vh);
+}
+.background-image-intro {
+    background-image: url('src/assets/img/StPaulChurchWideView.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position:center;
+}
+.welcome-text {
+    font-size:calc(1vh + 1vw + 1em);
+    text-align:center;
+}
+.intro-text {
+    font-size:calc(1vh + 1vw + 0.3em);
+    text-align:center;
+}
+.intro-title-grid {
+    display:grid;
+    grid-template-columns: repeat(15, 5%);
+    grid-template-rows: repeat(10, 10%);
+}
+ .background-image-find-us {
+    position:absolute;
+    background-position: bottom center;
+    background-size:cover;
+    background-image:url('../../assets/img/CarverCountyMap.png');
+    opacity:0.4;
+    height:105%;
+    width:97vw;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    background-color:white;
+    z-index:-1;
+}
+
+.title-text {
+    font-size:calc(1vh + 1vw + 3.6em);
+    color:white;
+    width:-moz-fit-content;
+    width:fit-content;
+    padding:5px;
+    grid-column:3/span 20;
+    grid-row:3/span 10;
+    width:100%;
+    text-align:left;
+    margin-right:50px;
+}
+.find-us-title-text {
+    position:relative;
+    font-size:7.0em;color:white;
+    width:-moz-fit-content;
+    width:fit-content;
+    padding:5px;
+    grid-column:3/span 20;
+    grid-row:3/span 10;
+    width:100%;
+    text-align:left;
+    margin-right:50px;
+}
+.church-family-links {
+    font-size:calc(1.0vh + 1.0vw + 1.0em);
+    text-align:center;
+    background-color:#00000066;
+    border-radius:0.5em;
+    grid-column:48;
+    grid-row:10/span 10;
+    color:white;
+    width:max-content;
+    padding: 15px;
+}
+.church-family-link-button {
+    background: none;
+    border: none;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+    padding: 0;
+    text-align:center;
+}
+.church-family-link-button:hover {
+    text-decoration: underline;
+}
+.grid-for-text {
+    display:grid;
+    grid-template-columns:repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+}
+.page-dimensions {
+    height:95.1vh;
+    width:97vw;
+}

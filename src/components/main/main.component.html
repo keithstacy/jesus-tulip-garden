@@ -1,169 +1,63 @@
 
-<div id="main" *ngIf="displayMain">
-    <div class="grid-inline-container">
-        <!--row 1-->
-        <div id="div1" class="img-class img-size img-top-left row1" 
-            (mouseenter)="onMouseEnter(1)"
-            (mousemove)="onMouseEnter(1)"
-            (mouseleave)="onMouseLeave(1)"
-            (click)="onPanelClicked(1)">
-            <img id="img1" src="../../assets/img/Aniv Med.jpg" alt="Chapter One" class="img-class"/>
-        </div>
-        <div id="div1overlay" class="radial-gradient img-class img-size img-top-left row1" 
-            (mouseenter)="onMouseEnter(1)"
-            (mousemove)="onMouseEnter(1)"
-            (mouseleave)="onMouseLeave(1)"
-            (click)="onPanelClicked(1)">
-            <span class="center-text radial-gradient" >Chapter&nbsp;One:<br/>Our Church Family</span>
-        </div>
+<div id="intro" class="full-page pad-content page-dimensions" style="background-color: transparent;color:black;">
+    <div class="background-image-intro" style="background-color:transparent;min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
+        <div class="grid-for-text">
+            
+            <div class="link-box">
+                <a href="#church-family" class="text-outline-white link-button" style="color:darkblue;">Our Church Family</a>
+                <a href="#global-family" class="text-outline-white link-button" style="color:darkblue;">Our Global Family</a>
+                <a href="#find-us" class="text-outline-white link-button" style="color:darkblue;">How to Find Us</a>
+            </div>
 
-        <div id="div2" class="img-class img-size img-top-left-center row1" 
-            (mouseenter)="onMouseEnter(2)"
-            (mousemove)="onMouseEnter(2)"
-            (mouseleave)="onMouseLeave(2)"
-            (click)="onPanelClicked(2)">
-            <img id="img2" src="../../assets/img/CONGO.jpg" alt="Chapter Two" class="img-class"/>
-        </div>
-        <div id="div2overlay" class="radial-gradient img-class img-size img-top-left-center row1" 
-            (mouseenter)="onMouseEnter(2)"
-            (mousemove)="onMouseEnter(2)"
-            (mouseleave)="onMouseLeave(2)"
-            (click)="onPanelClicked(2)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Two:<br/>What We Believe</span>
-        </div>
+            <div class="text-outline-blue intro-title-grid" style="border: transparent 2px solid;color:white;padding:5px;grid-column:49/span 47;width:100%;grid-row:4/span 20;text-align:center;">
 
-        <div id="div3" class="img-class img-size img-top-right-center row1" 
-            (mouseenter)="onMouseEnter(3)"
-            (mousemove)="onMouseEnter(3)"
-            (mouseleave)="onMouseLeave(3)"
-            (click)="onPanelClicked(3)">
-            <img id="img3" src="../../assets/img/Horse.jpg" alt="Chapter Three" class="img-class"/>
-            <div class="center-text">Three</div>
-        </div>
-        <div id="div3overlay" class="radial-gradient img-class img-size img-top-right-center row1" 
-            (mouseenter)="onMouseEnter(3)"
-            (mousemove)="onMouseEnter(3)"
-            (mouseleave)="onMouseLeave(3)"
-            (click)="onPanelClicked(3)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Three:<br/>How We Teach</span>
-        </div>
+                <div style="background-color:#ffffff99;height:200px;width:130px;grid-column:2;grid-row:1">
+                    <img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/>
+                </div>
+                <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                    <div style="border: transparent 2px solid;width:100%;font-size:5.0em;">St. Paul's Church</div>
+                    <div style="border: transparent 2px solid;width:100%;font-size:2em;">Hamburg, Minnesota</div>
+                </div>
+            </div>
 
-        <div id="div4" class="img-class img-size img-top-right row1"  
-            (mouseenter)="onMouseEnter(4)"
-            (mousemove)="onMouseEnter(4)"
-            (mouseleave)="onMouseLeave(4)"
-            (click)="onPanelClicked(4)">
-            <img id="img4" src="../../assets/img/Friends.jpg" alt="Chapter Four" class="img-class"/>            
-        </div>
-        <div id="div4overlay" class="radial-gradient img-class img-size img-top-right row1"  
-            (mouseenter)="onMouseEnter(4)"
-            (mousemove)="onMouseEnter(4)"
-            (mouseleave)="onMouseLeave(4)"
-            (click)="onPanelClicked(4)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Four:<br/>Worship Services</span>
-        </div>
+            <div class="text-outline-blue" style="border: transparent 2px solid;min-width:555px;padding:5px;background-color:transparent;color:white;grid-column:50/span 47;grid-row:25/span 20;width:fit-content;height:max-content;">        
+                <p class="welcome-text">Hello! We're glad you stopped by!</p>
+                <p class="intro-text">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links at the top of the page</span> to find out more about us.  </p><br>
+            </div>
 
-<!--row 2-->
-        <div id="div5" class="img-class img-size img-middle-left row2"  
-            (mouseenter)="onMouseEnter(5)"
-            (mousemove)="onMouseEnter(5)"
-            (mouseleave)="onMouseLeave(5)"
-            (click)="onPanelClicked(5)">
-            <img id="img5" src="../../assets/img/Heal.jpg" alt="Chapter Five" class="img-class"/>
         </div>
-        <div id="div5overlay" class="radial-gradient img-class img-size img-middle-left row2"  
-            (mouseenter)="onMouseEnter(5)"
-            (mousemove)="onMouseEnter(5)"
-            (mouseleave)="onMouseLeave(5)"
-            (click)="onPanelClicked(5)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Five:<br/>Prayer</span>
-        </div>
-
-        <div class="img-class img-size middle-card" (click)="onCenterClicked()">
-            <div style="width:50vw;height:30vh;text-align:center;display:flex;justify-content:center;align-items:center;">
-                <p style="font-size:1.5vw;width:10%;color:white;">Where Tradition<br>and Truth embrace...</p>
-                <span style="font-size:3.5vw;width:60%;">
-                    <img src="../../assets/img/Banner 2.jpg" class="img-class" 
-                        alt="St. Paul's Evangelical Reformed Church" style="width:70%;height:70%;object-fit:contain;"/>
-                </span>
-                <p style="font-size:1.5vw;width:15%;color:white;">...and rise<br>up in Praise</p>
+    </div> 
+</div>
+<div id="church-family" class="full-page pad-content page-dimensions" style="background-color: transparent;">
+    <div class="background-image-church-family">
+        <div class="grid-for-text">
+            <div class="text-outline-brown title-text">Our Church Family</div>
+            <div class="text-outline-brown church-family-links">
+                <div><button routerLink="/who-are-we" class="church-family-link-button text-outline-brown">Who are we?</button></div>
+                <div><button routerLink="/what-we-believe" class="church-family-link-button text-outline-brown">What do we believe?</button></div>
+                <div><button routerLink="/join-with-us" class="church-family-link-button text-outline-brown">How can you<br/>join with us?</button></div>
+                <hr>
+                <div><button class="church-family-link-button text-outline-brown">Church Bulletin</button></div>
+                <div><button class="church-family-link-button text-outline-brown">Pastor's Sermons</button></div>
+                <div><button class="church-family-link-button text-outline-brown">Member Giving</button></div>
             </div>
         </div>
-
-        <div id="div6" class="img-class img-size img-middle-right row2"  
-            (mouseenter)="onMouseEnter(6)"
-            (mousemove)="onMouseEnter(6)"
-            (mouseleave)="onMouseLeave(6)"
-            (click)="onPanelClicked(6)">
-            <img id="img6" src="../../assets/img/_MG_1065.jpg" alt="Chapter Six" class="img-class"/>
-        </div>
-        <div id="div6overlay" class="radial-gradient img-class img-size img-middle-right row2"  
-            (mouseenter)="onMouseEnter(6)"
-            (mousemove)="onMouseEnter(6)"
-            (mouseleave)="onMouseLeave(6)"
-            (click)="onPanelClicked(6)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Six:<br/>Reaching Our Community</span>
-        </div>
-
-        <!--row 3-->
-        <div id="div7" class="img-class img-size img-bottom-left row3"  
-            (mouseenter)="onMouseEnter(7)"
-            (mousemove)="onMouseEnter(7)"
-            (mouseleave)="onMouseLeave(7)"
-            (click)="onPanelClicked(7)">
-            <img id="img7" src="../../assets/img/IMG_7122.JPG" alt="Chapter Seven" class="img-class"/>
-        </div>
-        <div id="div7overlay" class="radial-gradient img-class img-size img-bottom-left row3"  
-            (mouseenter)="onMouseEnter(7)"
-            (mousemove)="onMouseEnter(7)"
-            (mouseleave)="onMouseLeave(7)"
-            (click)="onPanelClicked(7)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Seven:<br/>Reaching the World</span>
-        </div>
-
-        <div id="div8" class="img-class img-size img-bottom-left-center row3"  
-            (mouseenter)="onMouseEnter(8)"
-            (mousemove)="onMouseEnter(8)"
-            (mouseleave)="onMouseLeave(8)"
-            (click)="onPanelClicked(8)">
-            <img id="img8" src="../../assets/img/Unity.jpg" alt="Chapter Eight" class="img-class"/>
-        </div>
-        <div id="div8overlay" class="radial-gradient img-class img-size img-bottom-left-center row3"  
-            (mouseenter)="onMouseEnter(8)"
-            (mousemove)="onMouseEnter(8)"
-            (mouseleave)="onMouseLeave(8)"
-            (click)="onPanelClicked(8)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Eight:<br/>Our Global Family</span>
-        </div>
-
-        <div id="div9" class="img-class img-size img-bottom-right-center row3"  
-            (mouseenter)="onMouseEnter(9)"
-            (mousemove)="onMouseEnter(9)"
-            (mouseleave)="onMouseLeave(9)"
-            (click)="onPanelClicked(9)">
-            <img id="img9" src="../../assets/img/Love.jpg" alt="Chapter Nine" class="img-class"/>
-        </div>
-        <div id="div9overlay" class="radial-gradient img-class img-size img-bottom-right-center row3"  
-            (mouseenter)="onMouseEnter(9)"
-            (mousemove)="onMouseEnter(9)"
-            (mouseleave)="onMouseLeave(9)"
-            (click)="onPanelClicked(9)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Nine:<br/>Our Leaders</span>
-        </div>
-
-        <div id="div10" class="img-class img-size img-bottom-right row3"  
-            (mouseenter)="onMouseEnter(10)"
-            (mousemove)="onMouseEnter(10)"
-            (mouseleave)="onMouseLeave(10)"
-            (click)="onPanelClicked(10)">
-            <img id="img10" src="../../assets/img/tower_Painting_Painting    no wire.jpg" alt="Chapter Ten" class="img-class"/>
-        </div>
-        <div id="div10overlay" class="radial-gradient img-class img-size img-bottom-right row3"  
-            (mouseenter)="onMouseEnter(10)"
-            (mousemove)="onMouseEnter(10)"
-            (mouseleave)="onMouseLeave(10)"
-            (click)="onPanelClicked(10)">
-            <span class="center-text radial-gradient">Chapter&nbsp;Ten:<br/>How to Find Us</span>
+    </div> 
+</div>
+<div id="global-family" class="full-page pad-content page-dimensions" style="background-color: transparent;"  >
+    <div class="background-image-global-family">
+        <div class="grid-for-text">
+            <div class="text-outline-brown title-text">Our Global Family</div>
         </div>
     </div>
 </div>
+<div id="find-us" class="full-page pad-content page-dimensions" style="background-color: transparent;display:grid;grid-template-columns: 33% 33% 33%;grid-template-rows:33% 33% 33%;"  >
+    <div class="title-text" style="color:black;background-color:transparent;grid-column:1;grid-row:1;">How to<br>Find Us</div>
+    <div style="grid-column:2/span 2;grid-row:1;text-align:center;font-size:2.5em;padding-left:50px;padding-right:50px;padding-top:50px;">We're out in the country, a beautiful drive a few miles south of Norwood Young America. Use the helpful map to get directions to us from anywhere!</div>
+    <div class="background-image-find-us"></div>
+    <iframe title="St. Paul's Church Map" style="pointer-events: unset;border: solid 3px green;width:100%;height:100%;grid-column:1/span 3;grid-row:2/span 2;" 
+        allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+        [src]="safeUrl">
+    </iframe>
+</div>
+<!--  https://www.google.com/maps/embed/v1/directions?key=AIzaSyCIXUW6dyc_LjqQX-E68thdZE_OacHewIA&destination=44.723877%2C-93.929512&zoom=12&origin=home&center=44.723877%2C-93.929512 -->
