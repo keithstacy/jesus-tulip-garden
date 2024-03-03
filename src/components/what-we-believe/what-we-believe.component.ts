@@ -11,11 +11,7 @@ export class WhatWeBelieveComponent  implements OnInit {
   constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
 
   ngOnInit(): void {
-    console.log('Content loaded');
+
   }
 
-  returnToMain(){
-    console.log('returnToMain called')
-    this.contentSvc.LoadMainComponent(this.containerRef);
-  }
 }

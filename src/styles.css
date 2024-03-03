@@ -48,6 +48,33 @@ p {
   background-size:cover;
 }
 
+.title-grid-layout {
+  border: transparent 2px solid;
+  color:white;
+  padding:5px;
+  grid-column:49/span 47;
+  width:100%;
+  grid-row:4/span 20;
+  text-align:center;
+}
+
+.text-grid-layout {
+  border: transparent 2px solid;
+  min-width:555px;
+  padding:5px;
+  background-color:transparent;
+  color:white;
+  grid-column:50/span 47;
+  grid-row:25/span 20;
+  width:fit-content;
+  height:max-content;
+}
+
+.outlined-text-brown {
+  color:brown;
+  
+}
+
 .background-image-church-family {
   background-image:url('../src/assets/img/AnivMed.jpg');
   background-position: bottom center;
@@ -70,7 +97,6 @@ p {
   background-color:transparent;
   background-attachment:fixed;
 }
-
 .link-button {
   background: none;
   border: none;
@@ -85,7 +111,6 @@ p {
 .link-button:hover {
   text-decoration: underline;
 }
-
 .link-box {
   display:flex;
   flex-direction:row;
@@ -95,21 +120,15 @@ p {
   grid-column:1/span 100;
   grid-row:1/span 3;
 }
-
 .text-outline-blue {
   text-shadow:2px 2px 2px darkblue, -2px -2px 2px darkblue, -2px 2px 2px darkblue, 2px -2px 2px darkblue;
 }
-
 .text-outline-white {
   text-shadow:2px 2px 2px white, -2px -2px 2px white, -2px 2px 2px white, 2px -2px 2px white;
 }
-
 .text-outline-brown {
   text-shadow:2px 2px 2px brown, -2px -2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;
 }
-
-
-
 .intro {
   position: absolute;
   top: 50%;
@@ -263,7 +282,7 @@ p {
   margin-left: 60px;
 }
 
-a,
+/* a,
 a:visited,
 a:hover {
   color: #1976d2;
@@ -272,7 +291,7 @@ a:hover {
 
 a:hover {
   color: #125699;
-}
+} */
 
 .terminal {
   position: relative;
