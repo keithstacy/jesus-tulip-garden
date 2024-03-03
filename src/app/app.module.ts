@@ -13,6 +13,7 @@ import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.com
 import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
 import { WhoAreWeComponent } from '../components/who-are-we/who-are-we.component';
 import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.com
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
