@@ -62,7 +62,6 @@ p {
   border: transparent 2px solid;
   min-width:555px;
   padding:5px;
-  background-color:transparent;
   color:white;
   grid-column:50/span 47;
   grid-row:25/span 20;
