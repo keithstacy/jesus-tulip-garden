@@ -14,6 +14,7 @@ import { OurLeadersComponent } from '../components/our-leaders/our-leaders.compo
 import { WhoAreWeComponent } from '../components/who-are-we/who-are-we.component';
 import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { TheBibleComponent } from '../components/the-bible/the-bible.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     OurLeadersComponent,
     WhoAreWeComponent,
     JoinWithUsComponent,
+    TheBibleComponent,
   ],
   imports: [
     BrowserModule,
