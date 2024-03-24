@@ -6,6 +6,7 @@ import { WhoAreWeComponent } from 'src/components/who-are-we/who-are-we.componen
 import { WhatWeBelieveComponent } from 'src/components/what-we-believe/what-we-believe.component';
 import { JoinWithUsComponent } from 'src/components/join-with-us/join-with-us.component';
 import { ForeignMissionsComponent } from 'src/components/foreign-missions/foreign-missions.component';
+import { TheBibleComponent } from 'src/components/the-bible/the-bible.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'who-are-we', component: WhoAreWeComponent },
   { path: 'what-we-believe', component: WhatWeBelieveComponent },
   { path: 'join-with-us', component: JoinWithUsComponent },
-  { path: 'foreign-missions', component:ForeignMissionsComponent }
+  { path: 'foreign-missions', component:ForeignMissionsComponent },
+  { path: 'the-bible', component:TheBibleComponent }
 ]
 
 @NgModule({
