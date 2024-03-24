@@ -74,6 +74,18 @@ p {
   
 }
 
+.background-image-bible {
+  background-image:url('../src/assets/img/bible.jpg');
+  background-position: bottom center;
+  background-size:cover;
+  filter:brightness(100%);
+  background-color:white;
+  height:105%;
+  background-repeat:no-repeat;
+  background-color:transparent;
+  background-attachment:fixed;
+}
+
 .background-image-church-family {
   background-image:url('../src/assets/img/AnivMed.jpg');
   background-position: bottom center;
