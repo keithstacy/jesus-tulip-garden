@@ -15,6 +15,10 @@ import { WhoAreWeComponent } from '../components/who-are-we/who-are-we.component
 import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { TheBibleComponent } from '../components/the-bible/the-bible.component';
+import { JesusComponent } from '../components/jesus/jesus.component';
+import { FaithComponent } from '../components/faith/faith.component';
+import { GraceComponent } from '../components/grace/grace.component';
+import { MeaningComponent } from '../components/meaning/meaning.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { TheBibleComponent } from '../components/the-bible/the-bible.component';
     WhoAreWeComponent,
     JoinWithUsComponent,
     TheBibleComponent,
+    JesusComponent,
+    FaithComponent,
+    GraceComponent,
+    MeaningComponent,
   ],
   imports: [
     BrowserModule,

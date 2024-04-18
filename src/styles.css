@@ -65,6 +65,7 @@ p {
   color:white;
   grid-column:50/span 47;
   grid-row:25/span 20;
+  width:-moz-fit-content;
   width:fit-content;
   height:max-content;
 }
@@ -73,6 +74,12 @@ p {
   color:brown;
   
 }
+
+.black-text {
+  font-size:1.4em;
+  padding: 5px 20px;
+}
+
 
 .background-image-bible {
   background-image:url('../src/assets/img/bible.jpg');
@@ -177,6 +184,22 @@ p {
 
 .spacer {
   flex: 1;
+}
+
+.blockquote
+{
+  font-style: normal;
+  font-size: 22px;
+  margin-left: 32px;
+  font-family: Helvetica, Arial, Verdana;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+  padding-right: 9%;
+  line-height:0.7cm;
+}
+
+.biblequote {
+  color:darkblue;
 }
 
 .grid-inline-container {

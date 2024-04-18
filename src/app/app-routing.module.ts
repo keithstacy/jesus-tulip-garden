@@ -7,6 +7,10 @@ import { WhatWeBelieveComponent } from 'src/components/what-we-believe/what-we-b
 import { JoinWithUsComponent } from 'src/components/join-with-us/join-with-us.component';
 import { ForeignMissionsComponent } from 'src/components/foreign-missions/foreign-missions.component';
 import { TheBibleComponent } from 'src/components/the-bible/the-bible.component';
+import { JesusComponent } from 'src/components/jesus/jesus.component';
+import { FaithComponent } from 'src/components/faith/faith.component';
+import { GraceComponent } from 'src/components/grace/grace.component';
+import { MeaningComponent } from 'src/components/meaning/meaning.component';  
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -15,7 +19,11 @@ const routes: Routes = [
   { path: 'what-we-believe', component: WhatWeBelieveComponent },
   { path: 'join-with-us', component: JoinWithUsComponent },
   { path: 'foreign-missions', component:ForeignMissionsComponent },
-  { path: 'the-bible', component:TheBibleComponent }
+  { path: 'the-bible', component:TheBibleComponent },
+  { path: 'jesus', component:JesusComponent },
+  { path: 'faith', component:FaithComponent },
+  { path: 'grace', component:GraceComponent },
+  { path: 'meaning', component:MeaningComponent }
 ]
 
 @NgModule({

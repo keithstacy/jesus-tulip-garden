@@ -1,18 +1,13 @@
-p {
-    margin-bottom:10px;
-}
-.bible-subheader {
+
+.jesus-subheader {
     font-size:2em;
     text-align:center;
     margin:0 10vw;
 }
-.bible-text {
+.jesus-text {
     font-size:1.4em;
     padding: 5px 20px;
 }
-.bible-link {
+.jesus-link {
     color:black;
-}
-.highlight {
-    
 }
