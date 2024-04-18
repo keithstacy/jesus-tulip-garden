@@ -48,6 +48,10 @@ p {
   background-size:cover;
 }
 
+.highlight {
+  color:red;
+}
+
 .title-grid-layout {
   border: transparent 2px solid;
   color:white;
