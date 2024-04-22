@@ -11,6 +11,8 @@ import { JesusComponent } from 'src/components/jesus/jesus.component';
 import { FaithComponent } from 'src/components/faith/faith.component';
 import { GraceComponent } from 'src/components/grace/grace.component';
 import { MeaningComponent } from 'src/components/meaning/meaning.component';  
+import { TheSolasComponent } from 'src/components/the-solas/the-solas.component'; 
+import { GivingComponent } from 'src/components/giving/giving.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -18,12 +20,14 @@ const routes: Routes = [
   { path: 'who-are-we', component: WhoAreWeComponent },
   { path: 'what-we-believe', component: WhatWeBelieveComponent },
   { path: 'join-with-us', component: JoinWithUsComponent },
-  { path: 'foreign-missions', component:ForeignMissionsComponent },
-  { path: 'the-bible', component:TheBibleComponent },
-  { path: 'jesus', component:JesusComponent },
-  { path: 'faith', component:FaithComponent },
-  { path: 'grace', component:GraceComponent },
-  { path: 'meaning', component:MeaningComponent }
+  { path: 'foreign-missions', component: ForeignMissionsComponent },
+  { path: 'the-bible', component: TheBibleComponent },
+  { path: 'jesus', component: JesusComponent },
+  { path: 'faith', component: FaithComponent },
+  { path: 'grace', component: GraceComponent },
+  { path: 'meaning', component: MeaningComponent },
+  { path: 'the-solas', component: TheSolasComponent },
+  { path: 'giving', component: GivingComponent }
 ]
 
 @NgModule({

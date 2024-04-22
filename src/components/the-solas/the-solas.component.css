@@ -1,0 +1,15 @@
+p {
+    margin-bottom:20px;
+}
+
+.inset-box {
+    width:-moz-fit-content;
+    width:fit-content;
+    height:-moz-fit-content;
+    height:fit-content;
+    border:2px solid darkblue;
+    margin: 0 10%;
+    background-color:white;
+    font-size:1.1em;
+    margin-bottom:15px;
+}

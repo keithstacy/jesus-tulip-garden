@@ -19,6 +19,8 @@ import { JesusComponent } from '../components/jesus/jesus.component';
 import { FaithComponent } from '../components/faith/faith.component';
 import { GraceComponent } from '../components/grace/grace.component';
 import { MeaningComponent } from '../components/meaning/meaning.component';
+import { TheSolasComponent } from '../components/the-solas/the-solas.component';
+import { GivingComponent } from '../components/giving/giving.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { MeaningComponent } from '../components/meaning/meaning.component';
     FaithComponent,
     GraceComponent,
     MeaningComponent,
+    TheSolasComponent,
+    GivingComponent,
   ],
   imports: [
     BrowserModule,
