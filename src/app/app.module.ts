@@ -21,6 +21,8 @@ import { GraceComponent } from '../components/grace/grace.component';
 import { MeaningComponent } from '../components/meaning/meaning.component';
 import { TheSolasComponent } from '../components/the-solas/the-solas.component';
 import { GivingComponent } from '../components/giving/giving.component';
+import { BulletinListComponent } from '../components/bulletin-list/bulletin-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,10 +45,12 @@ import { GivingComponent } from '../components/giving/giving.component';
     MeaningComponent,
     TheSolasComponent,
     GivingComponent,
+    BulletinListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

@@ -13,6 +13,7 @@ import { GraceComponent } from 'src/components/grace/grace.component';
 import { MeaningComponent } from 'src/components/meaning/meaning.component';  
 import { TheSolasComponent } from 'src/components/the-solas/the-solas.component'; 
 import { GivingComponent } from 'src/components/giving/giving.component';
+import { BulletinListComponent } from 'src/components/bulletin-list/bulletin-list.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'grace', component: GraceComponent },
   { path: 'meaning', component: MeaningComponent },
   { path: 'the-solas', component: TheSolasComponent },
-  { path: 'giving', component: GivingComponent }
+  { path: 'giving', component: GivingComponent },
+  { path: 'bulletin-list', component: BulletinListComponent }
 ]
 
 @NgModule({

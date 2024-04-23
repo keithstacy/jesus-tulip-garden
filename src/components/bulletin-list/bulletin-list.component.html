@@ -1,0 +1,25 @@
+<div id="bulletin-list" class="full-page pad-content" 
+                     style="background-color: transparent;color:black;height:150vh;">
+    <div class="background-image-church-family page-layout">
+        <div class="link-box">
+            <a href="" class="text-outline-white link-button outlined-text-brown" style="color:brown">Main Page</a>
+            <a href="../#/what-we-believe" class="text-outline-white link-button outlined-text-brown;" style="color:brown">What We Believe</a>
+            <a href="../#/join-with-us" class="text-outline-white link-button outlined-text-brown;" style="color:brown">Join With Us</a>
+        </div>
+        <div class="text-outline-brown title-grid-layout">
+            <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                <div style="border:transparent 2px solid;width:100%;font-size:5.0em;">Church Bulletins</div>
+            </div>
+        </div>
+        <div class="text-outline-brown">
+            <div class="bubble-dark">
+                <div class="white-subheader">Bulletins for the Last Twelve Months</div>   
+                <ul>
+                    <li *ngFor="let bulletin of bulletins" >
+                        <a class="white-link" style="font-size:2em;" [href]="bulletin.url" target="_blank">{{bulletin.name}}&mdash;{{bulletin.date}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

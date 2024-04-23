@@ -1,0 +1,16 @@
+ul li::before {
+    text-shadow:2px 2px 2px brown, -2px -2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;
+    color:white;
+    content: "• ";
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    -webkit-columns:2;
+    -moz-columns:2;
+    columns:2;
+}
+
