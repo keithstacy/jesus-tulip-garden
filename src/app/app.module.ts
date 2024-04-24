@@ -23,6 +23,8 @@ import { TheSolasComponent } from '../components/the-solas/the-solas.component';
 import { GivingComponent } from '../components/giving/giving.component';
 import { BulletinListComponent } from '../components/bulletin-list/bulletin-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SermonsComponent } from '../components/sermons/sermons.component';
+import { TithingComponent } from '../components/tithing/tithing.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { HttpClientModule } from '@angular/common/http';
     MeaningComponent,
     TheSolasComponent,
     GivingComponent,
-    BulletinListComponent
+    BulletinListComponent,
+    SermonsComponent,
+    TithingComponent
   ],
   imports: [
     BrowserModule,
