@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "jesus-tulip-garden:build:production"
+              "buildTarget": "jesus-tulip-garden:build:production"
             },
             "development": {
-              "browserTarget": "jesus-tulip-garden:build:development"
+              "buildTarget": "jesus-tulip-garden:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jesus-tulip-garden:build"
+            "buildTarget": "jesus-tulip-garden:build"
           }
         },
         "test": {
