@@ -1,5 +1,5 @@
 
-<div id="bulletin-list" class="full-page pad-content" 
+<div id="sermons" class="full-page pad-content" 
                      style="background-color: transparent;color:black;height:150vh;">
     <div class="background-image-church-family page-layout">
         <div class="link-box">
@@ -13,8 +13,15 @@
             </div>
         </div>
         <div class="text-outline-brown">
-            <div class="bubble-dark">
-                <div class="white-subheader">Sermons from Recent Services</div>   
+            <div class="bubble-dark ">
+                <div class="white-subheader" style="background-color:transparent">Sermons from Recent Services</div>   
+                <div style="align-content:center;background-color: transparent;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;">
+                <div *ngFor="let sermon of sermons">
+                    <sermon-player style="width:60%;margin: 0 25%;min-width:200px;min-height:150px;" [videoID]="sermon.videoID"></sermon-player>
+                    <div class="white-subheader">{{sermon.date}}&mdash;{{sermon.name}}</div>
+                    <hr>
+                </div>
+                </div>
             </div>
         </div>
     </div>

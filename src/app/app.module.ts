@@ -25,6 +25,8 @@ import { BulletinListComponent } from '../components/bulletin-list/bulletin-list
 import { HttpClientModule } from '@angular/common/http';
 import { SermonsComponent } from '../components/sermons/sermons.component';
 import { TithingComponent } from '../components/tithing/tithing.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { SermonPlayerComponent } from '../components/sermon-player/sermon-player.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +51,14 @@ import { TithingComponent } from '../components/tithing/tithing.component';
     GivingComponent,
     BulletinListComponent,
     SermonsComponent,
-    TithingComponent
+    TithingComponent,
+    SermonPlayerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    YouTubePlayerModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

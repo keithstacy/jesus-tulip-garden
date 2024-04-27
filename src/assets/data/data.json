@@ -1,14 +1,121 @@
 {
     "bulletins": [
         {
-            "date":"4/22/2024",
-            "name":"Lord's Day X",
-            "url":"../assets/files/bulletin.1.pdf"
+            "date":"4/14/2024",
+            "name":"The Lord's Day",
+            "url":"../assets/files/Bulletin.20240414.pdf"
         },
         {
-            "date":"4/23/2024",
-            "name":"Lord's Day XI",
-            "url":"../assets/files/bulletin.2.pdf"
+            "date":"2/25/2024",
+            "name":"The Lord's Day",
+            "url":"../assets/files/Bulletin.20240225.pdf"
+        },
+		{
+			"date":"2/4/2024",
+			"name":"The Lord's Day",
+			"url":"../assets/files/Bulletin.20240204.pdf"
+		}
+    ],
+    "sermons": [
+        {
+            "name":"Sunday: 1 Peter 4:7-11",
+            "date":"April 07, 2024",
+            "videoID":"GhIxrwWisSY"
+        },
+        {
+            "name":"Easter Sunday: John 24:13-25",
+            "date":"March 31, 2024",
+            "videoID":"QFR-6ptrhu8"
+        },
+        {
+            "name":"Good Friday: John 19:28-30",
+            "date":"March 29, 2024",
+            "videoID":"45-fhfLvMA0"
+        },
+        {
+            "name":"Maundy Thursday: John 18:15-27",
+            "date":"March 28, 2024",
+            "videoID":"vErQKTULwxE"
+        },
+        {
+            "name":"Sunday: Luke 12:8-12",
+            "date":"March 24, 2024",
+            "videoID":"vlsZ9ouK1r0"
+        },
+        {
+            "name":"Sunday: Habakkuk 2:2-5",
+            "date":"March 17, 2024",
+            "videoID":"LTLcLixaYeU"
+        },
+        {
+            "name":"Sunday: Habakkuk 1 12 2;1",
+            "date":"March 10, 2024",
+            "videoID":"eaEuK5wtaX8"
+        },
+        {
+            "name":"Sunday: Habakkuk 1:1-11",
+            "date":"March 03, 2024",
+            "videoID":"N_Yy7tzkVgM"
+        },
+        {
+            "name":"Sunday: Matthew 5:13-16",
+            "date":"February 18, 2024",
+            "videoID":"ZToDG9Nk6ao"
+        },
+        {
+            "name":"Sunday: 1 Peter 4:4-6",
+            "date":"February 11, 2024",
+            "videoID":"QopOMh2WuhI"
+        },
+        {
+            "name":"Sunday: 1 Peter 4:1-3",
+            "date":"February 04, 2024",
+            "videoID":"WYq5vcjtf7Q"
+        },
+        {
+            "name":"Sunday: 1 Peter 3:18-22",
+            "date":"January 28, 2024",
+            "videoID":"lpPYsQOaZH4"
+        },
+        {
+            "name":"Sunday: Matthew 28:16-20",
+            "date":"January 21, 2024",
+            "videoID":"zuw6SDTDAOc"
+        },
+        {
+            "name":"Sunday: Nehemiah 13",
+            "date":"January 14, 2024",
+            "videoID":"wgyVkAXVIOI"
+        },
+        {
+            "name":"Sunday: Nehemiah 12:27-47",
+            "date":"January 07, 2024",
+            "videoID":"ivhthB5AGaU"
+        },
+        {
+            "name":"Sunday: Nehemiah 11",
+            "date":"December 31, 2023",
+            "videoID":"TY4gBBmPScA"
+        },
+        {
+            "name":"Sunday: Isaiah 9:1-7",
+            "date":"December 24, 2023",
+            "videoID":"KytZmTnnOtY"
+        },
+        {
+            "name":"Sunday: Isaiah 9",
+            "date":"December 17, 2023",
+            "videoID":"DMTthkqA8GE"
+        },
+        {
+            "name":"Sunday: Isaiah 9:1-7",
+            "date":"December 10, 2023",
+            "videoID":"beozfdHpffM"
+        },
+        {
+            "name":"Sunday: 1 Peter 3:13-17",
+            "date":"December 03, 2023",
+            "videoID":"ciTRE2ph9sw"
         }
     ]
 }

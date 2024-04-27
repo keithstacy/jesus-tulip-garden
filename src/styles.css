@@ -224,6 +224,16 @@ footer a {
 .full-page {
   height:100vh;
 }
+.grid-100-square {
+  display:grid;
+  grid-template-columns:repeat(100, minmax(5px, 1%));
+  grid-template-rows:repeat(100, minmax(5px, 1%));
+}
+.grid-20-square {
+  display:grid;
+  grid-template-columns:repeat(20, minmax(5px, 100%));
+  grid-template-rows:repeat(20, minmax(10px, 100%));
+}
 .grid-inline-container {
   display:inline-grid;
   position:relative;
