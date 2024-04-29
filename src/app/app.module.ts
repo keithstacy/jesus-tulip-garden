@@ -27,6 +27,7 @@ import { SermonsComponent } from '../components/sermons/sermons.component';
 import { TithingComponent } from '../components/tithing/tithing.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SermonPlayerComponent } from '../components/sermon-player/sermon-player.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { SermonPlayerComponent } from '../components/sermon-player/sermon-player
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    GoogleMapsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

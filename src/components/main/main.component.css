@@ -98,3 +98,8 @@ html {
     height:95.1vh;
     width:97vw;
 }
+.google-map {
+    width:100%;
+    height:100%;
+    padding-left:40vw;
+}
