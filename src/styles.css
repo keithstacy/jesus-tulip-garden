@@ -67,6 +67,12 @@ footer a {
   background-color:transparent;
   background-attachment:fixed;
 }
+.background-image-church-family-sticky {
+  background-image:url('../src/assets/img/AnivMed.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
 .background-image-global-family {
   background-image:url('../src/assets/img/CongoChurchService.JPG');
   background-position: bottom center;
