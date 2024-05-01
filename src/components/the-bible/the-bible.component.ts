@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
-import { ContentService } from 'src/services/content.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-the-bible',
@@ -7,5 +9,13 @@ import { ContentService } from 'src/services/content.service';
   styleUrls: ['./the-bible.component.css']
 })
 export class TheBibleComponent {
+  constructor(private router: Router, 
+    private viewportScroller: ViewportScroller) { 
+      this.router.events.pipe(
+        filter((event) => event instanceof NavigationEnd)).subscribe(() => {
+          this.viewportScroller.scrollToPosition([0,0]);
+        });
+    }
+
 
 }

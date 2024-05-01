@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Sermon, SermonData } from '../../interfaces/sermon';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-sermons',
@@ -11,8 +14,14 @@ import { Sermon, SermonData } from '../../interfaces/sermon';
 export class SermonsComponent implements OnInit {
   sermons: Sermon[] = [];
 
-  constructor(private http: HttpClient) {}
-  videoId = 'GhIxrwWisSY';
+  constructor(private http: HttpClient, 
+    private router: Router, 
+    private viewportScroller: ViewportScroller) { 
+      this.router.events.pipe(
+        filter((event) => event instanceof NavigationEnd)).subscribe(() => {
+          this.viewportScroller.scrollToPosition([0,0]);
+        });
+    }
 
   ngOnInit(): void {
     this.http.get<SermonData>('/assets/data/data.json').subscribe(data => {

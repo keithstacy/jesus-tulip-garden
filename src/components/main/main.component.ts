@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewContainerRef, AfterViewInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ContentService } from '../../services/content.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { ViewportScroller } from '@angular/common';
 
 declare var Microsoft: any;
 
@@ -17,9 +20,16 @@ export class MainComponent implements OnInit, AfterViewInit {
     backgroundColor: '#00ff00'
   }
 
-  //mapStyle: goog
-
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef, private sanitizer: DomSanitizer) { }
+  constructor(private contentSvc: ContentService, 
+              private containerRef: ViewContainerRef, 
+              private sanitizer: DomSanitizer, 
+              private router: Router, 
+              private viewportScroller: ViewportScroller) { 
+    this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd)).subscribe(() => {
+        this.viewportScroller.scrollToPosition([0,0]);
+      });
+  }
 
   ngAfterViewInit() {
     let outerMapContainer: HTMLElement | null = document.getElementById("outer-map-container");
