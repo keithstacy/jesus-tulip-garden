@@ -10,23 +10,49 @@ declare var Microsoft: any;
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit, AfterViewInit {
-  className = "google-map"
-  // map: any;
+
   mapOptions: google.maps.MapOptions = {
     center: new google.maps.LatLng(44.723877,-93.929512),
     zoom: 12,
-    backgroundColor: '#000000'
+    backgroundColor: '#00ff00'
   }
+
+  //mapStyle: goog
 
   constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef, private sanitizer: DomSanitizer) { }
 
   ngAfterViewInit() {
+    let outerMapContainer: HTMLElement | null = document.getElementById("outer-map-container");
+    let googleMapTag: Element | undefined;
+    let innerMapContainer: Element | undefined;
+    console.log(outerMapContainer);
+    if (outerMapContainer) {
+        googleMapTag = outerMapContainer.children[0];
+        
+        if (googleMapTag) {
+          console.log(googleMapTag as HTMLElement);
+          (googleMapTag as HTMLElement).style.width = "inherit";
+          (googleMapTag as HTMLElement).style.height = "inherit";
+          innerMapContainer = (googleMapTag as HTMLElement).children[0];
+          console.log(innerMapContainer as HTMLElement);
+          if (innerMapContainer) {
+              console.log((innerMapContainer as HTMLElement).style);
+              (innerMapContainer as HTMLElement).style.width = "inherit";
+              (innerMapContainer as HTMLElement).style.height = "inherit";
+              console.log((innerMapContainer as HTMLElement).style);
+          } else {
+              console.log("innerMapContainer is null or does not exist");
+          }  
+        } else {
+          console.log("googleMapTag does not exist")
+        }
+      } else {
+        console.log("outerMapContainer does not exist")
+      }
   }
+    
 
   ngOnInit(): void {
-    // let url = 'https://www.google.com/maps/embed/v1/directions?key=AIzaSyCIXUW6dyc_LjqQX-E68thdZE_OacHewIA&destination=44.723877%2C-93.929512&zoom=12&origin=home&center=44.723877%2C-93.929512';
-    // this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
-
   }
 
   displayMain = true;
