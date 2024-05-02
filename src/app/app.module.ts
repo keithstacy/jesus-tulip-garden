@@ -28,6 +28,7 @@ import { TithingComponent } from '../components/tithing/tithing.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SermonPlayerComponent } from '../components/sermon-player/sermon-player.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { FooterComponent } from 'src/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     BulletinListComponent,
     SermonsComponent,
     TithingComponent,
-    SermonPlayerComponent
+    SermonPlayerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

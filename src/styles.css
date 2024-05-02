@@ -288,13 +288,15 @@ footer a {
   text-decoration: underline;
 }
 .link-box {
+  position:sticky;
+  top: 0;
+  z-index:1000;
   display:flex;
   flex-direction:row;
-  font-size:25pt;
-  padding:15px;
-  background-color:#ffffffaa;
-  grid-column:1/span 100;
-  grid-row:1/span 3;
+  padding:15px 10px 10px 15px;
+  margin-right:-8px;
+  background-color:#ffffff;
+  font-size:calc(1vw + 1vh + 0.2em);
 }
 .outlined-text-brown {
   color:brown;

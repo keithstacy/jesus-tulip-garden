@@ -4,13 +4,14 @@ import { ContentService } from '../../services/content.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
+import { FooterComponent } from '../footer/footer.component';
 
 declare var Microsoft: any;
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit, AfterViewInit {
 
