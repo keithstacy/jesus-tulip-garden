@@ -1,17 +1,22 @@
 {
     "bulletins": [
         {
-            "date":"4/14/2024",
+            "date":"April 28, 2024",
+            "name":"The Lord's Day",
+            "url":"../assets/files/Bulletin.20240428.pdf"
+        },
+        {
+            "date":"April 14, 2024",
             "name":"The Lord's Day",
             "url":"../assets/files/Bulletin.20240414.pdf"
         },
         {
-            "date":"2/25/2024",
+            "date":"February 25, 2024",
             "name":"The Lord's Day",
             "url":"../assets/files/Bulletin.20240225.pdf"
         },
 		{
-			"date":"2/4/2024",
+			"date":"February 4, 2024",
 			"name":"The Lord's Day",
 			"url":"../assets/files/Bulletin.20240204.pdf"
 		}
