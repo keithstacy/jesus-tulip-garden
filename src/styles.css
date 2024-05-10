@@ -39,11 +39,13 @@ footer a {
 }
 
 .background-image {
-  background-image: url('src/assets/img/tower_Painting.Color.svg');
-  background-position: bottom center 50% 50%;
+  background-position: bottom center;
   background-size:cover;
   filter:brightness(100%);
-  background-color:white;
+  height:105%;
+  background-repeat:no-repeat;
+  background-color:transparent;
+  background-attachment:fixed;
 }
 .background-image-bible {
   background-image:url('../src/assets/img/bible.jpg');
@@ -57,7 +59,7 @@ footer a {
   background-attachment:fixed;
 }
 .background-image-church-family {
-  background-image:url('../src/assets/img/AnivMed.jpg');
+  /* background-image:url('../src/assets/img/AnivMed.jpg'); */
   background-position: bottom center;
   background-size:cover;
   filter:brightness(100%);
@@ -73,31 +75,30 @@ footer a {
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
+.background-image-congregation-picture {
+  background-image:url('../src/assets/img/AnivMed.jpg');
+}
 .background-image-global-family {
-  background-image:url('../src/assets/img/CongoChurchService.JPG');
+  /* background-image:url('../src/assets/img/CongoChurchService.JPG'); */
   background-position: bottom center;
   background-size:cover;
   filter:brightness(100%);
   background-color:white;
-  height:103%;
+  height:104%;
   background-repeat:no-repeat;
   background-color:transparent;
   background-attachment:fixed;
 }
-
 .black-text {
   font-size:1.4em;
   padding: 5px 20px;
 }
-
 .bubble {
   margin: 0 10vw;
   border-radius:15px;
   background-color:#ffffffdd;
   padding:15px 0;
 }
-
-
 .background-image-main {
   background-image: url('src/assets/img/StPaulChurchWideView.jpeg');
   background-repeat: no-repeat;
@@ -121,8 +122,9 @@ footer a {
 .bubble-dark {
   margin: 0 10vw;
   border-radius:15px;
-  background-color:#00000099;
+  background-color:#000000af;
   padding:15px 0;
+  overflow-y:visible;
 }
 .bubble-light {
   margin: 0 10vw;
@@ -302,7 +304,7 @@ footer a {
   z-index:1000;
   display:flex;
   flex-direction:row;
-  padding:15px 10px 10px 15px;
+  padding:15px 10px 10px 35px;
   margin-right:-8px;
   background-color:#ffffff;
   font-size:calc(1vw + 1vh + 0.2em);
@@ -314,8 +316,8 @@ footer a {
   padding: 20px;
 }
 .page-layout {
-  min-height:100%;
-  min-width:1000px;
+  /* min-height:100%; */
+  /* min-width:1000px; */
   background-attachment: fixed;
   background-position:bottom;
   background-repeat:no-repeat;

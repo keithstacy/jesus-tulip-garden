@@ -14,10 +14,19 @@
         <div class="text-outline-brown">
             <div class="bubble-dark">
                 <div class="white-subheader">Online Giving Through Tithely</div>
+                <div class="text-outline-brown" style="color:white;margin: 20px;font-size:calc(0.1em + 1vw + 1vh)" >
+                    If you have a Tithely account, you can log in here and give your tithes and offerings. 
+                    If you've never signed up with Tithely, <a class="white-link" href="https://signup.tithe.ly/">click here to go to the signup page.</a> You 
+                    can also download the app for your Android phone or iPhone.
+                </div>
                 <br>
-                <div style="display:flex;align-items:center;width:100%;color:white;">
-                    Click the button to start your gift on Tithely!<a class="tithely-button" data-form="64dc07c7-5d42-11ee-90fc-1260ab546d11">Give</a>                
+                <div style="display:flex;flex-direction:row;justify-content:center;width:100%;">
+                    <div [class.hidden]="!isLoading">
+                        <img src="../../assets/img/spinner.gif" alt="Loading..."/>
+                    </div>
+                    <iframe #iframe (load)="onIframeLoad()" [class.hidden]="isLoading" class="tithely-iframe" [src]="url | safe" title="Online Member Giving"></iframe>
                 </div>   
+                <br>
             </div>
         </div>
     </div>

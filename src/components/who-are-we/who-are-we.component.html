@@ -1,55 +1,66 @@
-<div id="who-are-we" class="full-page pad-content" 
-                     style="background-color: transparent;color:black;height:150vh;">
-    <div class="background-image-church-family page-layout">
-            <div class="link-box">
-                <a href="" class="text-outline-white link-button outlined-text-brown" style="color:brown">Main Page</a>
-                <a href="../#/what-we-believe" class="text-outline-white link-button outlined-text-brown;" style="color:brown">What We Believe</a>
-                <a href="../#/join-with-us" class="text-outline-white link-button outlined-text-brown;" style="color:brown">Join With Us</a>
+<div id="who-are-we" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
+    <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
+    <div #content style="position:absolute;top:0px;left:0px;">
+        <div class="link-box">
+            <a href="" class="text-outline-white link-button outlined-text-brown" style="color:brown">Main Page</a>
+            <a href="../#/what-we-believe" class="text-outline-white link-button outlined-text-brown;" style="color:brown">What We Believe</a>
+            <a href="../#/join-with-us" class="text-outline-white link-button outlined-text-brown;" style="color:brown">Join With Us</a>
+        </div>
+        <div class="text-outline-brown title-grid-layout">
+            <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                <div style="border:transparent 2px solid;width:100%;font-size:calc(1.0em + 2vw + 2vh);">Who We Are</div>
             </div>
-            <div class="text-outline-brown title-grid-layout">
-                <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                    <div style="border:transparent 2px solid;width:100%;font-size:5.0em;">Who We Are</div>
-                </div>
-            </div>
-            <div class="text-outline-brown">
-                <div class="bubble-dark">
+        </div>
+        <div #bubbleContainer class="text-outline-brown">
+            <div #bubble class="bubble-dark">
                 <div class="white-subheader">Our Mission</div>   
                 <div class="white-text">
-                    Our mission is simple: to glorify God and to share 
-                    the good news of His grace, saving sinners like us, 
+                    Our mis&shy;sion is sim&shy;ple: to glor&shy;ify God and to share 
+                    the good news of His grace, sav&shy;ing sin&shy;ners like us, 
                     through Jesus Christ.  As the Bible says in 
-                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Acts+4%3A12&version=NKJV">Acts 4:12</a>,
-                    "And there is salvation in no one else, for there is no other name 
-                    under heaven given among men by which we must be saved." 
+                    <a class="white-link" target="_blank" rel="noopener" 
+                        href="https://www.biblegateway.com/passage/?search=Acts+4%3A12&version=NKJV">Acts 4:12</a>,
+                    "And there is salv&shy;ation in no one else, for there is no other name 
+                    under hea&shy;ven giv&shy;en a&shy;mong men by which we must be saved." 
                 </div>
                 <div style="height:50px;"></div>     
                 <div class="white-subheader">Our Vision</div>
                 <div class="white-text">Our vision is multifaceted. We pray that:<br>
                     <ul>
-                        <li>Each one of us has a life-giving faith encounter with Jesus Christ. He offers the gift of saving faith to all those who call on Him. 
+                        <li>Each one of us has a life-giv&shy;ing faith en&shy;count&shy;er with Jesus Christ. He of&shy;fers 
+                            the gift of sav&shy;ing faith to all those who call on Him. 
                             <ul>
                                 <li>
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=John+3%3A1-18&version=NKJV">John 3:1-18</a>;
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Ephesians+2%3A1-10&version=NKJV">Ephesians 2:1-10</a>;
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Joel%202%3A32&version=NKJV">Joel 2:32</a>;
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Acts%202%3A21&version=NKJV">Acts 2:21</a>; 
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Romans%2010%3A13&version=NKJV">Romans 10:13</a>
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=John+3%3A1-18&version=NKJV">John 3:1-18</a>;
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Ephesians+2%3A1-10&version=NKJV">Ephe&shy;sians 2:1-10</a>;
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Joel%202%3A32&version=NKJV">Joel 2:32</a>;
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Acts%202%3A21&version=NKJV">Acts 2:21</a>; 
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Romans%2010%3A13&version=NKJV">Rom&shy;ans 10:13</a>
+                                </li>
+                    </ul>
+                        </li>
+                        <li>Each one of us makes God's word - The Bible - the focus of our liv&shy;ing and de&shy;cis&shy;ion-mak&shy;ing. 
+                            <ul>
+                                <li>
+                                    <a class="white-link" target="_blank" rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Psalm+19%3A7-11&version=NKJV">Psalm 19:7-11</a>; 
+                                    <a class="white-link" target="_blank"  rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=2+Timothy+3%3A16&version=NKJV">2 Tim&shy;othy 3:16</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>Each one of us makes God's word - The Bible - the focus of our living and decision-making. 
+                        <li>We ef&shy;fect&shy;ive&shy;ly reach into our com&shy;mun&shy;ity as in&shy;div&shy;id&shy;u&shy;als and as a church. 
                             <ul>
                                 <li>
-                                    <a class="white-link" target="_blank" rel="noopener" href="https://www.biblegateway.com/passage/?search=Psalm+19%3A7-11&version=NKJV">Psalm 19:7-11</a>; 
-                                    <a class="white-link" target="_blank"  rel="noopener" href="https://www.biblegateway.com/passage/?search=2+Timothy+3%3A16&version=NKJV">2 Timothy 3:16</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>We effectively reach into our community as individuals and as a church. 
-                            <ul>
-                                <li>
-                                    <a class="white-link" target="_blank"  rel="noopener" href="https://www.biblegateway.com/passage/?search=Matthew+5%3A13-16&version=NKJV">Matthew 5:13-16</a>; 
-                                    <a class="white-link" target="_blank"  rel="noopener" href="https://www.biblegateway.com/passage/?search=1+Peter+2%3A9-12&version=NKJV">1 Peter 2:9-12</a>
+                                    <a class="white-link" target="_blank"  rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=Matthew+5%3A13-16&version=NKJV">Matthew 5:13-16</a>; 
+                                    <a class="white-link" target="_blank"  rel="noopener" 
+                                        href="https://www.biblegateway.com/passage/?search=1+Peter+2%3A9-12&version=NKJV">1 Peter 2:9-12</a>
                                 </li>
                             </ul>
                         </li>
@@ -58,7 +69,8 @@
                 <div style="height:50px;"></div>     
                 <div class="white-subheader">Our Values</div>
                 <div class="white-text">
-                    Our core values&mdash;what we call the <a class="white-link" href="../#the-solas/">five <i>Solas</i></a>&mdash;are simply five points that detail our Reformed teaching on things like:
+                    Our core val&shy;ues&mdash;what we call the <a class="white-link" href="../#the-solas/">five <i>Solas</i></a>&mdash;are 
+                    sim&shy;ply five points that de&shy;tail our Re&shy;formed teach&shy;ing on things like:
                     <ul style="font-size:1.5em;margin-left:200px;">
                         <li><a class="white-link" target="_blank" rel="noopener" href="../#the-bible/">The Bible</a></li>
                         <li><a class="white-link" target="_blank" rel="noopener" href="../#faith/">Faith</a></li>
@@ -66,14 +78,17 @@
                         <li><a class="white-link" target="_blank"  rel="noopener" href="../#jesus/">Jesus</a></li>
                         <li><a class="white-link" target="_blank"  rel="noopener" href="../#meaning/">Life's meaning</a></li>
                     </ul>
-                    These anc&shy;ient teach&shy;ings find their roots in the Gos&shy;pel mes&shy;sage. They were re&shy;dis&shy;cover&shy;ed during the medi&shy;eval Prot&shy;est&shy;ant Ref&shy;orm&shy;a&shy;tion, and cont&shy;inue to be more than just 
-                    his&shy;tory&mdash;they are liv&shy;ing truths to be re&shy;ceived and em&shy;braced.<br>
-                    They re&shy;mind us of what is cent&shy;ral to Scrip&shy;ture and what is crit&shy;ical&shy;ly im&shy;port&shy;ant for faith&shy;ful, Bible-based church&shy;es to teach, preach, and live out before the watch&shy;ing world.<br><br>
-                    You can find out more about the five <i>Solas</i>&nbsp;<a class="white-link" target="_blank"  rel="noopener" href="../the-solas/">here</a>.
+                    These anc&shy;ient teach&shy;ings find their roots in the Gos&shy;pel mes&shy;sage. They were re&shy;dis&shy;cover&shy;ed 
+                    dur&shy;ing the medi&shy;eval Prot&shy;est&shy;ant Ref&shy;orm&shy;a&shy;tion, and cont&shy;inue to be more than just 
+                    his&shy;tory&mdash;they are liv&shy;ing truths to be re&shy;ceived and em&shy;braced.<br><br>
+                    They re&shy;mind us of what is cent&shy;ral to Scrip&shy;ture and what is crit&shy;ical&shy;ly im&shy;port&shy;ant 
+                    for faith&shy;ful, Bible-based church&shy;es to teach, preach, and live out be&shy;fore the watch&shy;ing world.<br><br>
+                    You can find out more about the five <i>Solas</i>&nbsp;<a class="white-link" target="_blank"  rel="noopener" 
+                    href="../the-solas/">here</a>.
                 </div>
                 <div style="height:50px;"></div>
             </div>
         </div>
-    <footer class="pad-content footer-color-brown footer-width" style="width:92vw;"></footer>
-    </div> 
+    <footer #footer class="pad-content footer-color-brown footer-width" style="width:100%;"></footer>
+    </div>
 </div>

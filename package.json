@@ -23,6 +23,7 @@
     "@angular/youtube-player": "^17.3.5",
     "agm": "^0.0.0",
     "git": "^0.1.5",
+    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.4"

@@ -29,6 +29,9 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SermonPlayerComponent } from '../components/sermon-player/sermon-player.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { FooterComponent } from 'src/components/footer/footer.component';
+import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
+import { SafePipe } from 'src/pipes/safe.pipe'
+import { CalculateImageHeightComponent } from 'src/components/calculate-image-height/calculate-image-height.component';
 
 @NgModule({
   declarations: [
@@ -55,14 +58,17 @@ import { FooterComponent } from 'src/components/footer/footer.component';
     SermonsComponent,
     TithingComponent,
     SermonPlayerComponent,
-    FooterComponent
+    FooterComponent,
+    HigherEdComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     YouTubePlayerModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    CalculateImageHeightComponent
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

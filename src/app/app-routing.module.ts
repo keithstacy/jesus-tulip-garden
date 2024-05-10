@@ -17,6 +17,7 @@ import { BulletinListComponent } from 'src/components/bulletin-list/bulletin-lis
 import { SermonsComponent } from 'src/components/sermons/sermons.component';
 import { TithingComponent } from 'src/components/tithing/tithing.component';
 import { PrayerComponent } from 'src/components/prayer/prayer.component';
+import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -35,7 +36,8 @@ const routes: Routes = [
   { path: 'bulletin-list', component: BulletinListComponent },
   { path: 'sermons', component: SermonsComponent },
   { path: 'tithing', component: TithingComponent },
-  { path: 'prayer', component: PrayerComponent }
+  { path: 'prayer', component: PrayerComponent },
+  { path: 'higher-ed', component: HigherEdComponent }
 ]
 
 @NgModule({
