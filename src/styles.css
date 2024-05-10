@@ -267,6 +267,12 @@ footer a {
   width:105%;
   height:105%;
 }
+.img-container {
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
 .img-size {
   width:105%;
   height:105%;

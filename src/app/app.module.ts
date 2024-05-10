@@ -31,7 +31,6 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { FooterComponent } from 'src/components/footer/footer.component';
 import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
 import { SafePipe } from 'src/pipes/safe.pipe'
-import { CalculateImageHeightComponent } from 'src/components/calculate-image-height/calculate-image-height.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +67,6 @@ import { CalculateImageHeightComponent } from 'src/components/calculate-image-he
     HttpClientModule,
     YouTubePlayerModule,
     GoogleMapsModule,
-    CalculateImageHeightComponent
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

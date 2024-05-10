@@ -16,9 +16,3 @@
 .image {
     background-image: url('src/assets/img/AnivMedPortrait.jpg');
 }
-.img-container {
-    width:100%;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
