@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from '../components/main/main.component';
-import { ContentComponent } from '../components/content/content.component';
 import { ForeignMissionsComponent } from '../components/foreign-missions/foreign-missions.component';
 import { LocalOutreachComponent } from '../components/local-outreach/local-outreach.component';
 import { PrayerComponent } from '../components/prayer/prayer.component';
@@ -36,7 +35,6 @@ import { SafePipe } from 'src/pipes/safe.pipe'
   declarations: [
     AppComponent,
     MainComponent,
-    ContentComponent,
     ForeignMissionsComponent,
     LocalOutreachComponent,
     PrayerComponent,
