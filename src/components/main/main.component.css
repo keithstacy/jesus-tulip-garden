@@ -112,12 +112,7 @@ html {
     font-size:calc(1vh + 1vw + 1em);
     text-align:center;
 }
-@keyframes rotateIntro {
-    0% {background-image: url(../../assets/img/StPaulChurchWideView.jpeg);}
-    33% {background-image: url(../../assets/img/StPaulChurchWideView.jpeg);}
-    66% {background-image: url(../../assets/img/tower_Painting.Color.svg);}
-    100% {background-image: url(../../assets/img/tower_Painting.Color.svg);}
-}
+
 @keyframes rotateFamily {
     0% {background-image: url(../../assets/img/AnivMed.jpg);}
     33% {background-image: url(../../assets/img/_MG_1520.jpg);}
