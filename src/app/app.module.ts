@@ -29,7 +29,15 @@ import { SermonPlayerComponent } from '../components/sermon-player/sermon-player
 import { GoogleMapsModule } from '@angular/google-maps';
 import { FooterComponent } from 'src/components/footer/footer.component';
 import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
-import { SafePipe } from 'src/pipes/safe.pipe'
+import { SafePipe } from 'src/pipes/safe.pipe';
+import { MenuBarComponent } from '../components/menu-bar/menu-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -57,7 +65,8 @@ import { SafePipe } from 'src/pipes/safe.pipe'
     SermonPlayerComponent,
     FooterComponent,
     HigherEdComponent,
-    SafePipe
+    SafePipe,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +74,13 @@ import { SafePipe } from 'src/pipes/safe.pipe'
     HttpClientModule,
     YouTubePlayerModule,
     GoogleMapsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { ContentService } from 'src/services/content.service';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
+import { MenuItem } from '../../interfaces/menu-items';
 
 @Component({
   selector: 'app-what-we-believe',
@@ -10,7 +11,8 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./what-we-believe.component.css']
 })
 export class WhatWeBelieveComponent  implements OnInit {
-  
+  menuItems: MenuItem[] = [];
+
   constructor(private contentSvc: ContentService, 
     private containerRef: ViewContainerRef, 
     private router: Router, 
@@ -29,7 +31,89 @@ export class WhatWeBelieveComponent  implements OnInit {
     }
 
   ngOnInit(): void {
-
+    this.menuItems = [
+      {
+        order: 0,
+        text: "Main Page",
+        route: "",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 1,
+        text: "Who We Are",
+        route: "/who-are-we",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 2,
+        text: "Join With Us",
+        route: "/join-with-us",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 3,
+        text: "About...",
+        route: "null",
+        fragment: "null",
+        hasSubmenu: true,
+        submenu: [
+          {
+            order: 0,
+            text: "The Bible",
+            route: "/what-we-believe",
+            fragment: "the-bible",
+            hasSubmenu: false,
+            submenu: []
+          },
+          {
+            order: 1,
+            text: "Faith",
+            route: "/what-we-believe",
+            fragment: "faith",
+            hasSubmenu: false,
+            submenu: []
+          },
+          {
+            order: 2,
+            text: "Grace",
+            route: "/what-we-believe",
+            fragment: "grace",
+            hasSubmenu: false,
+            submenu: []
+          },
+          {
+            order: 3,
+            text: "Jesus Christ",
+            route: "/what-we-believe",
+            fragment: "jesus",
+            hasSubmenu: false,
+            submenu: []
+          },
+          {
+            order: 4,
+            text: "Life's Meaning",
+            route: "/what-we-believe",
+            fragment: "meaning",
+            hasSubmenu: false,
+            submenu: []
+          }
+        ]
+      },
+      {
+        order: 4,
+        text: "Return to Top",
+        route: "/what-we-believe",
+        fragment: "top",
+        hasSubmenu: false,
+        submenu: []
+      }
+    ]
   }
 
 }

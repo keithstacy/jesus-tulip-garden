@@ -1,0 +1,21 @@
+<mat-toolbar class="mat-item">
+  <ng-container *ngFor="let menuItem of menuItems">
+    <!-- Regular button (no submenu) -->
+    <button mat-button *ngIf="!menuItem.hasSubmenu" [routerLink]="menuItem.route" [fragment]="menuItem.fragment" class="mat-item">
+      {{ menuItem.text }}
+    </button>
+
+    <!-- Button with submenu -->
+    <button mat-button *ngIf="menuItem.hasSubmenu" [matMenuTriggerFor]="submenu" class="mat-item">
+      {{ menuItem.text }}
+    </button>
+
+    <!-- Submenu -->
+    <mat-menu #submenu="matMenu" class="mat-item">
+      <button mat-menu-item *ngFor="let subItem of menuItem.submenu" [routerLink]="subItem.route" [fragment]="subItem.fragment" class="mat-item">
+        {{ subItem.text }}
+      </button>
+    </mat-menu>
+  </ng-container>
+</mat-toolbar>
+  
