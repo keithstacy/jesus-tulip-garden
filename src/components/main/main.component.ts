@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewContainerRef, AfterViewInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ContentService } from '../../services/content.service';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
+import { MenuItem } from '../../interfaces/menu-items';
 
 declare var Microsoft: any;
 
@@ -14,6 +15,7 @@ declare var Microsoft: any;
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit, AfterViewInit {
+  menuItems: MenuItem[] = [];
 
   mapOptions: google.maps.MapOptions = {
     center: new google.maps.LatLng(44.723877,-93.929512),
@@ -25,11 +27,18 @@ export class MainComponent implements OnInit, AfterViewInit {
               private containerRef: ViewContainerRef, 
               private sanitizer: DomSanitizer, 
               private router: Router, 
-              private viewportScroller: ViewportScroller) { 
+              private viewportScroller: ViewportScroller,
+              private route: ActivatedRoute) { 
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd)).subscribe(() => {
-        this.viewportScroller.scrollToPosition([0,0]);
-      });
+        const fragment = this.route.snapshot.fragment;
+        if (fragment) {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+          }
+        }
+    });
   }
 
   ngAfterViewInit() {
@@ -64,6 +73,40 @@ export class MainComponent implements OnInit, AfterViewInit {
     
 
   ngOnInit(): void {
+    this.menuItems = [
+      {
+        order: 0,
+        text: "Our Church Family",
+        route: "/",
+        fragment: "church-family",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 1,
+        text: "Our Global Family",
+        route: "/",
+        fragment: "global-family",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 2,
+        text: "How to Find Us",
+        route: "/",
+        fragment: "find-us",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 3,
+        text: "Return to Top",
+        route: "/",
+        fragment: "intro",
+        hasSubmenu: false,
+        submenu: []
+      }
+    ]
   }
 
   displayMain = true;
