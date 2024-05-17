@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { ContentService } from 'src/services/content.service';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
 
@@ -14,10 +14,17 @@ export class WhatWeBelieveComponent  implements OnInit {
   constructor(private contentSvc: ContentService, 
     private containerRef: ViewContainerRef, 
     private router: Router, 
-    private viewportScroller: ViewportScroller) { 
+    private viewportScroller: ViewportScroller, 
+    private route: ActivatedRoute) { 
       this.router.events.pipe(
         filter((event) => event instanceof NavigationEnd)).subscribe(() => {
-          this.viewportScroller.scrollToPosition([0,0]);
+          const fragment = this.route.snapshot.fragment;
+          if (fragment) {
+            const element = document.getElementById(fragment);
+            if (element) {
+              element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+            }
+          }
         });
     }
 

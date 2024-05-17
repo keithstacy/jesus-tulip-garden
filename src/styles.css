@@ -313,7 +313,7 @@ footer a {
   padding:15px 10px 10px 35px;
   margin-right:-8px;
   background-color:#ffffff;
-  font-size:calc(1vw + 1vh + 0.2em);
+  font-size:calc(1vw + 1vh + 0.1em);
 }
 .outlined-text-brown {
   color:brown;
