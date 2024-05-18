@@ -1,7 +1,7 @@
-<mat-toolbar class="mat-item">
+<mat-toolbar class="mat-item" style="width:inherit;max-width:100vw;">
   <ng-container *ngFor="let menuItem of menuItems">
     <!-- Regular button (no submenu) -->
-    <button mat-button *ngIf="!menuItem.hasSubmenu" [routerLink]="menuItem.route" [fragment]="menuItem.fragment" class="mat-item">
+    <button mat-button *ngIf="!menuItem.hasSubmenu" [routerLink]="menuItem.route" [fragment]="menuItem.fragment" class="mat-item" style="white-space: wrap;">
       {{ menuItem.text }}
     </button>
 

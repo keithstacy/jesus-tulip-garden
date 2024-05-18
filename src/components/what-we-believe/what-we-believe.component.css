@@ -1,42 +1,28 @@
 p {
     margin-bottom: 20px;
 }
-.believe-subheader {
-    font-size:2em;
-    text-align:center;
-    margin:0 10vw;
-}
-.believe-text {
-    font-size:1.4em;
-    padding: 5px 20px;
-}
 .believe-link {
     color:black;
 }
-.bible-subheader {
-    font-size:2em;
+.believe-subheader {
+    font-size:calc(1vw + 1vh + .25em);
     text-align:center;
     margin:0 10vw;
+    color:black;
+    font-weight: 500;
 }
-.bible-text {
-    font-size:1.4em;
+.believe-subtitle {
+    font-size:calc(1.1vw + 1.1vh + 0.1em);
+    width:100%;
+}
+.believe-text {
+    font-size:calc(.6vh + .6vw + .5em);
     padding: 5px 20px;
-}
-.bible-link {
     color:black;
 }
-
-.jesus-subheader {
-    font-size:2em;
-    text-align:center;
-    margin:0 10vw;
-}
-.jesus-text {
-    font-size:1.4em;
-    padding: 5px 20px;
-}
-.jesus-link {
-    color:black;
+.believe-title {
+    font-size:calc(1.5vh + 1.5vw + 2.0em);
+    width:100%;
 }
 div.poem { 
 	text-align:left;

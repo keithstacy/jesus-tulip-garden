@@ -112,7 +112,7 @@ footer a {
 .blockquote
 {
   font-style: normal;
-  font-size: 22px;
+  font-size: calc(.6vh + .6vw + .5em);
   margin-left: 32px;
   font-family: Helvetica, Arial, Verdana;
   border-left: 4px solid #CCC;
@@ -315,6 +315,8 @@ footer a {
   margin-right:-8px;
   background-color:#ffffff;
   font-size:calc(1vw + 1vh + 0.1em);
+  font-kerning:auto;
+  letter-spacing:0.0mm;
 }
 .outlined-text-brown {
   color:brown;
