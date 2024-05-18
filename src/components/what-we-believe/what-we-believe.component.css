@@ -16,32 +16,10 @@ p {
     width:100%;
 }
 .believe-text {
-    font-size:calc(.6vh + .6vw + .5em);
     padding: 5px 20px;
     color:black;
 }
 .believe-title {
     font-size:calc(1.5vh + 1.5vw + 2.0em);
     width:100%;
-}
-div.poem { 
-	text-align:left;
-	margin-left:5%;
-	width:90%;
-	position: relative;
-}
-.poem .stanza {
-	margin-top: 1em;
-}
-.stanza span,
-.stanza div,
-.stanza p {
-	display:block;
-	line-height: 1.2em;
-	margin-left: 2em;
-	text-indent: -2em;
-	margin-top: 0;
-}
-.stanza br {
-	display: none;
 }
