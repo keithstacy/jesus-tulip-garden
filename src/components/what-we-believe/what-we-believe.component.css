@@ -18,6 +18,7 @@ p {
 .believe-text {
     padding: 5px 20px;
     color:black;
+    text-align: left;
 }
 .believe-title {
     font-size:calc(1.5vh + 1.5vw + 2.0em);

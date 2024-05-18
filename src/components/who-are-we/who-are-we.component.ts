@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, Renderer2 } fr
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
+import { MenuItem } from '../../interfaces/menu-items';
 
 @Component({
   selector: 'app-who-are-we',
@@ -9,6 +10,7 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./who-are-we.component.css']
 })
 export class WhoAreWeComponent implements OnInit, AfterViewInit {
+  menuItems: MenuItem[] = [];
   imageUrl = "../../assets/img/AnivMedPortrait.jpg";
   @ViewChild('footer', { read: ElementRef }) footer!: ElementRef;
   @ViewChild('imageContainer', { read: ElementRef }) imageContainer!: ElementRef;
@@ -24,6 +26,33 @@ export class WhoAreWeComponent implements OnInit, AfterViewInit {
     }
 
     ngOnInit(): void {
+      this.menuItems = [
+        {
+          order: 0,
+          text: "Main Page",
+          route: "",
+          fragment: "",
+          hasSubmenu: false,
+          submenu: []
+        },
+        {
+          order: 1,
+          text: "What We Believe",
+          route: "/what-we-believe",
+          fragment: "",
+          hasSubmenu: false,
+          submenu: []
+        },
+        {
+          order: 2,
+          text: "Join With Us",
+          route: "/join-with-us",
+          fragment: "",
+          hasSubmenu: false,
+          submenu: []
+        }
+      ]
+  
       window.addEventListener("resize", () => {
         this.viewportScroller.scrollToPosition([0,0]);
         this.calculateImageHeight();

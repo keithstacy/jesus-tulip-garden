@@ -1,14 +1,10 @@
+<menu-bar class="link-box" style="color:brown;width:100%;word-wrap:break-word;" [menuItems]="menuItems"></menu-bar>
 <div id="bulletin-list" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
     <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
-    <div #content style="position:absolute;top:0px;left:0px;height:99vh;">
-        <div class="link-box" style="width:100vw;">
-            <a href="" class="text-outline-white link-button outlined-text-brown" style="color:brown">Main Page</a>
-            <a href="../#/what-we-believe" class="text-outline-white link-button outlined-text-brown;" style="color:brown">What We Believe</a>
-            <a href="../#/join-with-us" class="text-outline-white link-button outlined-text-brown;" style="color:brown">Join With Us</a>
-        </div>
+    <div #content style="position:absolute;top:60px;left:0px;height:99vh;">
         <div class="text-outline-brown title-grid-layout">
             <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                <div style="border:transparent 2px solid;width:100%;font-size:5.0em;">Church Bulletins</div>
+                <div class="page-title">Church Bulletins</div>
             </div>
         </div>
         <div class="text-outline-brown">

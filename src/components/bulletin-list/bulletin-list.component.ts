@@ -4,6 +4,7 @@ import { Bulletin, BulletinData } from '../../interfaces/bulletin';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
+import { MenuItem } from 'src/interfaces/menu-items';
 
 @Component({
   selector: 'app-bulletin-list',
@@ -12,6 +13,7 @@ import { ViewportScroller } from '@angular/common';
 })
 
 export class BulletinListComponent implements OnInit, AfterViewInit {
+  menuItems: MenuItem[] = [];
   imageUrl = "../../assets/img/AnivMedPortrait.jpg";
   bulletins: Bulletin[] = [];
   @ViewChild('footer', { read: ElementRef }) footer!: ElementRef;
@@ -29,6 +31,33 @@ export class BulletinListComponent implements OnInit, AfterViewInit {
     }
 
    ngOnInit(): void {
+    this.menuItems = [
+      {
+        order: 0,
+        text: "Main Page",
+        route: "",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 1,
+        text: "Pastor's Sermons",
+        route: "/sermons",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      },
+      {
+        order: 2,
+        text: "Member Giving",
+        route: "/tithing",
+        fragment: "",
+        hasSubmenu: false,
+        submenu: []
+      }
+    ]
+
     window.addEventListener("resize", () => {
       this.viewportScroller.scrollToPosition([0,0]);
       this.calculateImageHeight();
