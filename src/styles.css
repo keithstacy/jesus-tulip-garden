@@ -112,7 +112,7 @@ footer a {
 .blockquote
 {
   font-style: normal;
-  font-size: calc(.6vh + .6vw + .5em);
+  text-align: left;
   margin-left: 32px;
   margin-bottom: 20px;
   font-family: Helvetica, Arial, Verdana;
@@ -321,6 +321,10 @@ footer a {
 .outlined-text-brown {
   color:brown;
 }
+.page-title {
+  font-size:calc(1.5vh + 1.5vw + 2.0em);
+  width:100%;
+}
 .pad-content {
   padding: 20px;
 }
@@ -386,15 +390,6 @@ footer a {
   width:-moz-fit-content;
   width:fit-content;
   height:max-content;
-}
-.title-grid-layout {
-  border: transparent 2px solid;
-  color:white;
-  padding:5px;
-  grid-column:49/span 47;
-  width:100%;
-  grid-row:4/span 20;
-  text-align:center;
 }
 .text-outline-blue {
   text-shadow:2px 2px 2px darkblue, -2px -2px 2px darkblue, -2px 2px 2px darkblue, 2px -2px 2px darkblue;
