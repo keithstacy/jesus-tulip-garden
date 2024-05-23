@@ -10,7 +10,7 @@ import { MenuItem } from '../../interfaces/menu-items';
   templateUrl: './what-we-believe.component.html',
   styleUrls: ['./what-we-believe.component.css']
 })
-export class WhatWeBelieveComponent  implements OnInit {
+export class WhatWeBelieveComponent implements OnInit {
   menuItems: MenuItem[] = [];
 
   constructor(private contentSvc: ContentService, 

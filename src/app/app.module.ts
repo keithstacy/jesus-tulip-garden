@@ -38,6 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expect.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HigherEdComponent,
     SafePipe,
-    MenuBarComponent
+    MenuBarComponent,
+    WhatToExpectComponent
   ],
   imports: [
     BrowserModule,

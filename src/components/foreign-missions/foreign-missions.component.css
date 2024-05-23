@@ -1,0 +1,16 @@
+
+.jesus-subheader {
+    font-size:2em;
+    text-align:center;
+    margin:0 10vw;
+}
+.jesus-text {
+    font-size:1.4em;
+    padding: 5px 20px;
+}
+.jesus-link {
+    color:black;
+}
+.image {
+    background-image: url('src/assets/img/AnivMedPortrait.jpg');
+}

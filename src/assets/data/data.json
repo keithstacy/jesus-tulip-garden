@@ -1,5 +1,10 @@
 {
     "bulletins": [
+        {
+			"date":"May 19, 2024",
+			"name":"The Lord's Day",
+			"url":"../assets/files/Bulletin.20240519.pdf"
+        },
 		{
 			"date":"May 5, 2024",
 			"name":"The Lord's Day",

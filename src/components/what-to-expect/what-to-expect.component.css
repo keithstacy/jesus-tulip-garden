@@ -1,0 +1,26 @@
+
+.link {
+    color:white;
+}
+.subheader {
+    font-size:calc(1vw + 1vh + .25em);
+    text-align:center;
+    margin:0 10vw;
+    color:white;
+}
+.subtitle {
+    font-size:calc(1.1vw + 1.1vh + 0.1em);
+    width:100%;
+}
+.text {
+    padding: 5px 20px;
+    color:white;
+    text-align: left;
+}
+.title {
+    font-size:calc(1.5vh + 1.5vw + 2.0em);
+    width:100%;
+}
+.image {
+    background-image: url('src/assets/img/AnivMedPortrait.jpg');
+}

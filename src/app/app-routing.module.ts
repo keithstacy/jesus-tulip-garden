@@ -18,6 +18,7 @@ import { SermonsComponent } from 'src/components/sermons/sermons.component';
 import { TithingComponent } from 'src/components/tithing/tithing.component';
 import { PrayerComponent } from 'src/components/prayer/prayer.component';
 import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
+import { WhatToExpectComponent } from 'src/components/what-to-expect/what-to-expect.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
   { path: 'sermons', component: SermonsComponent },
   { path: 'tithing', component: TithingComponent },
   { path: 'prayer', component: PrayerComponent },
-  { path: 'higher-ed', component: HigherEdComponent }
+  { path: 'higher-ed', component: HigherEdComponent },
+  { path: 'what-to-expect', component: WhatToExpectComponent }
 ]
 
 @NgModule({

@@ -23,6 +23,7 @@
     display:grid;
     grid-template-columns:repeat(100, 1fr);
     grid-template-rows:repeat(50, 1fr);
+    gap:7px;
 }
 .footer-grid a {
     z-index:1;
@@ -31,7 +32,7 @@
     font-size:calc(1vw + .3em);
     grid-column-start:1;
     grid-column-end:100;
-    grid-row:7;
+    grid-row:10;
     text-align:center;
     background-color: transparent;
 }
@@ -70,6 +71,14 @@
 }
 .text-outline {
     text-shadow:2px 2px 2px black, -2px -2px 2px black, -2px 2px 2px black, 2px -2px 2px black;
+}
+.footer-address {
+    font-size:calc(1vw + .4em);
+    grid-column-start:1;
+    grid-column-end:100;
+    grid-row:6/8;
+    text-align:center;
+    background-color:transparent;
 }
 
 #footer {
@@ -178,4 +187,67 @@
     grid-row:4;
     grid-column:5;
     background-clip:padding-box;
+}
+
+@media screen and (max-width: 455px) {
+    #footer {
+        background-color:transparent;
+        color:white;
+        height:350px;
+        width:100%;
+        padding:10px;
+    }
+    .footer-grid {
+        display:grid;
+        grid-template-columns:repeat(100, 1fr);
+        grid-template-rows:repeat(100, 1fr);
+        row-gap:5px;
+        column-gap:5px;
+    }
+    .more-about-us {
+        font-size:1.3em;
+        grid-column-start:1;
+        grid-column-end:70;
+        grid-row:8/14;
+        text-align:center;
+    }
+    .about-us-links {
+        grid-column:1/85;
+        grid-row:20/60;
+        background-color:transparent;
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-items:first baseline;
+        gap:14px;
+    }
+    .footer-subtitle {
+        font-size:calc(1vw + .6em);
+        grid-column-start:1;
+        grid-column-end:80;
+        grid-row:4;
+        text-align:center;
+        background-color: transparent;
+    }
+    .footer-subtitle a {
+        z-index: 1;
+        position:relative;
+    }
+    .footer-title {
+        font-size:calc(1vw + .79em);
+        grid-column-start:1;
+        grid-column-end:80;
+        grid-row:1 ;
+        text-align:center;
+        background-color:transparent;
+    }
+    .footer-address {
+        font-size:calc(1vw + .79em);
+        grid-column-start:1;
+        grid-column-end:80;
+        grid-row:2;
+        text-align:center;
+        background-color:transparent;
+    }
 }

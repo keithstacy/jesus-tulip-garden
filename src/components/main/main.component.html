@@ -1,20 +1,19 @@
 <menu-bar class="link-box" style="color:darkblue;width:100%;word-wrap: break-word;" [menuItems]="menuItems"></menu-bar>
-<div id="intro" class="full-page pad-content page-dimensions" style="background-color: transparent;color:black;">
-    <div class="background-image-intro" style="background-color:transparent;min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
-        <div class="grid-for-text" >
-            <div style="background-color: #007fff00; grid-column:49/span 49;grid-row:3/span 44;border-radius:15px;"></div>
+<div id="intro" class="full-page pad-content page-dimensions">
+    <div class="background-image-intro" style="min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
+        <div class="grid-for-text" style="position: relative;z-index:2;">
             <div class="text-outline-blue intro-title-grid intro-title-div">
 
-                <div style="background-color:#ffffff;height:200px;width:130px;grid-column:2;grid-row:1">
+                <div class="church-logo">
                     <img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/>
                 </div>
-                <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                <div class="church-name">
                     <div class="page-title">St. Paul's Church</div>
                     <div style="border: transparent 2px solid;width:100%;font-size:2em;">Hamburg, Minnesota</div>
                 </div>
             </div>
 
-            <div class="text-outline-blue intro-text-div">        
+            <div class="text-outline-blue intro-text-div bubble-dark">        
                 <p class="welcome-text">Hello! We're glad you stopped by!</p>
                 <p class="intro-text">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links at the top of the page</span> to find out more about us.  </p><br>
             </div>
@@ -22,14 +21,15 @@
         </div>
     </div> 
 </div>
-<div id="church-family" class="full-page pad-content page-dimensions" style="background-color: transparent;margin-top:-40px">
+<div id="church-family" class="full-page pad-content page-dimensions" style="margin-top:-40px">
     <div class="background-image-church-family family-slides">
         <div class="grid-for-text">
-            <div class="text-outline-brown title-text">Our Church Family</div>
+            <div class="text-outline-brown title-text narrow-family-text">Our Church Family</div>
             <div class="text-outline-brown church-family-links">
                 <div><button routerLink="/who-are-we" class="church-family-link-button text-outline-brown">Who are we?</button></div>
+                <div><button routerLink="/what-to-expect" class="church-family-link-button text-outline-brown">What can I expect?</button></div>
                 <div><button routerLink="/what-we-believe" class="church-family-link-button text-outline-brown">What do we believe?</button></div>
-                <div><button routerLink="/join-with-us" class="church-family-link-button text-outline-brown">How can you<br/>join with us?</button></div>
+                <!-- <div><button routerLink="/join-with-us" class="church-family-link-button text-outline-brown">How can you<br/>join with us?</button></div> -->
                 <hr>
                 <div><button routerLink="/bulletin-list" class="church-family-link-button text-outline-brown">Church Bulletins</button></div>
                 <div><button routerLink="/sermons" class="church-family-link-button text-outline-brown">Pastor's Sermons</button></div>
@@ -41,7 +41,7 @@
 <div id="global-family" class="full-page pad-content page-dimensions" style="margin-top:-40px;background-color: transparent;"  >
     <div class="background-image-global-family global-slides">
         <div class="grid-for-text">
-            <div class="text-outline-brown title-text">Our Global Family</div>
+            <div class="text-outline-brown title-text narrow-family-text">Our Global Family</div>
             <div class="text-outline-brown church-family-links" style="height:23vh;margin-top:4vh;">
                 <div style="margin-bottom:1vh;"><a href="https://rcus.org" target="_blank" rel="noopener" class="church-family-link-button text-outline-brown">Our Denomination</a></div>
                 <div style="margin-bottom:1vh;"><button routerLink="/foreign-missions" class="church-family-link-button text-outline-brown">Our Overseas<br>Partnerships</button></div>
@@ -51,12 +51,12 @@
     </div>
 </div>
 <div id="find-us" class="full-page pad-content page-dimensions" style="margin-top:-5px;background-color: transparent;display:grid;grid-template-columns: 33% 33% 33%;grid-template-rows:33% 33% 33%;">
-    <div class="title-text" style="margin-top:4vh;color:black;background-color:transparent;grid-column:1;grid-row:1;">How to<br>Find Us</div>
-    <div style="grid-column:2/span 2;grid-row:1;text-align:center;font-size:calc(1.0vh + 1.0vw + 0.8em);padding-left:50px;padding-right:50px;padding-top:50px;">
+    <div class="title-text find-us-title-text narrow-family-text">How to<br>Find Us</div>
+    <div class="find-us-text">
         We're out in the country, a beautiful drive a few miles south of Norwood Young America. Use the helpful map to get directions to us from anywhere!</div>
     <div class="background-image-find-us"></div>
-    <div id="outer-map-container" style="width:90vw;height:60vh;margin-left:3vw;border:2px solid green;background-color: green;">
-        <google-map [options]="mapOptions"></google-map>
+    <div id="outer-map-container" class="map-container">
+        <google-map class="map" [options]="mapOptions"></google-map>
     </div>
 </div>
 <footer class="pad-content footer-color-brown footer-width"></footer>
