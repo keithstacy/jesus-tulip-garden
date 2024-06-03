@@ -1,21 +1,21 @@
 <menu-bar class="link-box" style="color:darkblue;width:100%;word-wrap: break-word;" [menuItems]="menuItems"></menu-bar>
 <div id="intro" class="full-page pad-content page-dimensions">
-    <div class="background-image-intro" style="min-height:100%;min-width:1000px;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
+    <div class="background-image-intro" style="min-height:100%;background-attachment: fixed;background-position:bottom;background-repeat:no-repeat;background-size:cover;">
         <div class="grid-for-text" style="position: relative;z-index:2;">
-            <div class="text-outline-blue intro-title-grid intro-title-div">
-
+            <div class="intro-title-grid intro-title-div">
                 <div class="church-logo">
-                    <img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.png"/>
+                    <img style="width:100%;height:100%" alt="St. Paul Evangelical Reformed Church, Hamburg, Minnesota" src="../../assets/img/ChurchLogo.InvertedColor.png"/>
                 </div>
                 <div class="church-name">
                     <div class="page-title">St. Paul's Church</div>
                     <div style="border: transparent 2px solid;width:100%;font-size:2em;">Hamburg, Minnesota</div>
                 </div>
             </div>
-
-            <div class="text-outline-blue intro-text-div bubble-dark">        
+            <div class="intro-text-div bubble-dark">        
                 <p class="welcome-text">Hello! We're glad you stopped by!</p>
-                <p class="intro-text">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click one of the links at the top of the page</span> to find out more about us.  </p><br>
+                <p class="intro-text">There's so much we want to tell you about ourselves.  Please <span style="font-weight:450;">click 
+                    one of the links at the top of the page</span> to find out more about us.  
+                </p><br>
             </div>
 
         </div>
@@ -24,16 +24,16 @@
 <div id="church-family" class="full-page pad-content page-dimensions" style="margin-top:-40px">
     <div class="background-image-church-family family-slides">
         <div class="grid-for-text">
-            <div class="text-outline-brown title-text narrow-family-text">Our Church Family</div>
-            <div class="text-outline-brown church-family-links">
-                <div><button routerLink="/who-are-we" class="church-family-link-button text-outline-brown">Who are we?</button></div>
-                <div><button routerLink="/what-to-expect" class="church-family-link-button text-outline-brown">What can I expect?</button></div>
-                <div><button routerLink="/what-we-believe" class="church-family-link-button text-outline-brown">What do we believe?</button></div>
+            <div class="title-text narrow-family-text">Our Church Family</div>
+            <div class="church-family-links">
+                <div><button routerLink="/who-are-we" class="church-family-link-button">Who are we?</button></div>
+                <div><button routerLink="/what-to-expect" class="church-family-link-button">What can I expect?</button></div>
+                <div><button routerLink="/what-we-believe" class="church-family-link-button">What do we believe?</button></div>
                 <!-- <div><button routerLink="/join-with-us" class="church-family-link-button text-outline-brown">How can you<br/>join with us?</button></div> -->
                 <hr>
-                <div><button routerLink="/bulletin-list" class="church-family-link-button text-outline-brown">Church Bulletins</button></div>
-                <div><button routerLink="/sermons" class="church-family-link-button text-outline-brown">Pastor's Sermons</button></div>
-                <div><button routerLink="/tithing" class="church-family-link-button text-outline-brown">Member Giving</button></div>
+                <div><button routerLink="/bulletin-list" class="church-family-link-button">Church Bulletins</button></div>
+                <div><button routerLink="/sermons" class="church-family-link-button">Pastor's Sermons</button></div>
+                <div><button routerLink="/tithing" class="church-family-link-button">Member Giving</button></div>
             </div>
         </div>
     </div> 
@@ -41,11 +41,11 @@
 <div id="global-family" class="full-page pad-content page-dimensions" style="margin-top:-40px;background-color: transparent;"  >
     <div class="background-image-global-family global-slides">
         <div class="grid-for-text">
-            <div class="text-outline-brown title-text narrow-family-text">Our Global Family</div>
-            <div class="text-outline-brown church-family-links" style="height:23vh;margin-top:4vh;">
-                <div style="margin-bottom:1vh;"><a href="https://rcus.org" target="_blank" rel="noopener" class="church-family-link-button text-outline-brown">Our Denomination</a></div>
-                <div style="margin-bottom:1vh;"><button routerLink="/foreign-missions" class="church-family-link-button text-outline-brown">Our Overseas<br>Partnerships</button></div>
-                <div><button routerLink="/join-with-us" class="church-family-link-button text-outline-brown">Our Educational<br>Institutions</button></div>
+            <div class="title-text narrow-family-text">Our Global Family</div>
+            <div class="church-family-links" style="height:23vh;margin-top:4vh;">
+                <div style="margin-bottom:1vh;"><a href="https://rcus.org" target="_blank" rel="noopener" class="church-family-link-button">Our Denomination</a></div>
+                <div style="margin-bottom:1vh;"><button routerLink="/foreign-missions" class="church-family-link-button">Our Overseas<br>Partnerships</button></div>
+                <div><button routerLink="/join-with-us" class="church-family-link-button">Our Educational<br>Institutions</button></div>
             </div>
         </div>
     </div>
@@ -59,4 +59,4 @@
         <google-map class="map" [options]="mapOptions"></google-map>
     </div>
 </div>
-<footer class="pad-content footer-color-brown footer-width"></footer>
+<footer class="pad-content footer-color-dark-blue footer-width"></footer>

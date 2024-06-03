@@ -189,7 +189,7 @@
     background-clip:padding-box;
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 465px) {
     #footer {
         background-color:transparent;
         color:white;
@@ -251,3 +251,4 @@
         background-color:transparent;
     }
 }
+
