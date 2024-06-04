@@ -1,3 +1,9 @@
+img {
+    width:calc(3.5vw + 3.5vh);
+    max-width: 100px;
+    min-width: 50px;
+    height:auto;
+}
 @keyframes rotateFamily {
     0% {background-image: url(../../assets/img/AnivMed.jpg);}
     33% {background-image: url(../../assets/img/_MG_1520.jpg);}
@@ -12,3 +18,11 @@
     100% {background-image: url(../../assets/img/Friends.jpg);}
 }
 
+@media screen and (max-width: 500px) {
+    img {
+        max-width: none;
+        min-width: none;
+        width: 100px;
+        height: auto;
+    }
+}

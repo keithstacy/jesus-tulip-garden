@@ -1,14 +1,14 @@
-<menu-bar class="link-box" style="color:brown;font-kerning:auto;letter-spacing:0.01em;" [menuItems]="menuItems"></menu-bar>
+<menu-bar class="link-box" style="color:darkblue;font-kerning:auto;letter-spacing:0.01em;" [menuItems]="menuItems"></menu-bar>
 <div id="who-are-we" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
     <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
     <div #content style="position:absolute;top:50px;left:0px;">
-        <div class="text-outline-brown title-grid-layout">
-            <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                <div style="margin-top:20px;width:100%;font-size:calc(1.0em + 2vw + 2vh);">Who We Are</div>
-            </div>
-        </div>
-        <div class="text-outline-brown">
+        <div style="margin-top:30px;">
             <div #bubble class="bubble-dark">
+                <div class="title-grid-layout">
+                    <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                        <div style="margin-top:20px;width:100%;font-size:calc(1.0em + 2vw + 2vh);">Who We Are</div>
+                    </div>
+                </div>
                 <div class="white-subheader">Our Mission</div>   
                 <div class="white-text">
                     Our mis&shy;sion is sim&shy;ple: to glor&shy;ify God and to share 
@@ -86,6 +86,6 @@
                 <div style="height:50px;"></div>
             </div>
         </div>
-        <footer #footer class="pad-content footer-color-brown footer-width" style="width:100%;"></footer>
+        <footer #footer class="pad-content footer-color-dark-blue footer-width" style="width:100%;"></footer>
     </div>
 </div>
