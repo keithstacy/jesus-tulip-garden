@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
-import { ContentService } from 'src/services/content.service';
 
 @Component({
   selector: 'app-local-outreach',
@@ -8,7 +7,7 @@ import { ContentService } from 'src/services/content.service';
 })
 export class LocalOutreachComponent implements OnInit {
   
-  constructor(private contentSvc: ContentService, private containerRef: ViewContainerRef){}
+  constructor(private containerRef: ViewContainerRef){}
 
   ngOnInit(): void {
     console.log('Content loaded');
@@ -16,6 +15,5 @@ export class LocalOutreachComponent implements OnInit {
 
   returnToMain(){
     console.log('returnToMain called')
-    this.contentSvc.LoadMainComponent(this.containerRef);
   }
 }

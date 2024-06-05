@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
-import { ContentService } from 'src/services/content.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
@@ -11,8 +10,7 @@ import { ViewportScroller } from '@angular/common';
 })
 export class PrayerComponent implements OnInit {
   
-    constructor(private contentSvc: ContentService, 
-      private containerRef: ViewContainerRef,
+    constructor(private containerRef: ViewContainerRef,
       private router: Router, 
       private viewportScroller: ViewportScroller) {
         this.router.events.pipe(
@@ -27,6 +25,5 @@ export class PrayerComponent implements OnInit {
   
     returnToMain(){
       console.log('returnToMain called')
-      this.contentSvc.LoadMainComponent(this.containerRef);
     }
 }

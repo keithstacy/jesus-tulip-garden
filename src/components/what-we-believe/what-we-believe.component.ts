@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
-import { ContentService } from 'src/services/content.service';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
@@ -13,8 +12,7 @@ import { MenuItem } from '../../interfaces/menu-items';
 export class WhatWeBelieveComponent implements OnInit {
   menuItems: MenuItem[] = [];
 
-  constructor(private contentSvc: ContentService, 
-    private containerRef: ViewContainerRef, 
+  constructor(private containerRef: ViewContainerRef, 
     private router: Router, 
     private viewportScroller: ViewportScroller, 
     private route: ActivatedRoute) { 

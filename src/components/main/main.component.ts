@@ -1,11 +1,13 @@
+/// <reference types="@types/google.maps" />
 import { Component, OnInit, ViewContainerRef, AfterViewInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { ContentService } from '../../services/content.service';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
-import { FooterComponent } from '../footer/footer.component';
 import { MenuItem } from '../../interfaces/menu-items';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMapsLoaderService } from 'src/services/google-maps-loader.service';
+import {} from 'google.maps';
 
 declare var Microsoft: any;
 
@@ -23,12 +25,13 @@ export class MainComponent implements OnInit, AfterViewInit {
     backgroundColor: '#00ff00'
   }
 
-  constructor(private contentSvc: ContentService, 
-              private containerRef: ViewContainerRef, 
+  constructor(private containerRef: ViewContainerRef, 
               private sanitizer: DomSanitizer, 
               private router: Router, 
               private viewportScroller: ViewportScroller,
-              private route: ActivatedRoute) { 
+              private route: ActivatedRoute,
+              private googleMapsLoaderService: GoogleMapsLoaderService
+            ) { 
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd)).subscribe(() => {
         const fragment = this.route.snapshot.fragment;
@@ -107,6 +110,11 @@ export class MainComponent implements OnInit, AfterViewInit {
         submenu: []
       }
     ]
+    this.googleMapsLoaderService.loadGoogleMaps().then(() => {
+      console.log('Google Maps loaded');
+    }).catch((error) => {
+      console.error('Error while loading Google Maps', error);
+    });
   }
 
   displayMain = true;
