@@ -21,7 +21,7 @@ import { MeaningComponent } from '../components/meaning/meaning.component';
 import { TheSolasComponent } from '../components/the-solas/the-solas.component';
 import { GivingComponent } from '../components/giving/giving.component';
 import { BulletinListComponent } from '../components/bulletin-list/bulletin-list.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { SermonsComponent } from '../components/sermons/sermons.component';
 import { TithingComponent } from '../components/tithing/tithing.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -40,51 +40,44 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expect.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    MainComponent,
-    ForeignMissionsComponent,
-    LocalOutreachComponent,
-    PrayerComponent,
-    WorshipServiceComponent,
-    WhatWeBelieveComponent,
-    HowWeTeachComponent,
-    OurLeadersComponent,
-    WhoAreWeComponent,
-    JoinWithUsComponent,
-    TheBibleComponent,
-    JesusComponent,
-    FaithComponent,
-    GraceComponent,
-    MeaningComponent,
-    TheSolasComponent,
-    GivingComponent,
-    BulletinListComponent,
-    SermonsComponent,
-    TithingComponent,
-    SermonPlayerComponent,
-    FooterComponent,
-    HigherEdComponent,
-    SafePipe,
-    MenuBarComponent,
-    WhatToExpectComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    YouTubePlayerModule,
-    GoogleMapsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatMenuModule,
-    BrowserAnimationsModule
-  ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        MainComponent,
+        ForeignMissionsComponent,
+        LocalOutreachComponent,
+        PrayerComponent,
+        WorshipServiceComponent,
+        WhatWeBelieveComponent,
+        HowWeTeachComponent,
+        OurLeadersComponent,
+        WhoAreWeComponent,
+        JoinWithUsComponent,
+        TheBibleComponent,
+        JesusComponent,
+        FaithComponent,
+        GraceComponent,
+        MeaningComponent,
+        TheSolasComponent,
+        GivingComponent,
+        BulletinListComponent,
+        SermonsComponent,
+        TithingComponent,
+        SermonPlayerComponent,
+        FooterComponent,
+        HigherEdComponent,
+        SafePipe,
+        MenuBarComponent,
+        WhatToExpectComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        YouTubePlayerModule,
+        GoogleMapsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatMenuModule,
+        BrowserAnimationsModule], providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
