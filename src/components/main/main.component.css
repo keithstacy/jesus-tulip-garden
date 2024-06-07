@@ -6,7 +6,7 @@ img {
 }
 @keyframes rotateFamily {
     0% {background-image: url(../../assets/img/AnivMed.jpg);}
-    33% {background-image: url(../../assets/img/_MG_1520.jpg);}
+    33% {background-image: url(../../assets/img/_MG_1520.JPG);}
     66% {background-image: url(../../assets/img/_MG_1485.JPG);}
     100% {background-image: url(../../assets/img/IMG_2147.JPG);}
 }
