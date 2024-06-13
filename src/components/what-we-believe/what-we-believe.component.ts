@@ -48,8 +48,8 @@ export class WhatWeBelieveComponent implements OnInit {
       },
       {
         order: 2,
-        text: "Join With Us",
-        route: "/join-with-us",
+        text: "What to Expect",
+        route: "/what-to-expect",
         fragment: "",
         hasSubmenu: false,
         submenu: []

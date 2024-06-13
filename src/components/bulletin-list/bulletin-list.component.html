@@ -2,21 +2,21 @@
 <div id="bulletin-list" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
     <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
     <div #content style="position:absolute;top:60px;left:0px;height:99vh;">
-        <div class="text-outline-brown title-grid-layout">
-            <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                <div class="page-title">Church Bulletins</div>
-            </div>
+        <div style="padding-top:30px">
+        <div class="bubble-light">
+        <div class="title-grid-layout">
+        <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+            <div class="page-title">Church Bulletins</div>
         </div>
-        <div class="text-outline-brown">
-            <div class="bubble-dark">
-                <div class="white-subheader">Bulletins from the Last Twelve Months</div>   
+        </div>
+            <div class="dark-subheader">Bulletins from the Last Twelve Months</div>   
                 <ul>
                     <li *ngFor="let bulletin of bulletins" >
-                        <a class="white-link" style="font-size:1.5em;" [href]="bulletin.url" target="_blank">{{bulletin.name}}&mdash;{{bulletin.date}}</a>
+                        <a class="dark-link" style="font-size:1.5em;" [href]="bulletin.url" target="_blank">{{bulletin.name}}&mdash;{{bulletin.date}}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <footer #footer class="pad-content footer-color-brown footer-width" style="width:100%;margin-top:0px;"></footer>
+    <footer #footer class="pad-content footer-color-dark-blue footer-width" style="width:100%;margin-top:0px;"></footer>
 </div>

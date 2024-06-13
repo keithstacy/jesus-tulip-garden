@@ -49,8 +49,8 @@ export class WhatToExpectComponent implements OnInit {
       },
       {
         order: 2,
-        text: "Join With Us",
-        route: "/join-with-us",
+        text: "What We Believe",
+        route: "/what-we-believe",
         fragment: "",
         hasSubmenu: false,
         submenu: []

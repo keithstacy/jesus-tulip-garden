@@ -3,15 +3,15 @@
                      style="background-color: transparent;color:black;height:150vh;">
     <div class="background-image-church-family-sticky page-layout">
         <div style="padding-top:30px;">
-            <div class="bubble-dark" style="color:white; text-align:center;">
+            <div class="bubble-light" style="text-align:center;">
                 <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                    <div class="page-title">Sunday Sermons</div>
+                    <div class="page-title blue-title">Sunday Sermons</div>
                 </div>
-                <div class="white-subheader" style="background-color:transparent">Sermons from Recent Services</div>   
+                <div class="dark-subheader blue-title" style="background-color:transparent">Sermons from Recent Services</div>   
                 <div style="align-content:center;background-color: transparent;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;">
                     <div *ngFor="let sermon of sermons">
                         <sermon-player style="width:60%;margin: 0 25%;min-width:200px;min-height:150px;" [videoID]="sermon.videoID"></sermon-player>
-                        <div class="white-subheader">{{sermon.date}}<br>{{sermon.name}}</div>
+                        <div class="dark-subheader">{{sermon.date}}<br>{{sermon.name}}</div>
                         <hr>
                     </div>
                 </div>

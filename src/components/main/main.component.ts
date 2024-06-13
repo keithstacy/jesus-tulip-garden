@@ -73,7 +73,7 @@ export class MainComponent implements OnInit, AfterViewInit {
         console.log("outerMapContainer does not exist")
       }
   }
-    
+
 
   ngOnInit(): void {
     this.menuItems = [
@@ -110,11 +110,6 @@ export class MainComponent implements OnInit, AfterViewInit {
         submenu: []
       }
     ]
-    // this.googleMapsLoaderService.loadGoogleMaps().then(() => {
-    //   console.log('Google Maps loaded');
-    // }).catch((error) => {
-    //   console.error('Error while loading Google Maps', error);
-    // });
   }
 
   displayMain = true;
