@@ -564,15 +564,16 @@ HHH       HHH               IIIIIIIIIIIII
   grid-template-rows: repeat(10, 10%);
 }
 /*
-LLL                             SSSSSSSSS
-LLL                           SS         SS
-LLL                           SS         SS
-LLL             ===========   SS
-LLL             ===========     SSSSSSSSS  
-LLL             ===========              SS
-LLL                           SS         SS
+LLLL                            SSSSSSSSS
+LLLL                          SS         SS
+LLLL                          SS           
+LLLL            ===========   SS
+LLLL            ===========     SSSSSSSSS  
+LLLl            ===========              SS
+LLLL                                     SS
 LLLLLLLLLLLLL                 SS         SS
 LLLLLLLLLLLLL                   SSSSSSSSS
+LLLLLLLLLLLLL
 */
 .link-button {
   background: none;
@@ -878,6 +879,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     width:100%;
     padding:10px;
     color:white;
+    width:-moz-fit-content;
     width:fit-content;
     height:max-content;
   }
@@ -958,8 +960,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     grid-row:1;
     width:-moz-fit-content;
     width:fit-content;
-    height:-moz-fit-content;
-    height:fit-content;
+    height:max-content;
     text-align:left;
   }
   .background-image-find-us {
@@ -1124,6 +1125,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     width:100%;
     padding:10px;
     color:white;
+    width:-moz-fit-content;
     width:fit-content;
     height:max-content;
   }
@@ -1221,7 +1223,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     border-radius:0.5em;
     grid-column:48;
     grid-row:20/span 65;
-    height:fit-content;
+    height:max-content;
     color:white;
     width:max-content;
     padding: 15px;
@@ -1234,8 +1236,8 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     object-fit: contain;
     object-position:left;
     margin-left:0vw;
-    width:fit-content;
-    height:fit-content;
+    width:max-content;
+    height:max-content;
     /* border: solid 1px coral; */
   }
   .church-name {
@@ -1282,7 +1284,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     border-radius:0.5em;
     grid-column:48;
     grid-row:20/span 65;
-    height:fit-content;
+    height:max-content;
     color:white;
     width:max-content;
     padding: 15px;
@@ -1294,6 +1296,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     width:100%;
     padding:10px;
     color:white;
+    width:-moz-fit-content;
     width:fit-content;
     height:max-content;
   }

@@ -4,6 +4,13 @@ img {
     min-width: 50px;
     height:auto;
 }
+.find-us {
+    margin-top:-5px;
+    background-color: transparent;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:33% 33% 33%;
+}
 @keyframes rotateFamily {
     0% {background-image: url(../../assets/img/AnivMed.jpg);}
     33% {background-image: url(../../assets/img/_MG_1520.JPG);}
@@ -16,13 +23,4 @@ img {
     50% {background-image: url(../../assets/img/IMG_7122.JPG);}
     75% {background-image: url(../../assets/img/IMG_7055.JPG);}
     100% {background-image: url(../../assets/img/Friends.jpg);}
-}
-
-@media screen and (max-width: 500px) {
-    img {
-        max-width: none;
-        min-width: none;
-        width: 100px;
-        height: auto;
-    }
 }
