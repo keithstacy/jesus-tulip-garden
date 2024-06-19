@@ -14,7 +14,7 @@ import { MenuItem } from 'src/interfaces/menu-items';
 
 export class BulletinListComponent implements OnInit, AfterViewInit {
   menuItems: MenuItem[] = [];
-  imageUrl = "../../assets/img/AnivMedPortrait.jpg";
+  imageUrl = "src/assets/img/AnivMedPortrait.jpg";
   bulletins: Bulletin[] = [];
   @ViewChild('footer', { read: ElementRef }) footer!: ElementRef;
   @ViewChild('imageContainer', { read: ElementRef }) imageContainer!: ElementRef;

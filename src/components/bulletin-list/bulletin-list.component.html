@@ -1,22 +1,25 @@
 <menu-bar class="link-box" style="color:brown;width:100%;word-wrap:break-word;" [menuItems]="menuItems"></menu-bar>
-<div id="bulletin-list" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
-    <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
-    <div #content style="position:absolute;top:60px;left:0px;height:99vh;">
-        <div style="padding-top:30px">
-        <div class="bubble-light">
-        <div class="title-grid-layout">
-        <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-            <div class="page-title">Church Bulletins</div>
-        </div>
-        </div>
-            <div class="dark-subheader">Bulletins from the Last Twelve Months</div>   
+<div id="who-are-we" style="color:black;max-height:150vh;height:fit-content;">
+    <div #imageContainer class="img-container image"  ></div> 
+    <div #content style="position:absolute;top:50px;left:0px;">
+        <div style="margin-top:30px;">
+            <br>
+            <div class="bubble-light">
+                <div class="title-grid-layout blue-title">
+                    <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
+                        <div class="page-title">Church Bulletins</div>
+                    </div>
+                </div>
+                <div class="dark-subheader blue-title">Bulletins from the Last Twelve Months</div>   
                 <ul>
                     <li *ngFor="let bulletin of bulletins" >
                         <a class="dark-link" style="font-size:1.5em;" [href]="bulletin.url" target="_blank">{{bulletin.name}}&mdash;{{bulletin.date}}</a>
                     </li>
                 </ul>
             </div>
-        </div>
+                    </div>
+        <br>
+        <footer #footer class="footer-color-dark-blue footer-width" ></footer>
     </div>
-    <footer #footer class="pad-content footer-color-dark-blue footer-width" style="width:100%;margin-top:0px;"></footer>
 </div>
+

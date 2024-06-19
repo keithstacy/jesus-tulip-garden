@@ -1,8 +1,9 @@
 <menu-bar class="link-box" style="color:darkblue;font-kerning:auto;letter-spacing:0.01em;" [menuItems]="menuItems"></menu-bar>
-<div id="who-are-we" style="background-color: transparent;color:black;max-height:150vh;height:fit-content;">
+<div id="who-are-we" style="color:black;max-height:150vh;height:fit-content;">
     <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
     <div #content style="position:absolute;top:50px;left:0px;">
         <div style="margin-top:30px;">
+            <br>
             <div #bubble class="bubble-light">
                 <div class="title-grid-layout blue-title">
                     <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
@@ -86,6 +87,7 @@
                 <div style="height:50px;"></div>
             </div>
         </div>
-        <footer #footer class="pad-content footer-color-dark-blue footer-width" style="width:100%;"></footer>
+        <br>
+        <footer #footer class="footer-color-dark-blue footer-width" style="width:100%;"></footer>
     </div>
 </div>

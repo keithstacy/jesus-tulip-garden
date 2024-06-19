@@ -16,3 +16,8 @@
 .image {
     background-image: url('src/assets/img/AnivMedPortrait.jpg');
 }
+.footer-width {
+    margin-left: 0.5vw;
+    max-width: 98vw;
+    height:max-content;
+}

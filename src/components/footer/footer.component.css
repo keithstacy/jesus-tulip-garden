@@ -19,6 +19,15 @@
 .about-us-links a {
     z-index:1;
 }
+.copyright-notice {
+    display:block;
+    padding-bottom:20px;
+    grid-column:1/span 99;
+    grid-row:49;
+    text-align:center;
+    background-color:inherit;
+    color:inherit;
+}
 .footer-grid {
     display:grid;
     grid-template-columns:repeat(100, 1fr);
@@ -84,7 +93,7 @@
 #footer {
     background-color:transparent;
     color:white;
-    height:300px;
+    height:400px;
     width:100%;
     padding:10px;
 }
@@ -258,9 +267,18 @@
     #footer {
         background-color:transparent;
         color:white;
-        height:380px;
+        height:60vh;
         width:100%;
         padding:10px;
+    }
+    .copyright-notice {
+        margin-top:auto;
+        padding-bottom:20px;
+        grid-column:10/span 50;
+        grid-row:7;
+        text-align:center;
+        background-color:inherit;
+        color:inherit;
     }
     .footer-grid {
         display:grid;
@@ -286,6 +304,7 @@
         justify-content: space-between;
         align-items:first baseline;
         gap:14px;
+        order:1
     }
     .footer-subtitle {
         font-size:calc(1vw + .6em);

@@ -1,6 +1,5 @@
 ul li::before {
-    text-shadow:2px 2px 2px brown, -2px -2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;
-    color:white;
+    color:black;
     content: "• ";
 }
 
@@ -13,4 +12,26 @@ ul {
     -moz-columns:2;
     columns:2;
 }
-
+.who-we-are-subheader{
+    font-size:2em;
+    text-align:center;
+    margin:0 10vw;
+    color:white;
+}
+.who-we-are-text {
+    font-size:1.4em;
+    padding: 5px 20px;
+    color:white;
+}
+.who-we-are-link {
+    color:white;
+}
+.image {
+    background-image: url('src/assets/img/AnivMedPortrait.jpg');
+}
+.footer-width {
+    margin-left: 0.6vw;
+    max-width:150vw;
+    width:98.7vw;
+    height:max-content;
+}
