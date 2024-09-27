@@ -9,12 +9,12 @@
                 </div>
                 <div class="dark-subheader blue-title" style="background-color:transparent">Sermons from Recent Services</div>   
                 <div style="align-content:center;background-color: transparent;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;">
-                    <div *ngFor="let sermon of sermons">
+                    <!--<div *ngFor="let sermon of sermons">
                         <sermon-player style="width:60%;margin: 0 25%;min-width:200px;min-height:150px;" [videoID]="sermon.videoID"></sermon-player>
                         <div class="dark-subheader">{{sermon.date}}<br>{{sermon.name}}</div>
                         <hr>
-                    </div>
-                </div>
+                    </div>-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=prlb8apYF3iG8108&amp;list=PLgVXknp_wVbM8eI3CIPUsqXsT9z9-OAXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
             </div>
         </div>
         <br>

@@ -4,6 +4,7 @@ import { Sermon, SermonData } from '../../interfaces/sermon';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
+import { ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { MenuItem } from 'src/interfaces/menu-items';
 
 @Component({
@@ -15,6 +16,10 @@ import { MenuItem } from 'src/interfaces/menu-items';
 export class SermonsComponent implements OnInit {
   sermons: Sermon[] = [];
   menuItems: MenuItem[] = [];
+  url: string = "https://youtube.com/@st.paulsevangelicalreforme6201?feature=shared";
+  isLoading = true;
+  @ViewChild("iframe") iframe!: ElementRef;
+
 
   constructor(private http: HttpClient, 
     private router: Router, 
@@ -58,4 +63,9 @@ export class SermonsComponent implements OnInit {
     ]
 
   }
+
+  onIframeLoad() {
+    this.isLoading = false;
+  }
+
 }
