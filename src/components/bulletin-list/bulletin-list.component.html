@@ -7,19 +7,45 @@
             <div class="bubble-light">
                 <div class="title-grid-layout blue-title">
                     <div style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
-                        <div class="page-title">Church Bulletins</div>
+                        <div class="page-title">Facebook Page</div>
+                        <div class="dark-subheader blue-title">Church bulletins and sermon videos</div>
+                    </div>
+                    <div style="height:20px;"></div>
+                    <div class="iframe-container">
+                        <div style="grid-column:1;">&nbsp;</div>
+                        <iframe title="Facebook Page" src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/stpaulsrcus&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="1000" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <div style="grid-column:3">&nbsp;</div>
                     </div>
                 </div>
-                <div class="dark-subheader blue-title">Bulletins from the Last Twelve Months</div>   
-                <ul>
-                    <li *ngFor="let bulletin of bulletins" >
-                        <a class="dark-link" style="font-size:1.5em;" [href]="bulletin.url" target="_blank">{{bulletin.name}}&mdash;{{bulletin.date}}</a>
-                    </li>
-                </ul>
             </div>
-                    </div>
+        </div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"></script>      
         <br>
         <footer #footer class="footer-color-dark-blue footer-width" ></footer>
     </div>
 </div>
+<style>
+.iframe-container {
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows:100%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  
+}
 
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 80%;
+  border: none;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: transparent;
+}
+</style>
