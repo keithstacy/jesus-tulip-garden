@@ -42,8 +42,8 @@ export class BulletinListComponent implements OnInit, AfterViewInit {
       },
       {
         order: 1,
-        text: "Pastor's Sermons",
-        route: "/sermons",
+        text: "Who We Are",
+        route: "/who-are-we",
         fragment: "",
         hasSubmenu: false,
         submenu: []

@@ -39,15 +39,15 @@ export class TithingComponent implements OnInit, AfterViewInit {
         },
         {
           order: 1,
-          text: "Pastor's Sermons",
-          route: "/sermons",
+          text: "Who We Are",
+          route: "/who-are-we",
           fragment: "",
           hasSubmenu: false,
           submenu: []
         },
         {
           order: 2,
-          text: "Church Bulletins",
+          text: "Facebook Page",
           route: "/bulletin-list",
           fragment: "",
           hasSubmenu: false,

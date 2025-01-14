@@ -46,7 +46,7 @@ export class SermonsComponent implements OnInit {
       },
       {
         order: 1,
-        text: "Church Bulletins",
+        text: "Facebook Page",
         route: "/bulletin-list",
         fragment: "",
         hasSubmenu: false,
