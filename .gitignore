@@ -40,6 +40,7 @@ src/environments
 src/index.html
 
 # System files
+key.txt
 .DS_Store
 Thumbs.db
 src/index.html
