@@ -9,7 +9,6 @@ import { PrayerComponent } from '../components/prayer/prayer.component';
 import { WorshipServiceComponent } from '../components/worship-service/worship-service.component';
 import { WhatWeBelieveComponent } from '../components/what-we-believe/what-we-believe.component';
 import { HowWeTeachComponent } from '../components/how-we-teach/how-we-teach.component';
-import { OurLeadersComponent } from '../components/our-leaders/our-leaders.component';
 import { WhoAreWeComponent } from '../components/who-are-we/who-are-we.component';
 import { JoinWithUsComponent } from '../components/join-with-us/join-with-us.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
@@ -30,6 +29,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { FooterComponent } from 'src/components/footer/footer.component';
 import { HigherEdComponent } from 'src/components/higher-ed/higher-ed.component';
 import { SafePipe } from 'src/pipes/safe.pipe';
+import { PastorBioComponent } from 'src/components/pastor-bio/pastor-bio.component';
 import { MenuBarComponent } from '../components/menu-bar/menu-bar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -49,7 +49,6 @@ import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expe
         WorshipServiceComponent,
         WhatWeBelieveComponent,
         HowWeTeachComponent,
-        OurLeadersComponent,
         WhoAreWeComponent,
         JoinWithUsComponent,
         TheBibleComponent,
@@ -66,6 +65,7 @@ import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expe
         FooterComponent,
         HigherEdComponent,
         SafePipe,
+        PastorBioComponent,
         MenuBarComponent,
         WhatToExpectComponent
     ],
