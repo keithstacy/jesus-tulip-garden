@@ -538,6 +538,10 @@ HHH       HHH               IIIIIIIIIIIII
   font-size:calc(1vh + 1vw + 0.3em);
   text-align:center;
 }
+.intro-service-time-text {
+  font-size:calc(1vh + 1vw);
+  text-align:left;
+}
 .intro-text-div {
   border: transparent 2px solid;
   min-width:555px;
