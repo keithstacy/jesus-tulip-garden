@@ -1,0 +1,3 @@
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "frame-src https://maps.apple.com https://maps.googleapis.com"
+</IfModule>

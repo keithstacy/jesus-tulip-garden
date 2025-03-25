@@ -40,6 +40,8 @@ h1,h2,h3,h4,h5,h6 {
 img {
   border-radius:0;
   object-fit: cover;
+  width:max-content;
+  height:max-content;
 }
 img:hover {
   z-index: 1;

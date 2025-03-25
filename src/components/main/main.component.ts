@@ -5,11 +5,9 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ViewportScroller } from '@angular/common';
 import { MenuItem } from '../../interfaces/menu-items';
-import { GoogleMapsModule } from '@angular/google-maps';
-// import { GoogleMapsLoaderService } from 'src/services/google-maps-loader.service';
-// import {} from 'google.maps';
 
-declare var Microsoft: any;
+declare const google: any;
+declare var Microsoft: any
 
 @Component({
   selector: 'app-main',
@@ -18,20 +16,18 @@ declare var Microsoft: any;
 })
 export class MainComponent implements OnInit, AfterViewInit {
   menuItems: MenuItem[] = [];
-
-  mapOptions: google.maps.MapOptions = {
-    center: new google.maps.LatLng(44.723877,-93.929512),
-    zoom: 12,
-    backgroundColor: '#00ff00'
-  }
+  latitude: number = 44.723877;
+  longitude: number = -93.929512;
+  wrapSettings: boolean = false;
+  isApple: boolean = false;
+  mapOptions: google.maps.MapOptions = {}
 
   constructor(private containerRef: ViewContainerRef
     , private sanitizer: DomSanitizer
     , private router: Router
     , private viewportScroller: ViewportScroller
     , private route: ActivatedRoute
-    // , private googleMapsLoaderService: GoogleMapsLoaderService
-    ) { 
+  ) { 
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd)).subscribe(() => {
         const fragment = this.route.snapshot.fragment;
@@ -44,38 +40,84 @@ export class MainComponent implements OnInit, AfterViewInit {
     });
   }
 
+  private isSafari(): boolean {
+    const userAgent = navigator.userAgent;
+    return /^((?!chrome|android).)*safari/i.test(userAgent);
+  }
+
+  private runGoogleMap(): void {
+    let latlng = new google.maps.LatLng(44.723877, -93.929512);
+    console.log(latlng);
+    this.mapOptions = {
+      center: latlng
+      ,zoom: 12
+      ,mapTypeId: google.maps.MapTypeId.ROADMAP
+      ,disableDefaultUI: false
+      ,fullscreenControl: false
+      ,mapTypeControl: false
+      ,scaleControl: false
+      ,streetViewControl: true
+      ,zoomControl: true
+      ,gestureHandling: "auto"
+      ,backgroundColor: '#00ff00'
+    }
+    console.log("Google Map Options:");
+    console.log(this.mapOptions);
+  }
+
+  private runAppleMap(): void {}
+
   ngAfterViewInit() {
-    let outerMapContainer: HTMLElement | null = document.getElementById("outer-map-container");
-    let googleMapTag: Element | undefined;
-    let innerMapContainer: Element | undefined;
-    console.log(outerMapContainer);
-    if (outerMapContainer) {
-        googleMapTag = outerMapContainer.children[0];
-        
+    if (this.isApple) {}
+    else {
+      let outerMapContainer: HTMLElement | null = document.getElementById("outer-map-container");
+      let googleMapTag: Element | undefined;
+      let innerMapContainer: Element | undefined;
+      let googleDiv: Element | undefined;
+      console.log("outerMapContainer:");
+      console.log(outerMapContainer);
+      if (outerMapContainer) {
+        googleDiv = outerMapContainer.children[0];
+        (googleDiv as HTMLElement).style.width = "inherit";
+        (googleDiv as HTMLElement).style.height = "inherit";
+        console.log(googleDiv);
+        googleMapTag = googleDiv.children[0];
+            
         if (googleMapTag) {
-          console.log(googleMapTag as HTMLElement);
-          (googleMapTag as HTMLElement).style.width = "inherit";
-          (googleMapTag as HTMLElement).style.height = "inherit";
-          innerMapContainer = (googleMapTag as HTMLElement).children[0];
-          console.log(innerMapContainer as HTMLElement);
-          if (innerMapContainer) {
-              console.log((innerMapContainer as HTMLElement).style);
-              (innerMapContainer as HTMLElement).style.width = "inherit";
-              (innerMapContainer as HTMLElement).style.height = "inherit";
-              console.log((innerMapContainer as HTMLElement).style);
+            console.log("googleMapTag:");
+            console.log(googleMapTag as HTMLElement);
+            (googleMapTag as HTMLElement).style.width = "inherit";
+            (googleMapTag as HTMLElement).style.height = "inherit";
+            innerMapContainer = (googleMapTag as HTMLElement).children[0];
+            console.log("innerMapContainer:");
+            console.log(innerMapContainer as HTMLElement);
+            if (innerMapContainer) {
+                console.log((innerMapContainer as HTMLElement).style);
+                (innerMapContainer as HTMLElement).style.width = "inherit";
+                (innerMapContainer as HTMLElement).style.height = "inherit";
+                console.log((innerMapContainer as HTMLElement).style);
+            } else {
+                console.log("innerMapContainer is null or does not exist");
+            }  
           } else {
-              console.log("innerMapContainer is null or does not exist");
-          }  
+            console.log("googleMapTag does not exist")
+          }
         } else {
-          console.log("googleMapTag does not exist")
-        }
-      } else {
-        console.log("outerMapContainer does not exist")
+          console.log("outerMapContainer does not exist")
       }
+    }
   }
 
 
   ngOnInit(): void {
+    this.isApple = this.isSafari();
+    if (this.isApple){
+      this.runAppleMap();
+    }
+    else {
+      this.runGoogleMap();
+    }
+    console.log("isSafari? " + this.isApple);
     this.menuItems = [
       {
         order: 0,
