@@ -1,3 +1,4 @@
+/*
 img {
     width:calc(3.5vw + 3.5vh);
     max-width: 100px;
@@ -10,7 +11,7 @@ img {
     display:grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows:33% 33% 33%;
-}
+}*/
 @keyframes rotateFamily {
     0% {background-image: url(../../assets/img/AnivMed.jpg);}
     33% {background-image: url(../../assets/img/_MG_1520.JPG);}
