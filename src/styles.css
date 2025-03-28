@@ -560,6 +560,14 @@ HHH       HHH               IIIIIIIIIIIII
   font-size:calc(1vh + 1vw + 0.3em);
   text-align:center;
 }
+.intro-text-flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border:solid 1px transparent;
+  width:60%;
+  margin:auto;
+}
 .intro-service-time-text {
   font-size:calc(1vh + 1vw);
   text-align:left;
@@ -630,6 +638,11 @@ LLLLLLLLLLLLL                   SSSSSSSSS
   font-size:calc(1vw + 1vh + 0.1em);
   font-kerning:auto;
   letter-spacing:0.0mm;
+}
+.link-box-position {
+  color:darkblue;
+  width:100%;
+  word-wrap: break-word;
 }
 .map {
   top:0;
@@ -1103,9 +1116,54 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
 */
 
 /* Phone, portrait  */
-/*@media screen and (max-width: 500px) and (max-height: 900px) {
+/**/
+@media screen and (min-width: 300px) and (max-width: 500px) and (min-height:600px) and (max-height: 900px) and (orientation:portrait) {
   body {
     overflow-x:hidden;
+  }
+  .background-image-church-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:103%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+    min-width:109vw;
+    width:109vw;
+    max-width:109vw;
+}
+  .background-image-find-us {
+    position:absolute;
+    background-position: bottom center;
+    background-size:cover;
+    background-image:url('src/assets/img/CarverCountyMap.png');
+    opacity:0.4;
+    height:110vh;
+    width:109vw;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    background-color:white;
+    z-index:-1;
+    margin-left:-28px;
+    margin-top:-300px;
+  }
+  .background-image-global-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:105%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+    min-width:109vw;
+    width:109vw;
+    max-width:109vw;
   }
   .background-image-intro {
     background-image: url('src/assets/img/vertical.church.tower.dimmed.png');
@@ -1116,6 +1174,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     z-index:0;
     overflow-x:hidden;
     min-width:none;
+    margin-left:-28px;
   }
   .bubble-dark {
     margin: 0 10vw;
@@ -1125,25 +1184,33 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     overflow-y:hidden;
     max-width:80vw;
   }
+  .church-city {
+    border:transparent 2px solid;
+    width: 100%;
+    font-size: x-large;
+  }
   .church-family-links {
     font-size:calc(1.0vh + 1.0vw + 1.0em);
     text-align:center;
     background-color:#000000af;
     border-radius:0.5em;
     grid-column:48;
-    grid-row-start:40;
+    grid-row-start:20;
     color:white;
     width:max-content;
     height:max-content;
     padding: 15px;
+    margin-top:80px;
   }
   .church-logo {
     background-color:transparent;
-    grid-column:6;
+    grid-column:9;
     grid-row:1;
     object-fit: contain;
     object-position:center;
     margin-left:1vw;
+    height:10vh;
+    width:12vw;
   }
   .church-name {
     grid-column:1/span 15;
@@ -1153,29 +1220,41 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     -webkit-flex-direction:column;
     flex-direction: column;
     width:125%;
+    font-size:xx-large;
   }
   .find-us-text {
-    grid-column:2/span 2;
-    grid-row:1;
-    text-align:center;
-    font-size:calc(1.0vh + 1.0vw + 0.3em);
-    padding-left:50px;
-    padding-right:50px;
-    padding-top:50px;
+    grid-column: 2/span 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: calc(1vh + 1vw + .3em);
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: -5px;
   }
   .find-us-title-text {
     font-size:calc(1.5vh + 1.5vw + 1.5em);
-    margin-top:4vh;
+    margin-top:2vh;
     color:black;
     grid-column:1/span 3;
     grid-row:1;
     width:-moz-fit-content;
     width:fit-content;
     text-align:left;
+    margin-left:-4vw;
   }
   .full-page {
     height:90vh;
     min-height:700px;
+  }
+  .intro-service-time-text {
+    font-size:medium;
+    text-align:left;
+  }
+  .intro-text {
+    font-size:x-large;
+    text-align:center;
   }
   .intro-text-div {
     min-width:200px;
@@ -1185,6 +1264,16 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     width:-moz-fit-content;
     width:fit-content;
     height:max-content;
+    margin-top:20px;
+    margin-left:-8px;
+  }
+  .intro-text-flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px transparent;
+    width:60%;
+    margin:auto;
   }
   .intro-title-div {
     color:white;
@@ -1206,14 +1295,20 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     z-index:1000;
     -webkit-display: flex;
     display:flex;
-    -webkit-flex-direction:row;
+    -webkit-flex-direction: row;
     flex-direction:row;
-    padding:5px 5px 5px 5px;
-    margin-right:-4px;
+    padding:15px 10px 10px 35px;;
+    margin-right:-8px;
     background-color:#ffffff;
     font-size:calc(1vw + 1vh + 0.1em);
     font-kerning:auto;
     letter-spacing:0.0mm;
+  }
+  .link-box-position {
+    color:darkblue;
+    width:104%;
+    word-wrap: break-word;
+    margin-left:-28px;
   }
   .map-container {
     width:80vw;
@@ -1224,6 +1319,10 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     grid-column:3/span 60;
     text-align: center;
     font-size:calc(1.5vh + 1.5vw + 0.5em);
+  }
+  .page-title {
+    font-size:x-large;
+    width:100%;
   }
   .title-text {
     font-size:calc(1.5vh + 1.5vw + 1.5em);
@@ -1237,6 +1336,15 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     text-align:left;
     margin-right:50px;
   }
+  .welcome-text {
+    font-size:x-large;
+    text-align:center;
+  }
+  .welcome-text-sub {
+    width:100vw;
+    text-align:center;
+    font-size:large;
+  }
   .values-list {
     font-size:1em;
     margin-left:10vw;
@@ -1245,24 +1353,68 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     font-size: 1em;
     word-wrap: break-word;
   }
-}*/
+}
+
 
 /* Phone, landscape */
-/*@media screen and (max-height:500px) and (max-width: 900px) {
-
+@media screen and (min-width: 300px) and (max-width: 500px) and (min-height:600px) and (max-height: 900px) and (orientation:landscape) {
   body {
     overflow-x:hidden;
   }
+  .background-image-church-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:103%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+    min-width:109vw;
+    width:109vw;
+    max-width:109vw;
+}
+  .background-image-find-us {
+    position:absolute;
+    background-position: bottom center;
+    background-size:cover;
+    background-image:url('src/assets/img/CarverCountyMap.png');
+    opacity:0.4;
+    height:110vh;
+    width:109vw;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    background-color:white;
+    z-index:-1;
+    margin-left:-28px;
+    margin-top:-300px;
+  }
+  .background-image-global-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:105%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+    min-width:109vw;
+    width:109vw;
+    max-width:109vw;
+  }
   .background-image-intro {
-    background-image: url('src/assets/img/StPaulChurchWideView.dimmed.png');
+    background-image: url('src/assets/img/vertical.church.tower.dimmed.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:left;
-    max-width:900px;
-    max-height:500px;
+    max-width:500px;
     z-index:0;
     overflow-x:hidden;
     min-width:none;
+    margin-left:-28px;
   }
   .bubble-dark {
     margin: 0 10vw;
@@ -1272,77 +1424,77 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     overflow-y:hidden;
     max-width:80vw;
   }
+  .church-city {
+    border:transparent 2px solid;
+    width: 100%;
+    font-size: x-large;
+  }
   .church-family-links {
     font-size:calc(1.0vh + 1.0vw + 1.0em);
     text-align:center;
     background-color:#000000af;
     border-radius:0.5em;
     grid-column:48;
-    grid-row:20/span 65;
-    height:max-content;
+    grid-row-start:20;
     color:white;
     width:max-content;
+    height:max-content;
     padding: 15px;
+    margin-top:80px;
   }
   .church-logo {
     background-color:transparent;
-    grid-column:1;
+    grid-column:9;
     grid-row:1;
     object-fit: contain;
-    object-position:left;
-    margin-left:0vw;
-    width:max-content;
-    height:max-content;
+    object-position:center;
+    margin-left:1vw;
+    height:10vh;
+    width:12vw;
   }
   .church-name {
-    grid-column:2/span 14;
-    grid-row:1/span 10;
+    grid-column:1/span 15;
+    grid-row:6/span 10;
     -webkit-display: flex;
     display:flex;
     -webkit-flex-direction:column;
     flex-direction: column;
-    width:115%;
+    width:125%;
+    font-size:xx-large;
   }
   .find-us-text {
-    grid-column:2/span 2;
-    grid-row:1;
-    text-align:center;
-    font-size:calc(1.0vh + 1.0vw + 0.3em);
-    padding-left:50px;
-    padding-right:50px;
-    padding-top:10px;
+    grid-column: 2/span 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: calc(1vh + 1vw + .3em);
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: -5px;
   }
   .find-us-title-text {
     font-size:calc(1.5vh + 1.5vw + 1.5em);
-    margin-top:4vh;
+    margin-top:2vh;
     color:black;
     grid-column:1/span 3;
     grid-row:1;
     width:-moz-fit-content;
     width:fit-content;
     text-align:left;
-}
+    margin-left:-4vw;
+  }
   .full-page {
-    height:88vh;
-    min-height:350px;
+    height:90vh;
+    min-height:700px;
+  }
+  .intro-service-time-text {
+    font-size:medium;
+    text-align:left;
   }
   .intro-text {
-    font-size:calc(1vh + 1vw + 0.5em);
+    font-size:x-large;
     text-align:center;
-  }
-  .global-family-links {
-    margin-top:4vh;
-    font-size:calc(1.0vh + 1.0vw + 1.0em);
-    text-align:center;
-    background-color:#000000af;
-    border-radius:0.5em;
-    grid-column:48;
-    grid-row:20/span 65;
-    height:max-content;
-    color:white;
-    width:max-content;
-    padding: 15px;
-  
   }
   .intro-text-div {
     min-width:200px;
@@ -1352,6 +1504,16 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     width:-moz-fit-content;
     width:fit-content;
     height:max-content;
+    margin-top:20px;
+    margin-left:-8px;
+  }
+  .intro-text-flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px transparent;
+    width:60%;
+    margin:auto;
   }
   .intro-title-div {
     color:white;
@@ -1373,14 +1535,20 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     z-index:1000;
     -webkit-display: flex;
     display:flex;
-    -webkit-flex-direction:row;
+    -webkit-flex-direction: row;
     flex-direction:row;
-    padding:5px 5px 5px 5px;
-    margin-right:-4px;
+    padding:15px 10px 10px 35px;;
+    margin-right:-8px;
     background-color:#ffffff;
-    font-size:calc(1vw + 1vh + 0.5em);
+    font-size:calc(1vw + 1vh + 0.1em);
     font-kerning:auto;
     letter-spacing:0.0mm;
+  }
+  .link-box-position {
+    color:darkblue;
+    width:104%;
+    word-wrap: break-word;
+    margin-left:-28px;
   }
   .map-container {
     width:80vw;
@@ -1391,6 +1559,10 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     grid-column:3/span 60;
     text-align: center;
     font-size:calc(1.5vh + 1.5vw + 0.5em);
+  }
+  .page-title {
+    font-size:x-large;
+    width:100%;
   }
   .title-text {
     font-size:calc(1.5vh + 1.5vw + 1.5em);
@@ -1404,22 +1576,29 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     text-align:left;
     margin-right:50px;
   }
+  .welcome-text {
+    font-size:x-large;
+    text-align:center;
+  }
+  .welcome-text-sub {
+    width:100vw;
+    text-align:center;
+    font-size:large;
+  }
   .values-list {
     font-size:1em;
     margin-left:10vw;
-  }
-  .welcome-text {
-    font-size:calc(1vh + 1vw + 1em);
-    text-align:center;
   }
   .white-subheader {
     font-size: 1em;
     word-wrap: break-word;
   }
-}*/
+}
+/*
+*/
 
-/* Motorola Moto G71 5G */
-@media screen and (width: 412px) and (height:797px) {
+/* Motorola Moto G71 5G (portrait) */
+@media screen and (min-width: 407px) and (max-width:417px) and (min-height:792px) and (max-height:802px) and (orientation:portrait) {
   body {
     overflow-x:hidden;
   }
@@ -1582,6 +1761,12 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     height:max-content;
     margin-left:-50px;
   }
+  .grid-for-text {
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+    max-height:100vh;
+  }
   .intro-title-div {
     color:white;
     padding:5px;
@@ -1656,7 +1841,7 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
 }
 
 /* iPhone SE */
-@media screen and (width: 375px) and (height:667px) {
+@media screen and (min-width: 370px) and (max-width: 380px) and (min-height:548px) and (max-height:558px) and (orientation:portrait) {
   body {
     overflow-x:hidden;
   }
@@ -1754,6 +1939,217 @@ TTTTTTTTTTTTT               ZZZZZZZZZZZZ
     flex-direction: column;
     grid-column:5/span 15;
     grid-row:1/span 10;
+  }
+  .find-us-text {
+    grid-column:2/span 2;
+    grid-row:1;
+    text-align:center;
+    font-size:calc(1.0vh + 1.0vw + 0.3em);
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+    margin-bottom:20px;
+  }
+  .find-us-title-text {
+    font-size:calc(1.5vh + 1.5vw + 1.5em);
+    margin-top:4vh;
+    color:black;
+    grid-column:1/span 3;
+    grid-row:1;
+    width:-moz-fit-content;
+    width:fit-content;
+    text-align:left;
+  }
+  .full-page {
+    height:90vh;
+    min-height:700px;
+  }
+  .footer-width {
+    width:95vw;
+    margin-bottom:-15px;
+    margin-left:-28px;
+  }
+  .intro-text-div {
+    border: transparent 2px solid;
+    margin-top:30px;
+    min-width:555px;
+    padding:5px;
+    background-color:transparent;
+    color:white;
+    grid-column:50/span 47;
+    grid-row:45/span 20;
+    width:-moz-fit-content;
+    width:fit-content;
+    height:max-content;
+  }
+  .intro-title-div {
+    color:white;
+    padding:5px;
+    grid-column:2/span 47;
+    width:100%;
+    grid-row:4/span 20;
+    text-align:center;
+  }
+  .intro-title-grid {
+    display:grid;
+    grid-template-columns: repeat(15, 5%);
+    grid-template-rows: repeat(10, 10%);
+    width:100vw;
+  }
+  .link-box {
+    position:sticky;
+    top: 0;
+    z-index:1000;
+    -webkit-display: flex;
+    display:flex;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+    padding:5px 5px 5px 5px;
+    margin-right:-4px;
+    background-color:#ffffff;
+    font-size:calc(1vw + 1vh + 0.1em);
+    font-kerning:auto;
+    letter-spacing:0.0mm;
+  }
+  .map-container {
+    width:80vw;
+    height:50vh;
+    margin-left:3vw;
+  }
+  .narrow-family-text {
+    grid-column:3/span 60;
+    text-align: center;
+    font-size:calc(1.5vh + 1.5vw + 0.5em);
+  }
+  .title-text {
+    font-size:calc(1.5vh + 1.5vw + 1.5em);
+    color:white;
+    width:-moz-fit-content;
+    width:fit-content;
+    padding:5px;
+    grid-column:3/span 20;
+    grid-row:3/span 10;
+    width:100%;
+    text-align:left;
+    margin-right:50px;
+  }
+  .values-list {
+    font-size:1em;
+    margin-left:10vw;
+  }
+  .white-subheader {
+    font-size: 1em;
+    word-wrap: break-word;
+  }
+  .page-title {
+    font-size:calc(1.5vh + 1.5vw + 1.0em);
+    width:100%;
+  }
+  .welcome-text {
+    font-size:calc(1vh + 1vw + 0.5em);
+    text-align:center;
+  }
+}
+/* iPhone 12 (2020) */
+@media screen and (min-width:385px) and (max-width:395px) and (min-height:659px) and (max-height:669px) and (orientation:portrait) {
+  body {
+    overflow-x:hidden;
+  }
+  .background-image-intro {
+    background-image: url('src/assets/img/vertical.church.tower.dimmed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    max-width:500px;
+    z-index:0;
+    overflow-x:hidden;
+    min-width:none;
+  }
+  .background-image {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    height:105%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+  }
+  .background-image-church-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:103%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+  }
+  .background-image-find-us {
+    position:absolute;
+    background-position: bottom center;
+    background-size:cover;
+    background-image:url('src/assets/img/CarverCountyMap.png');
+    opacity:0.4;
+    height:110%;
+    width:100vw;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    background-color:white;
+    z-index:-1;
+    margin-left:-28px;
+    width:109vw;
+    margin-top:-257px;
+  }
+  .background-image-global-family {
+    background-position: bottom center;
+    background-size:cover;
+    filter:brightness(100%);
+    background-color:white;
+    height:105%;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+    margin-left:-28px;
+  }
+  .background-image-intro {
+    background-image: url('src/assets/img/StPaulChurchWideView.dimmed.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position:center;
+    margin-left:-28px;
+  }
+  .bubble-dark {
+    margin: 0 10vw;
+    border-radius:15px;
+    background-color:#000000af;
+    padding:15px 0;
+    overflow-y:hidden;
+    max-width:80vw;
+  }
+  .church-city {
+    border:transparent 2px solid;
+    width: 100%;
+    font-size: 1em;
+  }
+  .church-logo {
+    background-color:transparent;
+    height:50px;
+    width:auto;
+    grid-column:10;
+    grid-row:1
+   }
+  .church-name {
+    color: white;
+    -webkit-display: flex;
+    display:flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    grid-column:2/span 15;
+    grid-row:5/span 10;
+    font-size:small;
   }
   .find-us-text {
     grid-column:2/span 2;
