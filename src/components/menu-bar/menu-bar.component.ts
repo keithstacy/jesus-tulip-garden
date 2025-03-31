@@ -13,6 +13,7 @@ import { MenuItem } from 'src/interfaces/menu-items';
 })
 export class MenuBarComponent {
   @Input() menuItems: MenuItem[] = [];
+  
 
   private breakpointObserver = inject(BreakpointObserver);
 

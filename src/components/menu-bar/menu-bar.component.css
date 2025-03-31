@@ -3,10 +3,36 @@
   background: inherit;
 }
 
-.mat-toolbar.mat-primary {
+.mat-toolbar .mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
+  color:inherit;
+  height:-moz-fit-content;
+  height:fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  font:inherit;
+  font-kerning:inherit;
+  letter-spacing:inherit;
+  margin-right:0.5vw;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color:inherit;
+  height:-moz-fit-content;
+  height:fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  font:inherit;
+  font-kerning:inherit;
+  letter-spacing:inherit;
+  margin-right:0.5vw;
+  font-family: "Bookman Old Style", Georgia, "Times New Roman", Times, "Trirong", serif, -apple-system, BlinkMacSystemFont, 
+  "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .mat-item {
@@ -20,4 +46,57 @@
   font-kerning:inherit;
   letter-spacing: inherit;
   margin-right:0.5vw;
+}
+
+.menu-item-button {
+  background-color:inherit;
+  color:inherit;
+  height:-moz-fit-content;
+  height:fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  font:inherit;
+  font-kerning:inherit;
+  letter-spacing: inherit;
+  margin-right:0.5vw;
+}
+
+@media screen and (min-width:385) and (max-width:395) and (min-height:659) and (max-height:669) and (orientation:portrait) {
+  .mat-toolbar {
+    background: inherit;
+    margin-left:3vw;
+    font-size:1vh;
+    width:inherit;
+    max-width:100vw;
+  }
+
+  .menu-item-button {
+    background-color:inherit;
+    color:inherit;
+    height:6vh;
+    width:5vw;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    font:inherit;
+    font-kerning:inherit;
+    letter-spacing: inherit;
+    margin-right:0.5vw;
+  }
+
+  .mat-item {
+    background-color:inherit;
+    color:inherit;
+    height:6vh;
+    width:5vw;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    font:inherit;
+    font-kerning:inherit;
+    letter-spacing: inherit;
+    margin-right:0.5vw;
+  }
 }
