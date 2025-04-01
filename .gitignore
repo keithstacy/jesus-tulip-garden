@@ -38,6 +38,9 @@ testem.log
 /typings
 src/environments
 src/index.html
+betaPromoteScript.txt
+betaPromote.bat
+betapromote.log
 
 # System files
 key.txt
