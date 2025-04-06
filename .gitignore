@@ -41,6 +41,9 @@ src/index.html
 betaPromoteScript.txt
 betaPromote.bat
 betapromote.log
+prodPromoteScript.txt
+prodPromote.bat
+prodPromote.log
 
 # System files
 key.txt
