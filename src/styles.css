@@ -3952,7 +3952,7 @@ div.poem {
     background-color:inherit;
     color:inherit;
     height:6vh;
-    width:15vw !important;
+    width:17vw;
     word-break:keep-all;
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
@@ -3968,9 +3968,11 @@ div.poem {
   .mdc-button__label {
     font-family: var(--font-stack);
     letter-spacing:0.0mm;
+    width:20vw;
+    font-size:1em;
   }
   .mat-mdc-button-base {
-    width:75px;
+    width:20vw;
   }
   .menu-item-button {
     background-color:white;
