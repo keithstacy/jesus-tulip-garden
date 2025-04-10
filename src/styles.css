@@ -172,6 +172,7 @@ div.poem {
   background-size:cover;
   filter:brightness(100%);
   background-color:white;
+  width:100vw;
   height:105%;
   background-repeat:no-repeat;
   background-color:transparent;
@@ -625,6 +626,9 @@ div.poem {
   display:grid;
   grid-template-columns: repeat(15, 5%);
   grid-template-rows: repeat(10, 10%);
+}
+.intro-worship {
+  font-weight:bold;
 }
 /*
 ███                              ██████
@@ -2321,6 +2325,17 @@ div.poem {
   body {
     overflow-x:hidden;
   }
+  .bubble-light {
+    margin-left:4vw;
+    margin-right:7vw;
+  }
+  #who-are-we .bubble-light {
+    margin-left:7vw;
+    width:85vw;
+  }
+  #what-to-expect .bubble-light {
+    width:88vw;
+  }  
   .background-image {
     background-position: bottom center;
     background-size:cover;
@@ -2329,6 +2344,9 @@ div.poem {
     background-repeat:no-repeat;
     background-color:transparent;
     background-attachment:fixed;
+    margin-left:-28px;
+  }
+  .background-image-bible {
     margin-left:-28px;
   }
   .background-image-church-family {
@@ -2455,7 +2473,7 @@ div.poem {
     height:max-content;
   }
   .intro-text-flex {
-    margin-left:6vw;
+    margin-left:10vw;
   }
   .intro-title-div {
     color:white;
@@ -2465,9 +2483,12 @@ div.poem {
     grid-row:4/span 20;
     text-align:center;
   }
+  .intro-worship {
+    font-size:2.7vh;
+  }
   .intro-title-grid {
     display:grid;
-    grid-template-columns: repeat(15, 5%);
+    grid-template-columns: repeat(20, 5%);
     grid-template-rows: repeat(10, 10%);
     width:100vw;
   }
@@ -2597,7 +2618,7 @@ div.poem {
   .welcome-text {
     font-size:calc(1vh + 1vw + 0.5em);
     text-align:center;
-    margin-left: -44vw;
+    margin-left: -34vw;
   }
   .white-subheader {
     font-size: 1em;
@@ -2925,6 +2946,9 @@ div.poem {
   .background-image {
     margin-left:-28px;
   }
+  .background-image-bible {
+    margin-left:-28px;
+  }
   .background-image-church-family {
     height:103%;
     margin-left:-28px;
@@ -2934,7 +2958,6 @@ div.poem {
     width:100vw;
     margin-left:-28px;
     width:109vw;
-    margin-top:-257px;
   }
   .background-image-global-family {
     height:105%;
@@ -2954,9 +2977,17 @@ div.poem {
     overflow-y:hidden;
     max-width:80vw;
   }
+  .bubble-light {
+    margin-left:4vw;
+    margin-right:9vw;
+  }
   .church-city {
     font-size: 1.5em;
     margin-left: -4vw;
+  }
+  .church-family-links {
+    margin-left:-15vw;
+    margin-top: 22vh;
   }
   .church-logo {
     height:50px;
@@ -2982,6 +3013,10 @@ div.poem {
   .full-page {
     height:90vh;
     min-height:700px;
+  }
+  .global-family-links {
+    margin-left:-15vw;
+    margin-top:20vh;
   }
   .intro-text-div {
     margin-top:30px;
@@ -3038,6 +3073,7 @@ div.poem {
   .link-box-position {
     color:darkblue;
     width:100vw;
+    margin-left:-2vw;
   }
   .map-container {
     width:80vw;
@@ -3094,6 +3130,9 @@ div.poem {
     grid-column:3/span 60;
     text-align: center;
     font-size:calc(1.5vh + 1.5vw + 0.5em);
+    margin-bottom:2vh;
+    height:fit-content;
+    width:fit-content;
   }
   .page-title {
     font-size:calc(1.5vh + 1.5vw + 1.0em);
@@ -3749,12 +3788,24 @@ div.poem {
   body {
     overflow-x:hidden;
   }
+  .background-image-bible {
+    background-image:url('../src/assets/img/bible.jpg');
+    background-position: top left;
+    /* background-position:unset; */
+    /* background-size:cover; */
+    background-size:150vw 75vh;
+    filter:brightness(100%);
+    /* height:105%; */
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-attachment:fixed;
+  }
   .background-image-church-family {
     background-position: bottom center;
     background-size:cover;
     filter:brightness(100%);
     background-color:white;
-    height:103%;
+    /* height:103%; */
     background-repeat:no-repeat;
     background-color:transparent;
     background-attachment:fixed;
