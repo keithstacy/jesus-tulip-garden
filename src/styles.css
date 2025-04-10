@@ -2644,6 +2644,9 @@ div.poem {
     background-attachment:fixed;
     margin-left:-28px;
   }
+  .background-image-bible {
+    margin-left:-28px;
+  }
   .background-image-church-family {
     background-position: bottom center;
     background-size:cover;
@@ -2701,6 +2704,18 @@ div.poem {
     overflow-y:hidden;
     max-width:80vw;
   }
+  .bubble-light {
+    margin-left:4vw;
+    margin-right:8vw;
+  }
+  #who-are-we .bubble-light {
+    margin-left:7vw;
+    width:85vw;
+    margin-right:7vw;
+  }
+  #what-to-expect .bubble-light {
+    width:88vw;
+  }  
   .church-city {
     border:transparent 2px solid;
     width: 100%;
