@@ -2754,6 +2754,9 @@ div.poem {
     margin-bottom:-15px;
     margin-left:-28px;
   }
+  .intro-text {
+    margin-left:13vw;
+  }
   .intro-text-div {
     border: transparent 2px solid;
     margin-top:30px;
