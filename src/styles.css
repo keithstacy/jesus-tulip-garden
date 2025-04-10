@@ -2780,7 +2780,7 @@ div.poem {
   }
   .intro-title-grid {
     display:grid;
-    grid-template-columns: repeat(15, 5%);
+    grid-template-columns: repeat(20, 5%);
     grid-template-rows: repeat(10, 10%);
     width:100vw;
   }
@@ -2910,7 +2910,11 @@ div.poem {
   .welcome-text {
     font-size:calc(1vh + 1vw + 0.5em);
     text-align:center;
-    margin-left: -44vw;
+    margin-left: -26vw;
+  }
+  .welcome-text-sub {
+    width:auto;
+    margin-left:10vw;
   }
   .white-subheader {
     font-size: 1em;
