@@ -2646,6 +2646,7 @@ div.poem {
   }
   .background-image-bible {
     margin-left:-28px;
+    width:108.25vw;
   }
   .background-image-church-family {
     background-position: bottom center;
@@ -2706,7 +2707,7 @@ div.poem {
   }
   .bubble-light {
     margin-left:4vw;
-    margin-right:8vw;
+    margin-right:15vw;
   }
   #who-are-we .bubble-light {
     margin-left:7vw;
@@ -2768,9 +2769,10 @@ div.poem {
     min-height:700px;
   }
   .footer-width {
-    width:105vw;
+    width:100vw;
     margin-bottom:-15px;
-    margin-left:-8px;
+    margin-top:-3vh;
+    margin-left:-3vw;
   }
   .intro-text {
     margin-left:13vw;
