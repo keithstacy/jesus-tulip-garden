@@ -39,6 +39,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expect.component';
+import { BelieveComponent } from '../components/believe/believe.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -67,7 +68,8 @@ import { WhatToExpectComponent } from '../components/what-to-expect/what-to-expe
         SafePipe,
         PastorBioComponent,
         MenuBarComponent,
-        WhatToExpectComponent
+        WhatToExpectComponent,
+        BelieveComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
