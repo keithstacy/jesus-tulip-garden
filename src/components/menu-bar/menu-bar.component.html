@@ -11,8 +11,8 @@
     </button>
 
     <!-- Submenu -->
-    <mat-menu #submenu="matMenu" class="mat-item">
-      <button mat-menu-item *ngFor="let subItem of menuItem.submenu" [routerLink]="subItem.route" [fragment]="subItem.fragment" class="mat-item menu-item-button">
+    <mat-menu #submenu="matMenu" class="mat-item" style="height:max-content;">
+      <button mat-menu-item *ngFor="let subItem of menuItem.submenu" [routerLink]="subItem.route" [fragment]="subItem.fragment" class="mat-item menu-item-button" style="width:max-content;font-size:1px;">
         {{ subItem.text }}
       </button>
     </mat-menu>
