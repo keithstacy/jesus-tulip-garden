@@ -1,10 +1,9 @@
 <menu-bar class="link-box" style="color:darkblue;font-kerning:auto;letter-spacing:0.01em;" [menuItems]="menuItems"></menu-bar>
-<div id="believe" style="color:black;max-height:150vh;height:fit-content;">
-    <div #imageContainer class="img-container" [style.backgroundImage]="'url(' + imageUrl + ')'" ></div> 
+<div id="believe" style="color:black;height:fit-content;background-color:#000">
     <div #content style="position:absolute;top:50px;left:0px;">
         <div id="top"></div>
         <div id="the-bible2"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible" >
             <div class="bubble-light">
                 <div class="blue-title" style="display:flex;flex-direction: column;grid-column:5/span 15;grid-row:1/span 10;">
                     <div class="believe-title" >What We Believe</div>
@@ -92,13 +91,9 @@
                     Keep reading! 
                 </p>
             </div><!--bubble-->
-            <br>
         </div>
-        <div>        
-        </div>
-        <br><br>
         <div id="the-bible"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout  background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title" >What We Believe About</div>
                 <div class="believe-title blue-title">The Bible</div>
@@ -160,7 +155,7 @@
             </div>
         </div>
         <div id="faith"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title">What We Believe About</div>
                 <div class="believe-title blue-title">Faith</div>
@@ -246,9 +241,8 @@
                 </div>
             </div>
         </div>
-        <br><br>
         <div id="grace"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title" >What We Believe About</div>
                 <div class="believe-title blue-title" >God's Grace</div>
@@ -330,9 +324,8 @@
                 </div>
             </div>
         </div>
-        <br><br>
         <div id="jesus"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title" >What We Believe About</div>
                 <div class="believe-title blue-title" >Jesus Christ</div>
@@ -475,9 +468,8 @@
                 </p>
             </div>
         </div>
-        <br><br>
         <div id="meaning"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title" >What We Believe About</div>
                 <div class="believe-title blue-title" style="word-wrap: break-word;">Life's Meaning</div>
@@ -528,9 +520,8 @@
                 </div>
             </div>
         </div>
-        <br><br>
         <div id="nutshell"></div>
-        <div class="title-grid-layout">
+        <div class="title-grid-layout background-image-bible">
             <div class="bubble-light">
                 <div class="believe-subtitle blue-title" >This is Our Faith</div>
                 <div class="believe-title blue-title" >In a Nutshell</div>
@@ -590,7 +581,6 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <footer #footer class="footer-color-dark-blue footer-width"></footer>
     </div>
-    <footer #footer class="footer-color-dark-blue footer-width" style="width:100%;"></footer>
 </div>

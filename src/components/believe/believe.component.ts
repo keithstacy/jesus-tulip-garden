@@ -37,8 +37,8 @@ export class BelieveComponent implements OnInit, AfterViewInit {
         },
         {
           order: 1,
-          text: "What We Believe",
-          route: "/believe",
+          text: "Who We Are",
+          route: "/who-are-we",
           fragment: "",
           hasSubmenu: false,
           submenu: []
@@ -50,9 +50,66 @@ export class BelieveComponent implements OnInit, AfterViewInit {
           fragment: "",
           hasSubmenu: false,
           submenu: []
+        },
+        {
+          order: 3,
+          text: "About...",
+          route: "null",
+          fragment: "null",
+          hasSubmenu: true,
+          submenu: [
+            {
+              order: 0,
+              text: "The Bible",
+              route: "/what-we-believe",
+              fragment: "the-bible",
+              hasSubmenu: false,
+              submenu: []
+            },
+            {
+              order: 1,
+              text: "Faith",
+              route: "/what-we-believe",
+              fragment: "faith",
+              hasSubmenu: false,
+              submenu: []
+            },
+            {
+              order: 2,
+              text: "Grace",
+              route: "/what-we-believe",
+              fragment: "grace",
+              hasSubmenu: false,
+              submenu: []
+            },
+            {
+              order: 3,
+              text: "Jesus Christ",
+              route: "/what-we-believe",
+              fragment: "jesus",
+              hasSubmenu: false,
+              submenu: []
+            },
+            {
+              order: 4,
+              text: "Life's Meaning",
+              route: "/what-we-believe",
+              fragment: "meaning",
+              hasSubmenu: false,
+              submenu: []
+            }
+          ]
+        },
+        {
+          order: 4,
+          text: "Return to Top",
+          route: "/what-we-believe",
+          fragment: "top",
+          hasSubmenu: false,
+          submenu: []
         }
       ]
-  
+    
       window.addEventListener("resize", () => {
         this.viewportScroller.scrollToPosition([0,0]);
         this.calculateImageHeight();

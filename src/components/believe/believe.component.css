@@ -1,0 +1,36 @@
+p {
+    margin-bottom: 20px;
+}
+.believe-link {
+    color:black;
+}
+.believe-subheader {
+    font-size:calc(1vw + 1vh + .25em);
+    text-align:center;
+    margin:0 10vw;
+    color:black;
+    font-weight: 500;
+}
+.believe-subtitle {
+    font-size:calc(1.1vw + 1.1vh + 0.1em);
+    width:100%;
+}
+.believe-text {
+    padding: 5px 20px;
+    color:black;
+    text-align: left;
+}
+.believe-title {
+    font-size:calc(1.5vh + 1.5vw + 2.0em);
+    width:100%;
+}
+.img-container {
+    width:auto;
+    height:auto;
+    background-size:auto;
+    background-position: top center;
+    background-repeat:no-repeat;
+  }
+  .bubble-light {
+    margin-top:4vh;
+  }
